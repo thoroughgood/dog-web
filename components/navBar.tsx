@@ -13,7 +13,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <div className="text-2xl font-bold">MyLogo</div>
+              <div className="text-2xl font-bold">Pick A Pooch</div>
             </Link>
           </div>
 
@@ -47,6 +47,9 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden sm:flex">
             <div className="flex space-x-12 text-md font-bold">
+              <Link href="/breeds">
+                <div className="hover:text-gray-300">BREEDS</div>
+              </Link>
               <Link href="/about">
                 <div className="hover:text-gray-300">ABOUT</div>
               </Link>
@@ -72,6 +75,11 @@ const Navbar = () => {
             isVisible ? 'translate-y-0' : '-translate-y-4'
           }`}
         >
+          <Link href="/breeds">
+            <div className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+              Breeds
+            </div>
+          </Link>
           <Link href="/about">
             <div className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
               About

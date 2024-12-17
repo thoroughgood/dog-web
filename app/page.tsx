@@ -3,15 +3,18 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="bg-white flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-16 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col text-left text-blue-600 gap-8 items-start">
-        <div className="bg-blue-200 w-full p-4 flex flex-col items-center">
-          <div className="text-4xl text-slate-800 font-bold">
+      <main className="flex flex-col text-left text-black gap-8 items-start">
+        <div className="bg-blue-200 w-full p-4 flex flex-col items-start">
+          <div className="text-4xl text-black font-bold">
             From the breeder to your doorstep
           </div>
-          <div className="flex w-2/5 text-slate-800">
+          <div className="flex w-2/5 text-black">
             At pick-a-poooch we find the best breeders at the best
             prices, so you don't have to
           </div>
+        </div>
+        <div className="w-full text-red-500 font-bold text-5xl pt-12 p-4 flex flex-col items-center">
+          Located in Sydney
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

@@ -1,0 +1,40 @@
+{
+  "dogBreeds": [
+    {
+      "name": "Poodle",
+      "description": "An intelligent and active breed with a curly, low-shedding coat, available in toy, miniature, and standard sizes."
+    },
+    {
+      "name": "Cavoodle",
+      "description": "A small, affectionate, and friendly crossbreed with a soft, low-shedding coat, ideal for families."
+    },
+    {
+      "name": "Labradoodle",
+      "description": "A friendly and energetic mix of Labrador and Poodle, known for its wavy or curly coat and sociable nature."
+    },
+    {
+      "name": "Groodle",
+      "description": "A gentle and affectionate Golden Retriever-Poodle mix with a wavy, low-shedding coat and loving temperament."
+    },
+    {
+      "name": "Spoodle",
+      "description": "A playful and loyal Cocker Spaniel-Poodle mix with a curly or wavy coat, great for active households."
+    },
+    {
+      "name": "Dachshund",
+      "description": "A small, bold breed with a long body and short legs, available in smooth, wire-haired, or long-haired varieties."
+    },
+    {
+      "name": "Pug",
+      "description": "A charming and mischievous small breed with a short, smooth coat and a distinctive wrinkled face."
+    },
+    {
+      "name": "French Bulldog",
+      "description": "A compact and affectionate breed with bat-like ears, a smooth coat, and a playful, adaptable personality."
+    },
+    {
+      "name": "Bulldog",
+      "description": "A calm and courageous medium-sized breed with a stocky build, short coat, and gentle demeanor."
+    }
+  ]
+}
