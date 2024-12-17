@@ -2,14 +2,16 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="bg-blue-200 grid grid-rows-[20px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col text-l text-blue-600 gap-8 row-start-1 items-start sm:items-start">
-        <div className="text-4xl text-slate-800 font-bold border-b-2 border-red-400">
-          From the breeder to your doorstep
-        </div>
-        <div className="flex w-2/5 text-slate-800">
-          At pick-a-poooch we find the best breeders at the best
-          prices, so you don't have to
+    <div className="bg-white flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-16 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col text-left text-blue-600 gap-8 items-start">
+        <div className="bg-blue-200 w-full p-4 flex flex-col items-center">
+          <div className="text-4xl text-slate-800 font-bold">
+            From the breeder to your doorstep
+          </div>
+          <div className="flex w-2/5 text-slate-800">
+            At pick-a-poooch we find the best breeders at the best
+            prices, so you don't have to
+          </div>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
