@@ -5,7 +5,7 @@ export default function Home() {
     <div className="bg-white flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-16 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col text-left text-black gap-8 items-start">
         <div className="bg-blue-200 w-full p-4 flex flex-col items-start">
-          <div className="text-4xl text-black font-bold">
+          <div className="text-4xl text-red-500 font-bold">
             From the breeder to your doorstep
           </div>
           <div className="flex w-2/5 text-black">

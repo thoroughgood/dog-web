@@ -1,19 +1,25 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-
+import image from '../public/pickapooch_1.webp';
+import Image from 'next/image';
 const Navbar = () => {
   const [isVisible, setIsOpen] = useState(false);
   console.log(isVisible);
 
   return (
-    <nav className="bg-sky-900 text-white">
+    <nav className="bg-blue-600 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <div className="text-2xl font-bold">Pick A Pooch</div>
+              <Image
+                alt="Dog sticking head out of van logo image"
+                width="100"
+                height="100"
+                src={image.src}
+              ></Image>
             </Link>
           </div>
 
@@ -21,7 +27,7 @@ const Navbar = () => {
           <div className="sm:hidden">
             <button
               onClick={() => setIsOpen(!isVisible)}
-              className="text-black hover:text-gray-400 focus:outline-none"
+              className="text-white hover:text-gray-400 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"

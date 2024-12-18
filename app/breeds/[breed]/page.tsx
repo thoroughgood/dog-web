@@ -1,14 +1,14 @@
 'use client';
 import { GetServerSideProps } from 'next';
 import breedsData from '../../../public/dogBreeds.json';
-
+import { usePathname } from 'next/navigation';
 export default function Page() {
-  const breed = context.params
-  console.log(breed);
-  const res = breedsData.dogBreeds.find(
-    (b) => b.name.toLowerCase() === (breed as string)?.toLowerCase
+  const pathname = usePathname().split('/')[2];
+  const breed = breedsData.dogBreeds.find(
+    (b) => b.name.toLowerCase() === pathname.toLowerCase()
   );
-  if (res === undefined) {
+  console.log(breed);
+  if (breed === undefined) {
     return (
       <div className="max-w-6xl mx-auto mt-12">
         <div className="text-4xl font-bold text-red-600">
@@ -26,15 +26,10 @@ export default function Page() {
     return (
       <div className="min-h-screen bg-gray-100 p-6">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
-          {res.name}
+          {breed.name}
         </h1>
-        {res.description}
+        <div className="text-black">{breed.description}</div>
       </div>
     );
   }
-}
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
-    const { breed } = context.params as {breed: string;}
-    const breed = 
 }

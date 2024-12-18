@@ -19,7 +19,7 @@ const BreedsPage = () => {
             className="block bg-white shadow-lg rounded-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
           >
             <div className="p-6 text-center">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2 hover:text-red-300">
                 {breed.name}
               </h2>
             </div>
