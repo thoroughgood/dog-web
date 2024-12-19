@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import facebook from '../public/facebook.svg';
 
 export default function Footer() {
   return (
@@ -54,20 +56,12 @@ export default function Footer() {
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex justify-center md:justify-start space-x-4">
-              <a
-                href="#"
-                className="text-gray-300 hover:text-red-500"
-                aria-label="Facebook"
-              >
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-red-500"
-                aria-label="Twitter"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
+              <Image
+                src={facebook.src}
+                alt="Facebook link for business"
+                width="25"
+                height="25"
+              />
               <a
                 href="#"
                 className="text-gray-300 hover:text-red-500"
@@ -81,8 +75,9 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="mt-8 text-center text-sm text-gray-400">
+          <p>ABN 71 522 934 713</p>
           <p>
-            &copy; {new Date().getFullYear()} Your Company. All Rights
+            &copy; {new Date().getFullYear()} Pick A Pooch. All Rights
             Reserved.
           </p>
         </div>
