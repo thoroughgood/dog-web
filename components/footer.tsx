@@ -11,15 +11,60 @@ export default function Footer() {
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="text-lg font-semibold mb-2">Breeds</h3>
             <div className="text-sm text-gray-300 flex flex-col">
-              <Link href="breeds/poodle">poodle</Link>
-              <Link href="breeds/cavoodle">cavoodle</Link>
-              <Link href="breeds/labradoodle">labradoodle</Link>
-              <Link href="breeds/groodle">groodle</Link>
-              <Link href="breeds/spoodle">spoodle</Link>
-              <Link href="breeds/dachshund">dachshund</Link>
-              <Link href="breeds/pugs">pugs</Link>
-              <Link href="breeds/frenchbulldog">french bulldog</Link>
-              <Link href="breeds/bulldog">bulldog</Link>
+              <Link
+                href="breeds/poodle"
+                className="text-gray-300 hover:underline hover:text-red-400"
+              >
+                poodle
+              </Link>
+              <Link
+                href="breeds/cavoodle"
+                className="text-gray-300 hover:underline hover:text-red-400"
+              >
+                cavoodle
+              </Link>
+              <Link
+                href="breeds/labradoodle"
+                className="text-gray-300 hover:underline hover:text-red-400"
+              >
+                labradoodle
+              </Link>
+              <Link
+                href="breeds/groodle"
+                className="text-gray-300 hover:underline hover:text-red-400"
+              >
+                groodle
+              </Link>
+              <Link
+                href="breeds/spoodle"
+                className="text-gray-300 hover:underline hover:text-red-400"
+              >
+                spoodle
+              </Link>
+              <Link
+                href="breeds/dachshund"
+                className="text-gray-300 hover:underline hover:text-red-400"
+              >
+                dachshund
+              </Link>
+              <Link
+                href="breeds/pugs"
+                className="text-gray-300 hover:underline hover:text-red-400"
+              >
+                pugs
+              </Link>
+              <Link
+                href="breeds/frenchbulldog"
+                className="text-gray-300 hover:underline hover:text-red-400"
+              >
+                french bulldog
+              </Link>
+              <Link
+                href="breeds/bulldog"
+                className="text-gray-300 hover:underline hover:text-red-400"
+              >
+                bulldog
+              </Link>
             </div>
           </div>
 
@@ -30,24 +75,28 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   className="text-gray-300 hover:text-red-400 hover:underline"
-                  href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="../"
                 >
-                  About
-                </a>
+                  Home
+                </Link>
               </li>
               <li>
-                <a
+                <Link
+                  className="text-gray-300 hover:text-red-400 hover:underline"
+                  href="../about"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
                   className="text-gray-300 hover:text-red-500 hover:underline"
-                  href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="../contact"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

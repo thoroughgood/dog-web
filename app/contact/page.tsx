@@ -3,19 +3,21 @@ import Contact, { EmailForm } from '@/components/contactForm';
 
 export default function Home() {
   return (
-    <div className="bg-white flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-16 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-white shadow-xl flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-16 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col text-left text-black gap-4 items-center justify-center mt-12">
         <div className="flex flex-grow w-full text-red-500 text-7xl font-bold items-center justify-center">
           CONTACT US
         </div>
 
-        <div className="flex flex-col gap-4 text-white sm:gap-0 sm:flex-row flex-grow justify-between w-3/">
+        <div className="flex flex-col gap-4 text-black sm:gap-0 sm:flex-row flex-grow justify-between w-3/">
           <div className="w-1/2 h-full shadow-md shadow-gray-400 rounded-md">
             <EmailForm></EmailForm>
           </div>
           <div className="flex flex-col flex-grow text-xl gap-4 justify-center items-center rounded-md max-w-2/3 pb-8 px-0 sm:px-4">
-            <div className="bg-blue-500 p-4 rounded-md w-full shadow-md shadow-gray-400">
-              <div className="">Mark, Business Owner</div>
+            <div className="bg-blue-300 p-4 rounded-md w-full shadow-md shadow-gray-400">
+              <div className="">
+                Business owner, Mark. Text or call
+              </div>
               <div className="flex flex-row gap-2 items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +37,7 @@ export default function Home() {
               </div>
               <div className="">puppies@pickapooch.com.au</div>
             </div>
-            <div className="bg-blue-500 text-lg rounded-md p-8 text-left flex flex-col sm:flex-row gap-2 w-full max-w-full min-w-[1/2] shadow-md shadow-gray-400">
+            <div className="bg-blue-300 text-lg rounded-md p-8 text-left flex flex-col sm:flex-row gap-2 w-full max-w-full min-w-[1/2] shadow-md shadow-gray-400">
               <div className="text-3xl">Operating Hours</div>
               <div className="flex-col flex">
                 <div> Monday: 9:00am - 5:00pm </div>
