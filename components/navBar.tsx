@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-600 text-white">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-        <div className="flex flex-row items-center justify-between h-16">
+        <div className="flex flex-row items-center justify-between h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
@@ -52,18 +52,24 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden sm:flex">
-            <div className="flex space-x-12 text-md font-bold">
+            <div className="flex space-x-12 text-lg font-bold">
               <Link href="/breeds">
-                <div className="hover:text-gray-300">BREEDS</div>
+                <div className="hover:text-gray-300 hover:underline">
+                  BREEDS
+                </div>
               </Link>
               <Link href="/about">
-                <div className="hover:text-gray-300">ABOUT</div>
+                <div className="hover:text-gray-300 hover:underline">
+                  ABOUT
+                </div>
               </Link>
               {/* <Link href="/services">
                 <div className="hover:text-gray-300">SERVICES</div>
               </Link> */}
               <Link href="/contact">
-                <div className="hover:text-gray-300">CONTACT</div>
+                <div className="hover:text-gray-300 hover:underline">
+                  CONTACT
+                </div>
               </Link>
             </div>
           </div>
