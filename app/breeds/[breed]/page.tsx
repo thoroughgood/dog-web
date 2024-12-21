@@ -2,6 +2,8 @@
 import { GetServerSideProps } from 'next';
 import breedsData from '../../../public/dogBreeds.json';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import poodle from '../../../public/poodle.webp';
 export default function Page() {
   const pathname = usePathname().split('/')[2];
   const breed = breedsData.dogBreeds.find(
@@ -29,6 +31,12 @@ export default function Page() {
           {breed.name}
         </h1>
         <div className="text-black">{breed.description}</div>
+        <Image
+          src={poodle.src}
+          width="50"
+          height="50"
+          alt="default"
+        ></Image>
       </div>
     );
   }

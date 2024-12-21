@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-blue-600 text-white py-8">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col items-start justify-between md:flex-row md:space-x-12">
+        <div className="flex flex-col items-center md:items-start md:justify-evenly md:flex-row md:space-x-12">
           {/* Column 1: About */}
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="text-lg font-semibold mb-2">Breeds</h3>

@@ -1,6 +1,14 @@
 import Link from 'next/link';
 import breedsData from '../../public/dogBreeds.json';
-
+import Image from 'next/image';
+import poodle from '../../public/poodle.webp';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardTitle,
+} from '@/components/ui/card';
 const BreedsPage = () => {
   const breeds = breedsData.dogBreeds;
 
@@ -11,18 +19,27 @@ const BreedsPage = () => {
       </h1>
       {/* Need to import images instead of putting names by default */}
       {/* 3x3 Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="flex flex-row justify-center gap-3 w-[2/4px] flex-wrap max-w-6xl mx-auto">
         {breeds.map((breed) => (
           <Link
             key={breed.name}
             href={`/breeds/${breed.name.toLowerCase()}`}
-            className="block bg-blue-300 shadow-lg shadow-black rounded-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
+            className="block shadow-lg w-[600px] h-[300px] shadow-black rounded-lg hover:shadow-xl transform hover:-translate-y-1 max-w-[300px] transition duration-300"
           >
-            <div className="p-6 text-center">
-              <h2 className="text-2xl text-black mb-2">
-                {breed.name}
-              </h2>
-            </div>
+            <Card>
+              <CardTitle>{breed.name}</CardTitle>
+              <CardContent className="w-auto h-auto">
+                <Image
+                  className="py-10 opacity-10"
+                  src={breed.image}
+                  layout="fill"
+                  alt="default"
+                ></Image>
+              </CardContent>
+              <CardFooter className="bg-black">
+                Buy now! asdasdasdasdasd asdasdasdasasdasdasdasdasd
+              </CardFooter>
+            </Card>
           </Link>
         ))}
       </div>
