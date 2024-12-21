@@ -9,6 +9,9 @@ import {
   CardFooter,
   CardTitle,
 } from '@/components/ui/card';
+import { Red_Hat_Display } from 'next/font/google';
+import { Button } from '@/components/ui/button';
+const redHat = Red_Hat_Display({ subsets: ['latin'] });
 const BreedsPage = () => {
   const breeds = breedsData.dogBreeds;
 
@@ -19,25 +22,33 @@ const BreedsPage = () => {
       </h1>
       {/* Need to import images instead of putting names by default */}
       {/* 3x3 Grid */}
-      <div className="flex flex-row justify-center gap-3 w-[2/4px] flex-wrap max-w-6xl mx-auto">
+      <div className="flex flex-row justify-center gap-5 w-[2/4px] flex-wrap max-w-6xl mx-auto">
         {breeds.map((breed) => (
           <Link
             key={breed.name}
             href={`/breeds/${breed.name.toLowerCase()}`}
-            className="block shadow-lg w-[600px] h-[300px] shadow-black rounded-lg hover:shadow-xl transform hover:-translate-y-1 max-w-[300px] transition duration-300"
+            className="block shadow-lg w-[600px] h-[300px] shadow-black rounded-xl hover:shadow-xl transform hover:-translate-y-1 max-w-[350px] transition duration-300"
           >
             <Card>
-              <CardTitle>{breed.name}</CardTitle>
-              <CardContent className="w-auto h-auto">
+              <CardTitle
+                className={`${redHat.className} border-b-2 border-red-500 text-xl flex justify-center text-blue-400`}
+              >
+                {breed.name}
+              </CardTitle>
+              <CardContent className="h-[210px]">
                 <Image
-                  className="py-10 opacity-10"
+                  className="p-3"
                   src={breed.image}
-                  layout="fill"
+                  width="600"
+                  height="400"
                   alt="default"
                 ></Image>
               </CardContent>
-              <CardFooter className="bg-black">
-                Buy now! asdasdasdasdasd asdasdasdasasdasdasdasdasd
+              <CardFooter className="bg-blue-500 text-white rounded-b-lg flex justify-center pt-2">
+                <Button className="bg-red-500 text-white">
+                  {' '}
+                  Buy Now
+                </Button>
               </CardFooter>
             </Card>
           </Link>

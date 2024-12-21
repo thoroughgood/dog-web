@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import facebook from '../public/facebook.svg';
+import instagram from '../public/instagram.svg';
 
 export default function Footer() {
   return (
@@ -105,19 +106,24 @@ export default function Footer() {
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex justify-center md:justify-start space-x-4">
-              <Image
-                src={facebook.src}
-                alt="Facebook link for business"
-                width="25"
-                height="25"
-              />
-              <a
-                href="#"
-                className="text-gray-300 hover:text-red-500"
-                aria-label="Instagram"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
+              <Link href="https://www.facebook.com/">
+                <Image
+                  className="hover:opacity-70"
+                  src={facebook.src}
+                  alt="Facebook link for business"
+                  width="25"
+                  height="25"
+                />
+              </Link>
+              <Link href="https://www.instagram.com/">
+                <Image
+                  className="hover:opacity-70"
+                  src={instagram.src}
+                  alt="Facebook link for business"
+                  width="25"
+                  height="25"
+                />
+              </Link>
             </div>
           </div>
         </div>

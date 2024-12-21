@@ -46,7 +46,7 @@ export default function Home() {
           We procure highly desirable dog breeds from our select range
           of dog breeders
           <div className="text-black text-lg font-thin">
-            and then we haggle down the prices for you for the best
+            and then we haggle down the prices for you to get the best
             deals
           </div>
         </div>
@@ -54,13 +54,11 @@ export default function Home() {
           Interested in what we've got to offer? Search our range of
           breeds
           <div className="text-2xl">
-            ➡️
             <Button
-              className={`${redHat.className} items-center bg-red-500 text-white primary max-w-auto p-4 text-xl font-bold`}
+              className={`${redHat.className} items-center bg-red-500 text-white primary max-w-auto p-4 text-xl font-bold hover:bg-blue-500 duration-300 ease-in-out`}
             >
               Breeds
             </Button>
-            ⬅️
           </div>
         </div>
       </main>
