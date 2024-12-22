@@ -18,7 +18,7 @@ export default function Home() {
             At Pick A Pooch, we do all the searching for you.
           </div>
         </div>
-        <div className="flex flex-row justify-evenly items w-full lg:px-[120px] md:px-[60px] sm: px-0">
+        <div className="flex flex-row justify-evenly items pt-4 w-full lg:px-[120px] md:px-[60px] sm: px-0">
           <div
             className={`${redHat.className} w-1/2 text-left text-red-500 rounded font-bold text-7xl flex flex-col border-b-4 border-l-4 justify-center items-start pl-5`}
           >
@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           <div className="w-1/2 flex justify-center">
             <Image
-              className="rounded border-r-4 border-t-4 max-w-[400px]"
+              className="rounded p-2 bg-blue-300 max-w-[400px]"
               src={dog.src}
               layout="responsive"
               width="400"

@@ -14,6 +14,13 @@ import {
 } from '../components/ui/form';
 import { Input } from '../components/ui/input';
 import { Textarea } from './ui/textarea';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from './ui/select';
 
 const FormSchema = z.object({
   name: z.string().min(1, {
@@ -25,6 +32,7 @@ const FormSchema = z.object({
   message: z.string().min(10, {
     message: 'Message must be at least 10 characters',
   }),
+  breed: z.string({ message: 'there was a problem ;#' }),
 });
 
 export function EmailForm() {
@@ -105,6 +113,46 @@ export function EmailForm() {
               {form.formState.errors.message && (
                 <p className="text-red-500 text-sm">
                   {form.formState.errors.message.message}
+                </p>
+              )}
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="breed"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Breed</FormLabel>
+              <Select
+                onValueChange={field.onChange}
+                defaultValue={field.value}
+              >
+                <FormControl>
+                  <SelectTrigger className="bg-white">
+                    <SelectValue placeholder="Select a breed" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent>
+                  <SelectItem value="Poodle">Poodle</SelectItem>
+                  <SelectItem value="Cavoodle">Cavoodle</SelectItem>
+                  <SelectItem value="Labradoodle">
+                    Labradoodle
+                  </SelectItem>
+                  <SelectItem value="Groodle">Groodle</SelectItem>
+                  <SelectItem value="Spoodle">Spoodle</SelectItem>
+                  <SelectItem value="Dachshund">Dachshund</SelectItem>
+                  <SelectItem value="Pug">Pug</SelectItem>
+                  <SelectItem value="French Bulldog">
+                    French Bulldog
+                  </SelectItem>
+                  <SelectItem value="Bulldog">Bulldog</SelectItem>
+                </SelectContent>
+              </Select>
+              {/* Show error message if there's an error */}
+              {form.formState.errors.message && (
+                <p className="text-red-500 text-sm">
+                  {form.formState.errors.breed.message}
                 </p>
               )}
             </FormItem>
