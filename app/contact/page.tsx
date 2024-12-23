@@ -3,7 +3,7 @@ import Contact, { EmailForm } from '@/components/contactForm';
 
 export default function Home() {
   return (
-    <div className="bg-white shadow-xl flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-16 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-white flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-32 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col text-left text-black gap-4 items-center justify-center mt-12">
         <div className="flex flex-grow w-full text-red-500 text-7xl font-bold items-center justify-center">
           CONTACT US

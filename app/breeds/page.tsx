@@ -27,20 +27,20 @@ const BreedsPage = () => {
           <Link
             key={breed.name}
             href={`/breeds/${breed.name.toLowerCase()}`}
-            className="block shadow-lg w-[600px] h-[300px] shadow-black rounded-xl hover:shadow-xl transform hover:-translate-y-1 max-w-[350px] transition duration-300"
+            className="block shadow-lg h-[300px] shadow-black hover:shadow-xl transform rounded-xl hover:-translate-y-1 max-w-[350px] transition duration-300"
           >
-            <Card>
+            <Card className="border-gray-400">
               <CardTitle
-                className={`${redHat.className} border-b-2 border-red-500 text-xl flex justify-center text-blue-400`}
+                className={`${redHat.className} text-xl flex justify-center text-blue-400 font-bold`}
               >
                 {breed.name}
               </CardTitle>
               <CardContent className="h-[210px]">
                 <Image
-                  className="p-3"
+                  className="p-2"
                   src={breed.image}
                   width="600"
-                  height="400"
+                  height="500"
                   alt="default"
                 ></Image>
               </CardContent>
