@@ -36,7 +36,7 @@ export default function RootLayout({
         content="width=device-width, intiial-scale=1.0"
       />
 
-      <body className={`${lato.className} antialiased bg-white`}>
+      <body className={`${lato.className} antialiased bg-blue-50`}>
         <NavBar />
         {children}
         <Footer />

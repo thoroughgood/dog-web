@@ -3,7 +3,7 @@ import { GetServerSideProps } from 'next';
 import breedsData from '../../../public/dogBreeds.json';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import poodle from '../../../public/poodle.webp';
+
 export default function Page() {
   const pathname = usePathname().split('/')[2];
   const breed = breedsData.dogBreeds.find(
@@ -26,13 +26,13 @@ export default function Page() {
     );
   } else {
     return (
-      <div className="min-h-screen bg-gray-100 p-6">
+      <div className="min-h-screen bg-blue-50 p-6">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
           {breed.name}
         </h1>
         <div className="text-black">{breed.description}</div>
         <Image
-          src={poodle.src}
+          src={breed.image}
           width="50"
           height="50"
           alt="default"
