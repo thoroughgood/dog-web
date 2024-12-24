@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Contact, { EmailForm } from '@/components/contactForm';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
@@ -13,29 +14,41 @@ export default function Home() {
           <div className="w-1/2 h-full shadow-md shadow-gray-400 rounded-md">
             <EmailForm></EmailForm>
           </div>
-          <div className="flex flex-col flex-grow text-xl gap-4 justify-center items-center rounded-md max-w-2/3 pb-8 px-0 sm:px-4">
+          <div className="flex flex-col text-xl gap-4 justify-center items-center rounded-md max-w-2/3 pb-8 px-0 sm:px-4">
             <div className="bg-blue-300 p-4 rounded-md w-full shadow-md shadow-gray-400">
-              <div className="">
-                Business owner, Mark. Text or call
+              <div className="text-center">
+                Text or Call Pick A Pooch at:
               </div>
-              <div className="flex flex-row gap-2 items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="size-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                  />
-                </svg>
-                0431892647
-              </div>
-              <div className="">puppies@pickapooch.com.au</div>
+              <a
+                href="tel:+61431892647"
+                className="flex justify-center"
+              >
+                <Button className="flex flex-row bg-red-500 hover:bg-red-400 gap-2 items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                    />
+                  </svg>
+                  0431892647
+                </Button>
+              </a>
+              <a
+                href="mailto:puppies@pickapooch.com.au"
+                className="flex pt-1 flex-row gap-2 justify-center items-center"
+              >
+                <Button className="bg-red-500 hover:bg-red-400">
+                  puppies@pickapooch.com.au
+                </Button>
+              </a>
             </div>
             <div className="bg-blue-300 text-lg rounded-md p-8 text-left flex flex-col sm:flex-row gap-2 w-full max-w-full min-w-[1/2] shadow-md shadow-gray-400">
               <div className="text-3xl">Operating Hours</div>

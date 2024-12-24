@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import dog from '../public/anime_dog.webp';
+import dog from '../public/anime_puppy.webp';
 import { Button } from '@/components/ui/button';
 import dogGroup from '../public/group_of_dogs.png';
 import { Chewy, Modak, Red_Hat_Display } from 'next/font/google';

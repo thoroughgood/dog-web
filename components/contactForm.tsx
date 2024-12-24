@@ -160,7 +160,7 @@ export function EmailForm() {
         />
         <Button
           type="submit"
-          className="bg-red-700 text-white font-extrabold mt-4 w-full"
+          className="bg-red-500 hover:bg-red-400 text-white font-extrabold mt-4 w-full"
         >
           SEND EMAIL
         </Button>
