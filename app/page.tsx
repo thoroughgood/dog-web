@@ -20,7 +20,7 @@ export default function Home() {
           At Pick A Pooch, we do all the searching for you.
         </div>
       </div>
-      <div className="flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen mx-auto gap-16 font-[family-name:var(--font-geist-sans)]">
+      <div className="flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen mx-auto gap-0 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col text-left text-black gap-8 items-start">
           <div className="flex flex-row justify-evenly items space-x-16 pt-4 w-full lg:px-[120px] md:px-[60px] sm: px-0">
             <div
@@ -69,16 +69,18 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="flex justify-center w-full">
-            <Image
-              className="responsive"
-              src={dogGroup.src}
-              width="600"
-              height="600"
-              alt="."
-            ></Image>
-          </div>
+          {/* This part ensures that the last image sticks to the bottom */}
         </main>
+
+        <div className="flex justify-center w-full mt-auto ">
+          <Image
+            className="responsive"
+            src={dogGroup.src}
+            width="600"
+            height="600"
+            alt="Group of dogs"
+          />
+        </div>
       </div>
     </>
   );

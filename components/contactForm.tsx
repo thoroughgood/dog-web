@@ -2,7 +2,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import React from 'react';
-import { z } from 'zod';
+import { string, z } from 'zod';
 import { Button } from '../components/ui/button';
 import {
   Form,
@@ -32,13 +32,26 @@ const FormSchema = z.object({
   message: z.string().min(10, {
     message: 'Message must be at least 10 characters',
   }),
-  breed: z.string({ message: 'there was a problem ;#' }),
+  breed: z.string({ message: 'There was a problem :(' }),
+  colour: z.string().min(1, {
+    message: 'Colour must have at least one character'
+  })
 });
 
-export function EmailForm() {
+interface EmailFormProps {
+  breed?: string; // breed prop is now optional
+}
+
+export function EmailForm({ breed }: EmailFormProps) {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
+    defaultValues: {
+      breed: breed || 'Poodle', // Default value for breed if not passed as a prop
+    }
   });
+
+  // You don't need defaultBreed here anymore because it's handled by the form state.
+  console.log(form.getValues('breed'));
 
   return (
     <Form {...form}>
@@ -51,9 +64,7 @@ export function EmailForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-black">
-                Name
-              </FormLabel>
+              <FormLabel className="pl-1 font-bold text-black">Name</FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -61,7 +72,6 @@ export function EmailForm() {
                   {...field}
                 />
               </FormControl>
-              {/* Show error message if there's an error */}
               {form.formState.errors.name && (
                 <p className="text-red-500 text-sm">
                   {form.formState.errors.name.message}
@@ -75,9 +85,7 @@ export function EmailForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-black">
-                Email
-              </FormLabel>
+              <FormLabel className="pl-1 font-bold text-black">Email</FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -85,7 +93,6 @@ export function EmailForm() {
                   {...field}
                 />
               </FormControl>
-              {/* Show error message if there's an error */}
               {form.formState.errors.email && (
                 <p className="text-red-500 text-sm">
                   {form.formState.errors.email.message}
@@ -99,9 +106,7 @@ export function EmailForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-black pl-1 font-bold">
-                Message
-              </FormLabel>
+              <FormLabel className="text-black pl-1 font-bold">Message</FormLabel>
               <FormControl>
                 <Textarea
                   className="bg-gray-100 text-black"
@@ -109,7 +114,6 @@ export function EmailForm() {
                   {...field}
                 />
               </FormControl>
-              {/* Show error message if there's an error */}
               {form.formState.errors.message && (
                 <p className="text-red-500 text-sm">
                   {form.formState.errors.message.message}
@@ -125,8 +129,8 @@ export function EmailForm() {
             <FormItem>
               <FormLabel>Breed</FormLabel>
               <Select
-                onValueChange={field.onChange}
-                defaultValue={field.value}
+                value={field.value} // Bind the value to form state
+                onValueChange={field.onChange} // Update form state when selection changes
               >
                 <FormControl>
                   <SelectTrigger className="bg-white">
@@ -136,23 +140,39 @@ export function EmailForm() {
                 <SelectContent>
                   <SelectItem value="Poodle">Poodle</SelectItem>
                   <SelectItem value="Cavoodle">Cavoodle</SelectItem>
-                  <SelectItem value="Labradoodle">
-                    Labradoodle
-                  </SelectItem>
+                  <SelectItem value="Labradoodle">Labradoodle</SelectItem>
                   <SelectItem value="Groodle">Groodle</SelectItem>
                   <SelectItem value="Spoodle">Spoodle</SelectItem>
                   <SelectItem value="Dachshund">Dachshund</SelectItem>
                   <SelectItem value="Pug">Pug</SelectItem>
-                  <SelectItem value="French Bulldog">
-                    French Bulldog
-                  </SelectItem>
+                  <SelectItem value="French Bulldog">French Bulldog</SelectItem>
                   <SelectItem value="Bulldog">Bulldog</SelectItem>
                 </SelectContent>
               </Select>
-              {/* Show error message if there's an error */}
-              {form.formState.errors.message && (
+              {form.formState.errors.breed && (
                 <p className="text-red-500 text-sm">
                   {form.formState.errors.breed.message}
+                </p>
+              )}
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="colour"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-black pl-1 font-bold">Colour</FormLabel>
+              <FormControl>
+                <Input
+                  className="bg-gray-100 text-black"
+                  placeholder="Colour"
+                  {...field}
+                />
+              </FormControl>
+              {form.formState.errors.colour && (
+                <p className="text-red-500 text-sm">
+                  {form.formState.errors.colour.message}
                 </p>
               )}
             </FormItem>
@@ -182,19 +202,18 @@ async function onSubmit(values: z.infer<typeof FormSchema>) {
         name: values.name,
         email: values.email,
         message: values.message,
+        breed: values.breed,
+        colour: values.colour
       }),
     });
 
     const result = await response.json();
     if (result.success) {
       console.log('Email sent successfully:', result);
-      // Optionally, show a success message or redirect
     } else {
       console.error('Error sending email:', result);
-      // Optionally, show an error message
     }
   } catch (error) {
     console.error('Unexpected error:', error);
-    // Handle network or unexpected errors gracefully
   }
 }

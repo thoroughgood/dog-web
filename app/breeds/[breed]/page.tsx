@@ -1,8 +1,15 @@
 'use client';
-import { GetServerSideProps } from 'next';
 import breedsData from '../../../public/dogBreeds.json';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import { Modak, Red_Hat_Display } from 'next/font/google';
+import { EmailForm } from '@/components/contactForm';
+import { Button } from '@/components/ui/button';
+
+const redHat = Red_Hat_Display({ subsets: ['latin'] });
+const modak = Modak({ subsets: ['latin'], weight: '400' });
+
+
 
 export default function Page() {
   const pathname = usePathname().split('/')[2];
@@ -26,17 +33,55 @@ export default function Page() {
     );
   } else {
     return (
-      <div className="min-h-screen bg-blue-50 p-6">
+      <div className={`min-h-screen bg-blue-50 p-6 ${redHat.className}`}>
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
           {breed.name}
         </h1>
-        <div className="text-black">{breed.description}</div>
+        <div className="flex justify-center items-center">
         <Image
+          className="border-2 border-gray-300"
           src={breed.image}
-          width="50"
-          height="50"
+          width="500"
+          height="500"
           alt="default"
         ></Image>
+        </div>
+        <div className="flex flex-row gap-1">
+          <div className="font-bold">Description:</div> <div className="">{breed.description}</div>
+        </div>
+        <div className="flex flex-row justify-center gap-16">
+          <div className="flex flex-col">
+            <div className={`flex flex-col text-center text-3xl`}>Email here</div>
+            <EmailForm breed={breed.name}></EmailForm>
+          </div>
+          <div className="flex flex-col text-center">
+            <div className="text-3xl"> Call/Text here </div>
+            <a
+                href="tel:+61431892647"
+                className="flex justify-center"
+              >
+                <Button className="flex flex-row bg-red-500 hover:bg-red-400 gap-2 items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                    />
+                  </svg>
+                  0431892647
+                </Button>
+              </a>
+          </div>
+        </div>
+
+
       </div>
     );
   }
