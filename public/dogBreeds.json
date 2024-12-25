@@ -2,48 +2,66 @@
   "dogBreeds": [
     {
       "name": "Poodle",
-      "description": "An intelligent and active breed with a curly, low-shedding coat, available in toy, miniature, and standard sizes.",
+      "description": "The Poodle is a highly intelligent and versatile breed, celebrated for its hypoallergenic, curly coat that comes in a range of colors. Available in toy, miniature, and standard sizes, Poodles are often regarded as one of the most trainable dog breeds, excelling in obedience and agility.",
+      "temperament": "Poodles are alert, lively, and eager to please. They are friendly but can be a bit reserved around strangers, making early socialization important.",
+      "lifestyle": "Poodles require daily mental and physical stimulation, such as training exercises, interactive play, or long walks. They thrive in active households where their intelligence is challenged.",
       "image": "/poodle.png"
     },
     {
       "name": "Cavoodle",
-      "description": "A small, affectionate, and friendly crossbreed with a soft, low-shedding coat, ideal for families.",
+      "description": "A crossbreed between a Cavalier King Charles Spaniel and a Poodle, the Cavoodle is cherished for its affectionate nature and low-shedding coat, making it an excellent companion for families or first-time dog owners.",
+      "temperament": "Cavoodles are friendly, gentle, and great with children. They bond closely with their families and thrive on human interaction.",
+      "lifestyle": "Cavoodles adapt well to apartment living but need daily walks and playtime. They dislike being left alone for long periods and do best with an attentive owner.",
       "image": "/cavoodle.png"
     },
     {
       "name": "Labradoodle",
-      "description": "A friendly and energetic mix of Labrador and Poodle, known for its wavy or curly coat and sociable nature.",
+      "description": "The Labradoodle, a mix of Labrador Retriever and Poodle, is known for its playful personality and wavy or curly, low-shedding coat. This breed is highly sociable and often works as a therapy or service dog.",
+      "temperament": "Labradoodles are energetic, friendly, and eager to please. They get along well with children and other pets, making them an ideal choice for active families.",
+      "lifestyle": "These dogs need plenty of exercise, including daily walks, play sessions, or swimming. They thrive in homes with ample outdoor space but can adapt to city life if given enough activity.",
       "image": "/labradoodle.png"
     },
     {
       "name": "Groodle",
-      "description": "A gentle and affectionate Golden Retriever-Poodle mix with a wavy, low-shedding coat and loving temperament.",
+      "description": "The Groodle, a mix of Golden Retriever and Poodle, is a loving and sociable dog known for its soft, wavy, low-shedding coat. This breed combines the loyalty of a Golden Retriever with the intelligence of a Poodle.",
+      "temperament": "Groodles are gentle, affectionate, and highly sociable. They are great with children and other animals, making them perfect for family life.",
+      "lifestyle": "Groodles need regular exercise, including long walks, fetch, or agility activities. They thrive in homes where they can be an integral part of the family dynamic.",
       "image": "/groodle.png"
     },
     {
       "name": "Spoodle",
-      "description": "A playful and loyal Cocker Spaniel-Poodle mix with a curly or wavy coat, great for active households.",
+      "description": "The Spoodle, a cross between a Cocker Spaniel and a Poodle, is an energetic and loyal breed. With its curly or wavy coat, this dog is well-suited for active households.",
+      "temperament": "Spoodles are playful, affectionate, and great with kids. They have a natural inclination to please, making them easy to train.",
+      "lifestyle": "Spoodles require daily exercise and mental stimulation, such as training games or outdoor adventures. They thrive in homes where they receive plenty of attention.",
       "image": "/spoodle.png"
     },
     {
       "name": "Dachshund",
-      "description": "A small, bold breed with a long body and short legs, available in smooth, wire-haired, or long-haired varieties.",
-      "image": "/poodle.webp"
+      "description": "The Dachshund, also known as the 'sausage dog,' is a small breed with a distinctive long body and short legs. They are available in smooth, wire-haired, or long-haired coat varieties.",
+      "temperament": "Dachshunds are bold, curious, and loyal. They can be a bit stubborn but are deeply devoted to their families.",
+      "lifestyle": "Dachshunds are relatively low-maintenance but require regular walks to keep their weight in check. They can adapt to apartment living but need mental stimulation to prevent boredom.",
+      "image": "/dachshund.png"
     },
     {
       "name": "Pug",
-      "description": "A charming and mischievous small breed with a short, smooth coat and a distinctive wrinkled face.",
-      "image": "/poodle.webp"
+      "description": "The Pug is a small breed with a distinctive wrinkled face and short, smooth coat. Known for their clownish and loving nature, Pugs make excellent companions.",
+      "temperament": "Pugs are charming, mischievous, and affectionate. They enjoy being the center of attention and are great with kids.",
+      "lifestyle": "Pugs are well-suited to apartment living but need regular short walks to maintain a healthy weight. They are prone to overheating, so care is needed in hot weather.",
+      "image": "/pug.png"
     },
     {
       "name": "French Bulldog",
-      "description": "A compact and affectionate breed with bat-like ears, a smooth coat, and a playful, adaptable personality.",
-      "image": "/poodle.webp"
+      "description": "The French Bulldog is a compact and muscular breed with bat-like ears and a smooth coat. They are known for their playful, adaptable, and affectionate personality.",
+      "temperament": "French Bulldogs are social, easygoing, and loyal. They enjoy being around people and are great with children.",
+      "lifestyle": "French Bulldogs are low-energy dogs requiring moderate exercise, such as daily walks. They thrive in urban settings but need careful monitoring in hot weather due to their short noses.",
+      "image": "/french_bulldog.png"
     },
     {
       "name": "Bulldog",
-      "description": "A calm and courageous medium-sized breed with a stocky build, short coat, and gentle demeanor.",
-      "image": "/poodle.webp"
+      "description": "The Bulldog is a medium-sized breed with a distinctive wrinkled face, stocky build, and short coat. They are known for their calm and courageous demeanor.",
+      "temperament": "Bulldogs are gentle, loyal, and affectionate. They form strong bonds with their families and are particularly good with children.",
+      "lifestyle": "Bulldogs are relatively low-energy but require daily walks to stay healthy. They are well-suited to apartment living but need a watchful eye in hot weather due to their susceptibility to overheating.",
+      "image": "/bulldog.png"
     }
   ]
 }

@@ -15,6 +15,7 @@ export default function Page() {
     (b) => b.name.toLowerCase() === pathname.toLowerCase()
   );
   console.log(breed);
+
   if (breed === undefined) {
     return (
       <div className="max-w-6xl mx-auto mt-12">
@@ -25,7 +26,7 @@ export default function Page() {
         <div className="text-red-600 text-lg pt-4">
           {' '}
           Check that the breed is spelt correctly or redirect yourself
-          to the breed through the home page
+          to the breed through the home page.
         </div>
       </div>
     );
@@ -37,32 +38,41 @@ export default function Page() {
         <h1 className="text-4xl font-bold text-left text-gray-800 m-4">
           {breed.name}
         </h1>
-        <div className="flex flex-row justify-start items-start">
-          <Image
-            className="border-2 border-gray-300"
-            src={breed.image}
-            width="500"
-            height="500"
-            alt="default"
-          ></Image>
-          <div className="flex flex-row gap-1">
-            <div className="font-bold text-md md:text-lg pl-4">
-              Description:
-            </div>{' '}
-            <div className="text-md md:text-lg">
-              {breed.description}
+        <div className="flex flex-col md:flex-row justify-start items-start gap-6 md:gap-12">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+            <Image
+              className="border-2 w-full md:w-[300px] border-gray-300 rounded-lg"
+              src={breed.image}
+              width="300"
+              height="500"
+              alt="default"
+            />
+          </div>
+          <div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-6">
+            <div className="text-md md:text-lg text-gray-700">
+              <strong>Description:</strong> {breed.description}
+            </div>
+            <div className="text-md md:text-lg text-gray-700">
+              <strong>Temperament:</strong> {breed.temperament}
+            </div>
+            <div className="text-md md:text-lg text-gray-700">
+              <strong>Lifestyle:</strong> {breed.lifestyle}
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-center gap-16">
-          <div className="w-1/3 flex flex-col">
-            <div className={`flex flex-col text-center text-3xl`}>
-              Email here
+
+        {/* Contact Section */}
+        <div className="flex flex-col md:flex-row justify-center md:justify-between gap-6 md:gap-12 mt-8">
+          <div className="w-full md:w-1/3 flex flex-col items-center">
+            <div className="text-2xl font-semibold mb-4">
+              Email Us
             </div>
-            <EmailForm breed={breed.name}></EmailForm>
+            <EmailForm breed={breed.name} />
           </div>
-          <div className="flex flex-col text-center">
-            <div className="text-3xl"> Call/Text here </div>
+          <div className="w-full md:w-1/3 flex flex-col items-center">
+            <div className="text-2xl font-semibold mb-4">
+              Call or Text Us
+            </div>
             <a
               href="tel:+61431892647"
               className="flex justify-center"
@@ -74,7 +84,7 @@ export default function Page() {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-6"
+                  className="w-6 h-6"
                 >
                   <path
                     strokeLinecap="round"

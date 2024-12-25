@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import dog from '../public/anime_puppy.webp';
 import { Button } from '@/components/ui/button';
-import dogGroup from '../public/group_of_dogs.png';
+import dogGroup from '../public/imagebottomdogs.png';
+import dogGroup2 from '../public/cornerbgremovedpuppies.png';
 import { Chewy, Modak, Red_Hat_Display } from 'next/font/google';
 const modak = Modak({ subsets: ['latin'], weight: '400' });
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
 const chewy = Chewy({ subsets: ['latin'], weight: '400' });
+
 export default function Home() {
   return (
     <>
@@ -24,7 +26,7 @@ export default function Home() {
         <main className="flex flex-col text-left text-black gap-8 items-start">
           <div className="flex flex-row justify-evenly items space-x-16 pt-4 w-full lg:px-[120px] md:px-[60px] sm: px-0">
             <div
-              className={`${modak.className} w-1/2 text-left text-red-500 rounded text-6xl flex flex-col border-b-4 border-l-4 border-blue-100 justify-center items-start pl-5`}
+              className={`${modak.className} w-1/2 text-left text-red-500 rounded text-4xl md:text-6xl flex flex-col border-b-4 border-l-4 border-blue-100 justify-center items-start pl-5`}
             >
               Sydney-Based.
               <div
@@ -54,11 +56,11 @@ export default function Home() {
             <div
               className={`${redHat.className} text-black text-lg font-thin`}
             >
-              the right puppy, at the right price, delivered straight
-              to your door.
+              the right puppy, at the right price, delivered right to
+              your door.
             </div>
           </div>
-          <div className="text-red-500 font-bold text-xl w-full flex justify-center items-center flex-col">
+          <div className="text-red-500 font-bold text-xl w-full flex text-center justify-center items-center flex-col pb-64">
             Interested in what we've got to offer? Search our range of
             breeds
             <div className="text-2xl pt-4">
@@ -69,15 +71,28 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          {/* This part ensures that the last image sticks to the bottom */}
         </main>
 
-        <div className="flex justify-center w-full mt-auto ">
+        {/* The bottom image section */}
+      </div>
+      <div className="relative w-full">
+        <div className="absolute bottom-[-37px] transform left-0">
           <Image
-            className="responsive"
+            className="rounded"
             src={dogGroup.src}
-            width="600"
-            height="600"
+            width="275"
+            height="300"
+            alt="Group of dogs"
+          />
+        </div>
+      </div>
+      <div className="relative w-full">
+        <div className="absolute bottom-[-51px] transform -right-7">
+          <Image
+            className="rounded"
+            src={dogGroup2.src}
+            width="275"
+            height="300"
             alt="Group of dogs"
           />
         </div>
