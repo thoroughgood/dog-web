@@ -5,14 +5,14 @@ import { Button } from '@/components/ui/button';
 export default function Home() {
   return (
     <div className=" flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-32 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col text-left text-black gap-4 items-center justify-center mt-12">
+      <main className="flex flex-col text-left text-black gap-2 items-center justify-center mt-12">
         <div className="flex flex-grow w-full text-red-500 text-7xl font-bold items-center justify-center">
           CONTACT US
         </div>
 
-        <div className="flex flex-col gap-4 text-black sm:gap-0 sm:flex-row flex-grow justify-between w-3/">
-          <div className="w-1/2 h-full shadow-md shadow-gray-400 rounded-md">
-            <EmailForm></EmailForm>
+        <div className="flex flex-col gap-2 text-black sm:gap-0 sm:flex-row flex-grow justify-center w-full">
+          <div className="w-1/3 h-full shadow-md shadow-gray-400 rounded-md">
+            <EmailForm />
           </div>
           <div className="flex flex-col text-xl gap-4 justify-center items-center rounded-md max-w-2/3 pb-8 px-0 sm:px-4">
             <div className="bg-blue-300 p-4 rounded-md w-full shadow-md shadow-gray-400">

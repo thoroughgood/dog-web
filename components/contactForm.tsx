@@ -34,8 +34,8 @@ const FormSchema = z.object({
   }),
   breed: z.string({ message: 'There was a problem :(' }),
   colour: z.string().min(1, {
-    message: 'Colour must have at least one character'
-  })
+    message: 'Colour must have at least one character',
+  }),
 });
 
 interface EmailFormProps {
@@ -47,7 +47,7 @@ export function EmailForm({ breed }: EmailFormProps) {
     resolver: zodResolver(FormSchema),
     defaultValues: {
       breed: breed || 'Poodle', // Default value for breed if not passed as a prop
-    }
+    },
   });
 
   // You don't need defaultBreed here anymore because it's handled by the form state.
@@ -57,14 +57,16 @@ export function EmailForm({ breed }: EmailFormProps) {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-blue-300 rounded-md p-6 max-w-md mx-auto"
+        className="bg-blue-300 rounded-md p-6 w-full mx-auto" // Changed max-w-xl to max-w-2xl for a wider form
       >
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-black">Name</FormLabel>
+              <FormLabel className="pl-1 font-bold text-black">
+                Name
+              </FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -85,7 +87,9 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-black">Email</FormLabel>
+              <FormLabel className="pl-1 font-bold text-black">
+                Email
+              </FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -106,7 +110,9 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-black pl-1 font-bold">Message</FormLabel>
+              <FormLabel className="text-black pl-1 font-bold">
+                Message
+              </FormLabel>
               <FormControl>
                 <Textarea
                   className="bg-gray-100 text-black"
@@ -140,12 +146,16 @@ export function EmailForm({ breed }: EmailFormProps) {
                 <SelectContent>
                   <SelectItem value="Poodle">Poodle</SelectItem>
                   <SelectItem value="Cavoodle">Cavoodle</SelectItem>
-                  <SelectItem value="Labradoodle">Labradoodle</SelectItem>
+                  <SelectItem value="Labradoodle">
+                    Labradoodle
+                  </SelectItem>
                   <SelectItem value="Groodle">Groodle</SelectItem>
                   <SelectItem value="Spoodle">Spoodle</SelectItem>
                   <SelectItem value="Dachshund">Dachshund</SelectItem>
                   <SelectItem value="Pug">Pug</SelectItem>
-                  <SelectItem value="French Bulldog">French Bulldog</SelectItem>
+                  <SelectItem value="French Bulldog">
+                    French Bulldog
+                  </SelectItem>
                   <SelectItem value="Bulldog">Bulldog</SelectItem>
                 </SelectContent>
               </Select>
@@ -162,7 +172,9 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="colour"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-black pl-1 font-bold">Colour</FormLabel>
+              <FormLabel className="text-black pl-1 font-bold">
+                Colour
+              </FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -203,7 +215,7 @@ async function onSubmit(values: z.infer<typeof FormSchema>) {
         email: values.email,
         message: values.message,
         breed: values.breed,
-        colour: values.colour
+        colour: values.colour,
       }),
     });
 
