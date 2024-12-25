@@ -32,12 +32,12 @@ export default function Page() {
   } else {
     return (
       <div
-        className={`min-h-screen bg-blue-50 p-6 ${redHat.className}`}
+        className={`min-h-screen mx-4 sm:mx-8 md:mx-16 lg:mx-32 bg-blue-50 p-6 ${redHat.className}`}
       >
         <h1 className="text-4xl font-bold text-left text-gray-800 m-4">
           {breed.name}
         </h1>
-        <div className="flex justify-start items-start">
+        <div className="flex flex-row justify-start items-start">
           <Image
             className="border-2 border-gray-300"
             src={breed.image}
@@ -45,10 +45,14 @@ export default function Page() {
             height="500"
             alt="default"
           ></Image>
-        </div>
-        <div className="flex flex-row gap-1">
-          <div className="font-bold text-xl pl-4">Description:</div>{' '}
-          <div className="text-xl">{breed.description}</div>
+          <div className="flex flex-row gap-1">
+            <div className="font-bold text-md md:text-lg pl-4">
+              Description:
+            </div>{' '}
+            <div className="text-md md:text-lg">
+              {breed.description}
+            </div>
+          </div>
         </div>
         <div className="flex flex-row justify-center gap-16">
           <div className="w-1/3 flex flex-col">
