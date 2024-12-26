@@ -63,13 +63,15 @@ export default function Home() {
           <div className="text-red-500 font-bold text-xl w-full flex text-center justify-center items-center flex-col pb-64">
             Interested in what we've got to offer? Search our range of
             breeds
-            <div className="text-2xl pt-4">
-              <Button
-                className={`${redHat.className} items-center bg-red-500 text-white primary max-w-auto p-4 text-xl font-bold hover:bg-blue-500 duration-300 ease-in-out`}
-              >
-                Breeds
-              </Button>
-            </div>
+            <a href="./breeds" className="">
+              <div className="text-2xl pt-4">
+                <Button
+                  className={`${redHat.className} items-center bg-red-500 text-white primary max-w-auto p-4 text-xl font-bold hover:bg-blue-500 duration-300 ease-in-out`}
+                >
+                  Breeds
+                </Button>
+              </div>
+            </a>
           </div>
         </main>
 
