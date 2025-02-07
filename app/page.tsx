@@ -38,7 +38,7 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex justify-center">
               <Image
-                className="rounded p-1 bg-blue-300 max-w-[400px]"
+                className="rounded p-1 m-10 max-w-[400px]"
                 src={dog.src}
                 layout="responsive"
                 width="400"
