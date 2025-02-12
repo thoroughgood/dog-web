@@ -18,7 +18,7 @@ export default function Page() {
 
   if (breed === undefined) {
     return (
-      <div className="max-w-6xl mx-auto mt-12">
+      <div className="max-w-6xl mt-12">
         <div className="text-4xl font-bold text-red-600">
           {' '}
           Uh oh! You're not supposed to be here.
@@ -33,36 +33,38 @@ export default function Page() {
   } else {
     return (
       <div
-        className={`min-h-screen mx-4 sm:mx-8 md:mx-16 lg:mx-32 bg-blue-50 p-6 ${redHat.className}`}
+        className={`min-h-screen mx-6 sm:mx-16 md:mx-32 lg:mx-48 bg-blue-50 p-6 ${redHat.className}`}
       >
-        <h1 className="text-4xl font-bold text-left text-gray-800 m-4">
-          {breed.name}
-        </h1>
-        <div className="flex flex-col md:flex-row justify-start items-start gap-6 md:gap-12">
-          <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-            <Image
-              className="border-2 w-full md:w-[300px] border-gray-300 rounded-lg"
-              src={breed.image}
-              width="300"
-              height="500"
-              alt="default"
-            />
-          </div>
-          <div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-6">
-            <div className="text-md md:text-lg text-gray-700">
-              <strong>Description:</strong> {breed.description}
+        <div className="mx-2 sm:mx-4 md:mx-8 lg:mx-12">
+          <h1 className="text-4xl font-bold text-left text-gray-800 m-4">
+            {breed.name}
+          </h1>
+          <div className="flex flex-col md:flex-row justify-start items-start gap-6 md:gap-12">
+            <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+              <Image
+                className="border-2 w-full md:w-[300px] border-gray-300 rounded-lg"
+                src={breed.image}
+                width="300"
+                height="500"
+                alt="default"
+              />
             </div>
-            <div className="text-md md:text-lg text-gray-700">
-              <strong>Temperament:</strong> {breed.temperament}
-            </div>
-            <div className="text-md md:text-lg text-gray-700">
-              <strong>Lifestyle:</strong> {breed.lifestyle}
+            <div className="w-full md:w-1/2 flex flex-col gap-4 md:gap-6">
+              <div className="text-md md:text-lg text-gray-700">
+                <strong>Description:</strong> {breed.description}
+              </div>
+              <div className="text-md md:text-lg text-gray-700">
+                <strong>Temperament:</strong> {breed.temperament}
+              </div>
+              <div className="text-md md:text-lg text-gray-700">
+                <strong>Lifestyle:</strong> {breed.lifestyle}
+              </div>
             </div>
           </div>
         </div>
 
         {/* Contact Section */}
-        <div className="flex flex-col md:flex-row justify-center md:justify-between gap-6 md:gap-12 mt-8">
+        <div className="flex flex-col-reverse md:flex-row justify-center md:justify-between gap-6 md:gap-12 mt-8">
           <div className="w-full md:w-1/3 flex flex-col items-center">
             <div className="text-2xl font-semibold mb-4">
               Email Us
