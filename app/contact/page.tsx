@@ -5,18 +5,18 @@ import { Button } from '@/components/ui/button';
 export default function Home() {
   return (
     <div className=" flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-32 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col text-left text-black gap-2 items-center justify-center mt-12">
+      <main className="flex flex-col text-left text-black gap-2 items-center justify-center mt-20">
         <div className="flex flex-grow w-full text-red-500 text-7xl font-bold items-center justify-center">
           CONTACT US
         </div>
 
         <div className="flex flex-col gap-2 text-black sm:gap-0 sm:flex-row flex-grow justify-center w-full">
-          <div className="w-1/3 h-full shadow-md shadow-gray-400 rounded-md">
+          <div className="w-1/3 h-full shadow-md shadow-gray-400 rounded-md mt-10">
             <EmailForm />
           </div>
           <div className="flex flex-col text-xl gap-4 justify-center items-center rounded-md max-w-2/3 pb-8 px-0 sm:px-4">
             <div className="bg-blue-300 p-4 rounded-md w-full shadow-md shadow-gray-400">
-              <div className="text-center">
+              <div className="text-center pb-2">
                 Text or Call Pick A Pooch at:
               </div>
               <a
@@ -50,8 +50,8 @@ export default function Home() {
                 </Button>
               </a>
             </div>
-            <div className="bg-blue-300 text-lg rounded-md p-8 text-left flex flex-col sm:flex-row gap-2 w-full max-w-full min-w-[1/2] shadow-md shadow-gray-400">
-              <div className="text-3xl">Operating Hours</div>
+            <div className="bg-blue-300 text-lg rounded-md p-8 text-left flex flex-col sm:flex-row sm:gap-4 gap-2 w-full max-w-full min-w-[1/2] shadow-md shadow-gray-400">
+              <div className="text-3xl flex">Operating Hours</div>
               <div className="flex-col flex">
                 <div> Monday: 9:00am - 5:00pm </div>
                 <div> Tuesday: 9:00am - 5:00pm </div>

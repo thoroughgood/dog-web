@@ -17,7 +17,7 @@ const BreedsPage = () => {
   const breeds = breedsData.dogBreeds;
 
   return (
-    <div className="bg-blue-50 p-6 max-w-7xl min-h-screen pb-20 mx-auto">
+    <div className="p-6 max-w-7xl min-h-screen pb-20 mx-auto">
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
         Dog Breeds
       </h1>
@@ -29,7 +29,7 @@ const BreedsPage = () => {
             href={`/breeds/${breed.name.toLowerCase()}`}
             className="block shadow-lg h-[300px] shadow-black hover:shadow-xl transform rounded-xl hover:-translate-y-1 max-w-[350px] transition duration-300"
           >
-            <Card className="bg-white border-0">
+            <Card className="bg-white">
               <CardTitle
                 className={`${redHat.className} text-xl flex justify-center text-blue-400 font-bold`}
               >

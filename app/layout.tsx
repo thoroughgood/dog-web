@@ -1,23 +1,10 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
-import { Lato, Roboto } from 'next/font/google';
+import { Lato } from 'next/font/google';
 import './globals.css';
 import NavBar from '@/components/navBar';
 import Footer from '@/components/footer';
 
-const roboto = Roboto({ weight: '400', subsets: ['latin'] });
-
 const lato = Lato({ weight: '400', subsets: ['latin'] });
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
-});
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
-});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -36,7 +23,7 @@ export default function RootLayout({
         content="width=device-width, intiial-scale=1.0"
       />
 
-      <body className={`${lato.className} antialiased bg-blue-50`}>
+      <body className={`${lato.className} antialiased bg-blue-100`}>
         <NavBar />
         {children}
         <Footer />

@@ -3,17 +3,23 @@ import dog from '../public/anime_puppy.webp';
 import { Button } from '@/components/ui/button';
 import dogGroup from '../public/imagebottomdogs.png';
 import dogGroup2 from '../public/cornerbgremovedpuppies.png';
-import { Chewy, Modak, Red_Hat_Display } from 'next/font/google';
+import {
+  Chewy,
+  Modak,
+  Red_Hat_Display,
+  Gluten,
+} from 'next/font/google';
+import localFont from 'next/font/local';
+
 const modak = Modak({ subsets: ['latin'], weight: '400' });
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
-const chewy = Chewy({ subsets: ['latin'], weight: '400' });
-
+const gluten = Gluten({ subsets: ['latin'], weight: '500' });
 export default function Home() {
   return (
     <>
-      <div className="bg-blue-200 w-full p-4 flex justify-center flex-col items-center shadow-md">
+      <div className="bg-blue-300 w-full p-4 flex justify-center flex-col items-center shadow-md">
         <div
-          className={`${modak.className} text-3xl text-red-500 text-center`}
+          className={`${gluten.className} text-2xl text-[#ba4c4d] text-center`}
         >
           Let us save you the hassle of finding the perfect breeder
         </div>
@@ -24,9 +30,9 @@ export default function Home() {
       </div>
       <div className="flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen mx-auto gap-0 font-[family-name:var(--font-geist-sans)]">
         <main className="flex flex-col text-left text-black gap-8 items-start">
-          <div className="flex flex-row justify-evenly items space-x-16 pt-4 w-full lg:px-[120px] md:px-[60px] sm: px-0">
+          <div className="flex flex-row justify-evenly items space-x-16 pt-6 w-full lg:px-[120px] md:px-[60px] sm: px-0">
             <div
-              className={`${modak.className} w-1/2 text-left text-red-500 rounded text-4xl md:text-6xl flex flex-col border-b-4 border-l-4 border-blue-100 justify-center items-start pl-5`}
+              className={`${gluten.className} w-1/2 text-left text-[#ba4c4d] rounded-md text-4xl md:text-6xl flex flex-col border-b-4 border-l-4 border-blue-200 justify-center items-start pl-5`}
             >
               Sydney-Based.
               <div
@@ -38,7 +44,7 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex justify-center">
               <Image
-                className="rounded p-1 m-10 max-w-[400px]"
+                className="rounded p-1 m-10 max-w-[300px]"
                 src={dog.src}
                 layout="responsive"
                 width="400"
@@ -49,7 +55,7 @@ export default function Home() {
           </div>
 
           <div
-            className={`${modak.className} text-red-500 text-3xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4`}
+            className={`${gluten.className} text-[#ba4c4d] text-2xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4 text-center`}
           >
             We procure highly desirable dog breeds from our select
             range of dog breeders
@@ -60,7 +66,7 @@ export default function Home() {
               your door.
             </div>
           </div>
-          <div className="text-red-500 font-bold text-xl w-full flex text-center justify-center items-center flex-col pb-64">
+          <div className="text-[#ba4c4d] font-bold text-xl w-full flex text-center justify-center items-center flex-col pb-64">
             Interested in what we've got to offer? Search our range of
             breeds
             <a href="./breeds" className="">
