@@ -84,7 +84,7 @@ export default function Home() {
         {/* The bottom image section */}
       </div>
       <div className="relative w-full lg:-mt-32 md:-mt-24">
-        <div className="absolute bottom-[-37px] transform left-0">
+        <div className="absolute bottom-[-34px] transform left-0">
           <Image
             className="rounded"
             src={dogGroup.src}
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </div>
       <div className="relative w-full">
-        <div className="absolute bottom-[-51px] transform -right-7">
+        <div className="absolute bottom-[-50px] transform -right-7">
           <Image
             className="rounded"
             src={dogGroup2.src}

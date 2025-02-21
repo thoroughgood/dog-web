@@ -49,14 +49,14 @@ export default function Page() {
                 alt="default"
               />
             </div>
-            <div className="w-1/3 flex flex-col gap-4 xl:gap-6">
-              <div className="text-md md:text-lg text-gray-700">
+            <div className="w-1/3 flex flex-col md:w-full md:text-lg text-md text-gray-700 gap-4 xl:gap-6">
+              <div className="">
                 <strong>Description:</strong> {breed.description}
               </div>
-              <div className="text-md md:text-lg text-gray-700">
+              <div className="">
                 <strong>Temperament:</strong> {breed.temperament}
               </div>
-              <div className="text-md md:text-lg text-gray-700">
+              <div className="">
                 <strong>Lifestyle:</strong> {breed.lifestyle}
               </div>
             </div>

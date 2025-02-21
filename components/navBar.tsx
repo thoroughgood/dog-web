@@ -58,6 +58,11 @@ const Navbar = () => {
                   BREEDS
                 </div>
               </Link>
+              <Link href="/services">
+                <div className="hover:text-gray-300 hover:underline">
+                  SERVICES
+                </div>
+              </Link>
               <Link href="/about">
                 <div className="hover:text-gray-300 hover:underline">
                   ABOUT
@@ -109,6 +114,11 @@ const Navbar = () => {
           <Link href="/breeds">
             <div className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
               Breeds
+            </div>
+          </Link>
+          <Link href="/about">
+            <div className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+              Services
             </div>
           </Link>
           <Link href="/about">
