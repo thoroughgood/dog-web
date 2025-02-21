@@ -83,7 +83,7 @@ export default function Home() {
 
         {/* The bottom image section */}
       </div>
-      <div className="relative w-full">
+      <div className="relative w-full lg:-mt-32 md:-mt-24">
         <div className="absolute bottom-[-37px] transform left-0">
           <Image
             className="rounded"
