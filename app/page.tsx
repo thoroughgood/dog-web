@@ -3,6 +3,7 @@ import dog from '../public/anime_puppy.webp';
 import { Button } from '@/components/ui/button';
 import dogGroup from '../public/imagebottomdogs.png';
 import dogGroup2 from '../public/cornerbgremovedpuppies.png';
+import background from '../public/background.png'; // Import your background pattern
 import {
   Chewy,
   Modak,
@@ -10,10 +11,10 @@ import {
   Gluten,
 } from 'next/font/google';
 import localFont from 'next/font/local';
-
 const modak = Modak({ subsets: ['latin'], weight: '400' });
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
 const gluten = Gluten({ subsets: ['latin'], weight: '500' });
+
 export default function Home() {
   return (
     <>
@@ -23,12 +24,20 @@ export default function Home() {
         >
           Let us save you the hassle of finding the perfect breeder
         </div>
-
         <div className="w-full text-black text-center">
           At Pick A Pooch, we do all the searching for you.
         </div>
       </div>
-      <div className="flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen mx-auto gap-0 font-[family-name:var(--font-geist-sans)]">
+
+      {/* Main content with repeating background */}
+      <div
+        className="flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen mx-auto gap-0 font-[family-name:var(--font-geist-sans)]"
+        style={{
+          backgroundImage: `url(${background.src})`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: 'auto',
+        }}
+      >
         <main className="flex flex-col text-left text-black gap-8 items-start">
           <div className="flex flex-row justify-evenly items space-x-16 pt-6 w-full lg:px-[120px] md:px-[60px] sm: px-0">
             <div
@@ -53,7 +62,6 @@ export default function Home() {
               />
             </div>
           </div>
-
           <div
             className={`${gluten.className} text-[#ba4c4d] text-2xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4 text-center`}
           >
@@ -80,9 +88,9 @@ export default function Home() {
             </a>
           </div>
         </main>
-
-        {/* The bottom image section */}
       </div>
+
+      {/* The bottom image sections */}
       <div className="relative w-full lg:-mt-32 md:-mt-24">
         <div className="absolute bottom-[-34px] transform left-0">
           <Image
@@ -95,7 +103,7 @@ export default function Home() {
         </div>
       </div>
       <div className="relative w-full">
-        <div className="absolute bottom-[-50px] transform -right-7">
+        <div className="absolute bottom-[-50px] transform right-0">
           <Image
             className="rounded"
             src={dogGroup2.src}

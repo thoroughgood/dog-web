@@ -3,7 +3,8 @@ import { Lato } from 'next/font/google';
 import './globals.css';
 import NavBar from '@/components/navBar';
 import Footer from '@/components/footer';
-
+import Image from 'next/image';
+import bg1 from '../public/background.png';
 const lato = Lato({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
