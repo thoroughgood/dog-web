@@ -30,66 +30,56 @@ export default function Home() {
       </div>
 
       {/* Main content with repeating background */}
-      <div
-        className="flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen mx-auto gap-0 font-[family-name:var(--font-geist-sans)]"
-        style={{
-          backgroundImage: `url(${background.src})`,
-          backgroundRepeat: 'repeat',
-          backgroundSize: 'auto',
-        }}
-      >
-        <main className="flex flex-col text-left text-black gap-8 items-start">
-          <div className="flex flex-row justify-evenly items space-x-16 pt-6 w-full lg:px-[120px] md:px-[60px] sm: px-0">
-            <div
-              className={`${gluten.className} w-1/2 text-left text-[#ba4c4d] rounded-md text-4xl md:text-6xl flex flex-col border-b-4 border-l-4 border-blue-200 justify-center items-start pl-5`}
-            >
-              Sydney-Based.
-              <div
-                className={`${redHat.className} text-lg font-thin text-black pt-4`}
-              >
-                Delivering to the Greater Sydney, South Coast and
-                Central Coast regions
-              </div>
-            </div>
-            <div className="w-1/2 flex justify-center">
-              <Image
-                className="rounded p-1 m-10 max-w-[300px]"
-                src={dog.src}
-                layout="responsive"
-                width="400"
-                height="400"
-                alt="Happy dog with tongue out"
-              />
-            </div>
-          </div>
+      <main className="flex flex-col text-left text-black gap-8 items-start">
+        <div className="flex flex-row justify-evenly items space-x-16 pt-6 w-full lg:px-[120px] md:px-[60px] sm: px-0">
           <div
-            className={`${gluten.className} text-[#ba4c4d] text-2xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4 text-center`}
+            className={`${gluten.className} w-1/2 text-left text-[#ba4c4d] rounded-sm text-4xl md:text-6xl flex flex-col border-b-4 border-l-4 border-blue-200 justify-center items-start pl-5`}
           >
-            We procure highly desirable dog breeds from our select
-            range of dog breeders
+            Sydney-Based.
             <div
-              className={`${redHat.className} text-black text-lg font-thin`}
+              className={`${redHat.className} text-lg font-thin text-black pt-4`}
             >
-              the right puppy, at the right price, delivered right to
-              your door.
+              Delivering to the Greater Sydney, South Coast and
+              Central Coast regions
             </div>
           </div>
-          <div className="text-[#ba4c4d] font-bold text-xl w-full flex text-center justify-center items-center flex-col pb-64">
-            Interested in what we've got to offer? Search our range of
-            breeds
-            <a href="./breeds" className="">
-              <div className="text-2xl pt-4">
-                <Button
-                  className={`${redHat.className} items-center bg-red-500 text-white primary max-w-auto p-4 text-xl font-bold hover:bg-blue-500 duration-300 ease-in-out`}
-                >
-                  Breeds
-                </Button>
-              </div>
-            </a>
+          <div className="w-1/2 flex justify-center">
+            <Image
+              className="rounded p-1 m-10 max-w-[300px]"
+              src={dog.src}
+              layout="responsive"
+              width="400"
+              height="400"
+              alt="Happy dog with tongue out"
+            />
           </div>
-        </main>
-      </div>
-
+        </div>
+        <div
+          className={`${gluten.className} text-[#ba4c4d] text-2xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4 text-center`}
+        >
+          We procure highly desirable dog breeds from our select range
+          of dog breeders
+          <div
+            className={`${redHat.className} text-black text-lg font-thin`}
+          >
+            the right puppy, at the right price, delivered right to
+            your door.
+          </div>
+        </div>
+        <div className="text-[#ba4c4d] font-bold text-xl w-full flex text-center justify-center items-center flex-col pb-64">
+          Interested in what we've got to offer? Search our range of
+          breeds
+          <a href="./breeds" className="">
+            <div className="text-2xl pt-4">
+              <Button
+                className={`${redHat.className} items-center bg-red-500 text-white primary max-w-auto p-4 text-xl font-bold hover:bg-blue-500 duration-300 ease-in-out`}
+              >
+                Breeds
+              </Button>
+            </div>
+          </a>
+        </div>
+      </main>
       {/* The bottom image sections */}
       <div className="relative w-full lg:-mt-32 md:-mt-24">
         <div className="absolute bottom-[-34px] transform left-0">
