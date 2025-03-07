@@ -1,12 +1,17 @@
 import Image from 'next/image';
 import Contact, { EmailForm } from '@/components/contactForm';
 import { Button } from '@/components/ui/button';
+import { Fredoka } from 'next/font/google';
+
+const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 
 export default function Home() {
   return (
     <div className=" flex flex-col flex-grow justify-items-center max-w-7xl min-h-screen pb-20 mx-auto gap-32 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col text-left text-black gap-2 items-center justify-center mt-20">
-        <div className="flex flex-grow w-full text-red-500 text-7xl font-bold items-center justify-center">
+        <div
+          className={`${fredoka.className} flex flex-grow w-full text-red-500 text-7xl font-bold items-center justify-center`}
+        >
           CONTACT US
         </div>
 

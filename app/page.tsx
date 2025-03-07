@@ -9,18 +9,19 @@ import {
   Modak,
   Red_Hat_Display,
   Gluten,
+  Fredoka,
 } from 'next/font/google';
 import localFont from 'next/font/local';
 const modak = Modak({ subsets: ['latin'], weight: '400' });
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
 const gluten = Gluten({ subsets: ['latin'], weight: '500' });
-
+const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 export default function Home() {
   return (
     <>
       <div className="bg-blue-300 w-full p-4 flex justify-center flex-col items-center shadow-md">
         <div
-          className={`${gluten.className} text-2xl text-[#ba4c4d] text-center`}
+          className={`${fredoka.className} text-2xl text-[#ba4c4d] text-center`}
         >
           Let us save you the hassle of finding the perfect breeder
         </div>
@@ -33,9 +34,9 @@ export default function Home() {
       <main className="flex flex-col text-left text-black gap-8 items-start">
         <div className="flex flex-row justify-evenly items space-x-16 pt-6 w-full lg:px-[120px] md:px-[60px] sm: px-0">
           <div
-            className={`${gluten.className} w-1/2 text-left text-[#ba4c4d] rounded-sm text-4xl md:text-6xl flex flex-col border-b-4 border-l-4 border-blue-200 justify-center items-start pl-5`}
+            className={`${fredoka.className} w-1/2 text-left text-[#ba4c4d] rounded-sm text-4xl md:text-7xl flex flex-col border-b-4 border-l-4 border-blue-200 justify-center items-start pl-5`}
           >
-            Sydney-Based.
+            SYDNEY-BASED.
             <div
               className={`${redHat.className} text-lg font-thin text-black pt-4`}
             >
@@ -55,7 +56,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          className={`${gluten.className} text-[#ba4c4d] text-2xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4 text-center`}
+          className={`${fredoka.className} text-[#ba4c4d] text-2xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4 text-center`}
         >
           We procure highly desirable dog breeds from our select range
           of dog breeders

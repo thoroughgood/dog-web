@@ -13,15 +13,18 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import ServiceCard from '../../components/serviceCard';
-import { Red_Hat_Display } from 'next/font/google';
+import { Fredoka, Red_Hat_Display } from 'next/font/google';
 import { Button } from '@/components/ui/button';
 
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
+const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 
 const servicesPage = () => {
   return (
     <div className="p-6 max-w-7xl min-h-screen pb-20 mx-auto">
-      <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
+      <h1
+        className={`${fredoka.className} text-4xl font-bold text-center text-red-400 mb-8`}
+      >
         Services
       </h1>
       <div className="flex flex-row justify-center gap-3">
