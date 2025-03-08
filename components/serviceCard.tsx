@@ -25,7 +25,7 @@ export default function ServiceCard({
 }: serviceCardProps) {
   return (
     <Link href={link}>
-      <Card className="w-[350px] shadow-md duration-100 ease-in-out h-[200px] hover:h-[300px]">
+      <Card className="w-[350px] shadow-md duration-100 ease-in-out h-[200px] hover:bg-gray-100">
         <CardHeader>
           <CardTitle className="text-red-500 self-center font-bold text-2xl">
             {title}
