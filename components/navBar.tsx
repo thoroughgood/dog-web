@@ -8,7 +8,7 @@ const Navbar = () => {
   console.log(isVisible);
 
   return (
-    <nav className="bg-blue-600 text-white">
+    <nav className="bg-sky-900 text-white">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         <div className="flex flex-row items-center justify-between h-24">
           {/* Logo */}

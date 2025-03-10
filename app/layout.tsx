@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import { Lato } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 import './globals.css';
 import NavBar from '@/components/navBar';
 import Footer from '@/components/footer';
 import Image from 'next/image';
 import bg1 from '../public/background.png';
-const lato = Lato({ weight: '400', subsets: ['latin'] });
+const open_sans = Open_Sans({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,8 +23,8 @@ export default function RootLayout({
         name="viewport"
         content="width=device-width, intiial-scale=1.0"
       />
-
-      <body className={`${lato.className} antialiased bg-blue-100`}>
+      {/* bg-gray-200 separator */}
+      <body className={`${open_sans.className} antialiased`}>
         <NavBar />
         {children}
         <Footer />

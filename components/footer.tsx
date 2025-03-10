@@ -5,7 +5,7 @@ import instagram from '../public/instagram.svg';
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-600 text-white py-8">
+    <footer className="bg-sky-900 text-white py-8">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center md:items-start md:justify-evenly md:flex-row md:space-x-12">
           {/* Column 1: About */}
@@ -16,55 +16,55 @@ export default function Footer() {
                 href="breeds/poodle"
                 className="text-gray-300 hover:underline hover:text-red-400"
               >
-                poodle
+                Poodle
               </Link>
               <Link
                 href="breeds/cavoodle"
                 className="text-gray-300 hover:underline hover:text-red-400"
               >
-                cavoodle
+                Cavoodle
               </Link>
               <Link
                 href="breeds/labradoodle"
                 className="text-gray-300 hover:underline hover:text-red-400"
               >
-                labradoodle
+                Labradoodle
               </Link>
               <Link
                 href="breeds/groodle"
                 className="text-gray-300 hover:underline hover:text-red-400"
               >
-                groodle
+                Groodle
               </Link>
               <Link
                 href="breeds/spoodle"
                 className="text-gray-300 hover:underline hover:text-red-400"
               >
-                spoodle
+                Spoodle
               </Link>
               <Link
                 href="breeds/dachshund"
                 className="text-gray-300 hover:underline hover:text-red-400"
               >
-                dachshund
+                Dachshund
               </Link>
               <Link
                 href="breeds/pugs"
                 className="text-gray-300 hover:underline hover:text-red-400"
               >
-                pugs
+                Pugs
               </Link>
               <Link
                 href="breeds/frenchbulldog"
                 className="text-gray-300 hover:underline hover:text-red-400"
               >
-                french bulldog
+                French Bulldog
               </Link>
               <Link
                 href="breeds/bulldog"
                 className="text-gray-300 hover:underline hover:text-red-400"
               >
-                bulldog
+                Bulldog
               </Link>
             </div>
           </div>
