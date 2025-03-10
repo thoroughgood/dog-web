@@ -22,7 +22,7 @@ const BreedsPage = () => {
         Dog Breeds
       </h1>
       {/* 3x3 Grid */}
-      <div className="flex flex-row justify-center gap-5 w-[2/4px] flex-wrap max-w-6xl mx-auto">
+      <div className="flex flex-row justify-center gap-x-6 gap-y-12 w-[2/4px] flex-wrap max-w-6xl mx-auto">
         {breeds.map((breed) => (
           <Link
             key={breed.name}
@@ -44,7 +44,7 @@ const BreedsPage = () => {
                   alt={breed.name}
                 />
               </CardContent>
-              <CardFooter className="bg-blue-500 text-white rounded-b-lg flex justify-center pt-2">
+              <CardFooter className="bg-blue-500 text-white rounded-b-lg flex justify-center pt-2 -mx-[1px] -my-[1px]">
                 <Button className="bg-red-500 text-white">
                   Buy Now
                 </Button>

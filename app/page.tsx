@@ -69,7 +69,7 @@ export default function Home() {
         </div>
         <div className="text-[#ba4c4d] font-bold text-xl w-full flex text-center justify-center items-center flex-col pb-64">
           Interested in what we've got to offer? Search our range of
-          breeds
+          breeds!
           <a href="./breeds" className="">
             <div className="text-2xl pt-4">
               <Button
