@@ -32,13 +32,18 @@ export default function Home() {
 
       {/* Main content with repeating background */}
       <main className="flex flex-col text-left text-black gap-8 items-start">
-        <div className="flex flex-row justify-evenly items space-x-16 pt-6 w-full lg:px-[120px] md:px-[60px] sm: px-0">
+        <div className="flex flex-row justify-center items space-x-16 pt-6 w-full lg:px-[120px] md:px-[60px] sm: px-0">
+          {/* there should be another div somewhere here to contain sydney-based and the delivering to the greater sydney regions
+          that way we can size the flex box, and then have the items centered inside the flex box - TODO: fix the shitty margin soln*/}
           <div
-            className={`${fredoka.className} w-1/2 text-left text-[#ba4c4d] rounded-sm text-4xl md:text-7xl flex flex-col border-b-4 border-l-4 border-blue-200 justify-center items-start pl-5`}
+            className={`${fredoka.className} text-left w-1/3 text-[#ba4c4d] rounded-sm text-4xl md:text-5xl flex flex-col border-b-4 border-l-4 border-blue-200 justify-center pl-5 ml-20`}
           >
+            <div className="max-w-[300px] justify-center">
             SYDNEY-BASED.
+
+            </div>
             <div
-              className={`${redHat.className} text-lg font-thin text-black pt-4`}
+              className={`${redHat.className} text-lg font-thin text-black pt-4 max-w-[300px]`}
             >
               Delivering to the Greater Sydney, South Coast and
               Central Coast regions
