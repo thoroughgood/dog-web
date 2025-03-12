@@ -45,7 +45,7 @@ export default function Home() {
               SYDNEY-BASED.
             </div>
             <div
-              className={`${open_sans.className} text-lg font-medium text-black pt-4 max-w-[400px]`}
+              className={`${open_sans.className} text-lg font-medium text-slate-700 pt-4 max-w-[400px]`}
             >
               Delivering to the Greater Sydney, South Coast and
               Central Coast regions
@@ -64,12 +64,12 @@ export default function Home() {
         </div>
         <div className="bg-neutral-200/70 self-center w-screen pt-4 flex flex-col gap-4">
           <div
-            className={`${fredoka.className} text-[#ba4c4d] text-2xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4 text-center`}
+            className={`${fredoka.className} text-sky-900 text-2xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4 text-center`}
           >
             We procure highly desirable dog breeds from our select
             range of dog breeders.
             <div
-              className={`${open_sans.className} text-black text-lg font-normal`}
+              className={`${open_sans.className} text-slate-700 text-lg font-normal`}
             >
               The right puppy, at the right price, delivered right to
               your door.

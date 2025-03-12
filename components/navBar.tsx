@@ -65,7 +65,7 @@ const Navbar = () => {
               </Link>
               <Link href="/about">
                 <div className="hover:text-gray-300 hover:underline">
-                  ABOUT
+                  ABOUT US
                 </div>
               </Link>
               {/* <Link href="/services">
@@ -123,7 +123,7 @@ const Navbar = () => {
           </Link>
           <Link href="/about">
             <div className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
-              About
+              About Us
             </div>
           </Link>
           {/* <Link href="/services">

@@ -88,7 +88,7 @@ export default function Footer() {
                   className="text-gray-300 hover:text-red-400 hover:underline"
                   href="../about"
                 >
-                  About
+                  About Us
                 </Link>
               </li>
               <li>
