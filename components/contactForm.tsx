@@ -157,6 +157,7 @@ export function EmailForm({ breed }: EmailFormProps) {
                     French Bulldog
                   </SelectItem>
                   <SelectItem value="Bulldog">Bulldog</SelectItem>
+                  <SelectItem value="Other">Other</SelectItem>
                 </SelectContent>
               </Select>
               {form.formState.errors.breed && (
@@ -190,12 +191,14 @@ export function EmailForm({ breed }: EmailFormProps) {
             </FormItem>
           )}
         />
-        <Button
+        <div className="flex justify-center w-full">
+          <Button
           type="submit"
-          className="bg-red-500 hover:bg-red-400 text-white font-extrabold mt-4 w-full"
+          className="bg-red-500 hover:bg-red-400 text-white font-extrabold mt-4 flex"
         >
           SEND EMAIL
         </Button>
+        </div>
       </form>
     </Form>
   );

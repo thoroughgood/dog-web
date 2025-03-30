@@ -1,5 +1,6 @@
 {
   "dogBreeds": [
+    {"name": "oodles", "description": "Our oodles category consists of the highly sought after poodle crossbreeds that are available.", "image": "/Untitled.png"},
     {
       "name": "Poodle",
       "description": "The Poodle is a highly intelligent and versatile breed, celebrated for its hypoallergenic, curly coat that comes in a range of colors. Available in toy, miniature, and standard sizes, Poodles are often regarded as one of the most trainable dog breeds, excelling in obedience and agility.",
