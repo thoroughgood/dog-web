@@ -50,21 +50,18 @@ export function EmailForm({ breed }: EmailFormProps) {
     },
   });
 
-  // You don't need defaultBreed here anymore because it's handled by the form state.
-  console.log(form.getValues('breed'));
-
   return (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-blue-300 rounded-md p-6 w-full mx-auto" // Changed max-w-xl to max-w-2xl for a wider form
+        className="bg-sky-900 rounded-md p-6 w-full mx-auto" // Changed max-w-xl to max-w-2xl for a wider form
       >
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-black">
+              <FormLabel className="pl-1 font-bold text-white">
                 Name
               </FormLabel>
               <FormControl>
@@ -87,7 +84,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-black">
+              <FormLabel className="pl-1 font-bold text-white">
                 Email
               </FormLabel>
               <FormControl>
@@ -110,7 +107,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-black pl-1 font-bold">
+              <FormLabel className="text-white pl-1 font-bold">
                 Message
               </FormLabel>
               <FormControl>
@@ -133,7 +130,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="breed"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Breed</FormLabel>
+              <FormLabel className="text-white">Breed</FormLabel>
               <Select
                 value={field.value} // Bind the value to form state
                 onValueChange={field.onChange} // Update form state when selection changes
@@ -173,7 +170,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="colour"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-black pl-1 font-bold">
+              <FormLabel className="text-white pl-1 font-bold">
                 Colour
               </FormLabel>
               <FormControl>
@@ -205,6 +202,7 @@ export function EmailForm({ breed }: EmailFormProps) {
 }
 
 async function onSubmit(values: z.infer<typeof FormSchema>) {
+  console.log("In on submit")
   try {
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -213,7 +211,7 @@ async function onSubmit(values: z.infer<typeof FormSchema>) {
         Accept: 'application/json',
       },
       body: JSON.stringify({
-        access_key: 'a5cc582d-8ed1-4776-b268-03580c2624c1',
+        access_key: 'c8e4e02b-95cf-442e-b8a7-a44a896fdae2',
         name: values.name,
         email: values.email,
         message: values.message,

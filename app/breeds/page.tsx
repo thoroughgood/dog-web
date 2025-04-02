@@ -12,7 +12,7 @@ import {
 import { Fredoka, Red_Hat_Display } from 'next/font/google';
 import { Button } from '@/components/ui/button';
 
-const fredoka = Fredoka({subsets: ['latin'], weight: '500'})
+const fredoka = Fredoka({subsets: ['latin'], weight: '600'})
 
 const BreedsPage = () => {
   const breeds = breedsData.dogBreeds.filter((breeds) => {
@@ -23,7 +23,7 @@ const BreedsPage = () => {
 
   return (
     <div className="p-6 min-h-screen pb-20 mx-auto">
-      <h1 className="text-4xl font-bold text-center text-sky-900 mb-8">
+      <h1 className={`${fredoka.className} text-red-500 text-4xl font-bold text-center mb-8`}>
         Dog Breeds
       </h1>
       {/* Flexbox Container */}

@@ -76,9 +76,8 @@ export default function Home() {
             </div>
           </div>
           <div className="text-[rgb(186,76,77)] font-bold text-xl w-full flex text-center justify-center items-center flex-col">
-            Interested in what we've got to offer? Search our range of
-            breeds!
-            <a href="./breeds" className="">
+            Interested in what we've got to offer? Search our range!
+            {/* <a href="./breeds" className="">
               <div className="text-2xl pt-4">
                 <Button
                   className={`${redHat.className} items-center bg-red-500 text-white primary max-w-auto p-4 text-xl font-black hover:bg-blue-500 duration-300 ease-in-out`}
@@ -86,15 +85,15 @@ export default function Home() {
                   Browse breeds
                 </Button>
               </div>
-            </a>
-            <div className="mt-4 flex flex-row gap-14">
+            </a> */}
+            <div className="mt-4 flex flex-row gap-14 mb-[230px] 2xl:mb-4">
               <BrowseCard
                 link="./services"
                 title="services"
-                description="browse our services"
+                description="check out our services for your puppies"
               ></BrowseCard>{' '}
-              <BrowseCard link="./about"></BrowseCard>{' '}
-              <BrowseCard link="./breeds"></BrowseCard>
+              <BrowseCard link="./about" title="about" description="learn more about who we are and what we do"></BrowseCard>{' '}
+              <BrowseCard link="./breeds" title="breeds" description="view our selection of dog breeds"></BrowseCard>
             </div>
           </div>
         </div>
