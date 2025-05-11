@@ -5,7 +5,7 @@ const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 export default function About() {
 
   return (
-    <div className="flex flex-col items-center px-6 py-12 bg-gray-100 min-h-screen">
+    <div className="flex flex-col items-center px-6 py-12 min-h-screen">
       <div className={`${fredoka.className} text-4xl font-bold text-red-600 mb-6 text-center uppercase`}>
         About Us
       </div>

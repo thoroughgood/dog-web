@@ -3,6 +3,9 @@ import dog from '../public/anime_puppy.png';
 import { Button } from '@/components/ui/button';
 import dogGroup from '../public/imagebottomdogs.png';
 import dogGroup2 from '../public/cornerbgremovedpuppies.png';
+import about from '../public/profile.png'
+import pawprint from '../public/pawprint.png'
+import dog2 from '../public/dog.png'
 import background from '../public/background.png'; // Import your background pattern
 import {
   Chewy,
@@ -91,9 +94,11 @@ export default function Home() {
                 link="./services"
                 title="services"
                 description="check out our services for your puppies"
+                images={[pawprint]}
               ></BrowseCard>{' '}
-              <BrowseCard link="./about" title="about" description="learn more about who we are and what we do"></BrowseCard>{' '}
-              <BrowseCard link="./breeds" title="breeds" description="view our selection of dog breeds"></BrowseCard>
+              <BrowseCard link="./about" title="about" description="learn more about who we are and what we do" images={[about]}
+              ></BrowseCard>{' '}
+              <BrowseCard link="./breeds" title="breeds" description="view our selection of dog breeds" images={[dog2]}></BrowseCard>
             </div>
           </div>
         </div>

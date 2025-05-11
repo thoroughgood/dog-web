@@ -24,7 +24,7 @@ export default function RootLayout({
         content="width=device-width, intiial-scale=1.0"
       />
       {/* bg-gray-200 separator */}
-      <body className={`${open_sans.className} antialiased`}>
+      <body className={`${open_sans.className} antialiased bg-gray-100`}>
         <NavBar />
         {children}
         <Footer />
