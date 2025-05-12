@@ -3,7 +3,6 @@ import Image from 'next/image';
 import bowl from '../../public/dog-dish-svgrepo-com.svg';
 import bone from '../../public/bone-svgrepo-com.svg';
 import ball from '../../public/tennis-ball-2-svgrepo-com.svg';
-import about from '../../public/profile.png'
 import { Fredoka, Red_Hat_Display } from 'next/font/google';
 import { Button } from '@/components/ui/button';
 import ServiceCard from '../../components/serviceCard';
@@ -18,23 +17,17 @@ const ServicesPage = () => {
         Our Services
       </h1>
       
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 place-items-center">
+      <div className="flex flex-col md:flex-row gap-6 md:justify-center items-center">
       <ServiceCard
           link="/puppy-pack"
-          title="$150 Puppy starter kit"
+          title="$160 Puppy Pack"
           description="Get started with a kit for your puppy"
           images={[bowl, bone, ball]}
         />
         <ServiceCard
-          link="/puppy-pack"
-          title="$150 Puppy dog toys pack"
-          description="Get started with a kit for your puppy"
-          images={[bowl, bone, ball]}
-        />
-        <ServiceCard
-          link="/puppy-pack"
-          title="$30 Food kibble pack"
-          description="Get started with a kit for your puppy"
+          link="/puppy-food-pack"
+          title="$49.00 Puppy Food Pack"
+          description="Food for all your nutritious needs"
           images={[bowl, bone, ball]}
         />
       </div>

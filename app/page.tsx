@@ -27,7 +27,7 @@ export default function Home() {
     <>
       <div className="bg-slate-400 w-full p-4 flex justify-center flex-col items-center shadow-md">
         <div
-          className={`${fredoka.className} text-2xl text-slate-800 text-center`}
+          className={`text-2xl text-slate-800 font-bold text-center`}
         >
           Let us save you the hassle of finding the perfect breeder
         </div>
