@@ -102,7 +102,10 @@ export default function Page() {
                   {breed.characteristics}
                 </div>
                 <div>
-                  <strong>Lifestyle:</strong> {breed.lifestyle}
+                  <strong>Lifestyle:</strong> {breed.lifespan}
+                </div>
+                <div>
+                  <strong>Temperament:</strong> {breed.temperament}
                 </div>
               </>
             )}

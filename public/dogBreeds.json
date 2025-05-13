@@ -1,7 +1,7 @@
 {
   "dogBreeds": [
     {
-      "name": "Cavoodle and oodles",
+      "name": "oodles",
       "description": "Our oodles category consists of the highly sought after poodle crossbreeds that are available.",
       "image": "/Untitled.png"
     },
@@ -9,63 +9,64 @@
       "name": "Poodle",
       "description": "The Poodle is a highly intelligent and versatile breed, celebrated for its hypoallergenic, curly coat that comes in a range of colors. Available in toy, miniature, and standard sizes, Poodles are often regarded as one of the most trainable dog breeds, excelling in obedience and agility.",
       "characteristics": "Poodles are alert, lively, and eager to please. They are friendly but can be a bit reserved around strangers, making early socialization important.",
-      "lifestyle": "Poodles require daily mental and physical stimulation, such as training exercises, interactive play, or long walks. They thrive in active households where their intelligence is challenged.",
+      "lifespan": "Poodles require daily mental and physical stimulation, such as training exercises, interactive play, or long walks. They thrive in active households where their intelligence is challenged.",
       "image": "/poodle.png"
     },
     {
       "name": "Cavoodle",
       "description": "The Cavoodle, also known as the Cavapoo, is a crossbreed between a Cavalier King Charles Spaniel and a Poodle. This hybrid dog is known for its friendly disposition and appealing characteristics.",
-      "characteristics": "Cavoodles are friendly, gentle, and great with children. They bond closely with their families and thrive on human interaction.",
-      "lifestyle": "Cavoodles adapt well to apartment living but need daily walks and playtime. They dislike being left alone for long periods and do best with an attentive owner.",
+      "characteristics": "Cavoodles are friendly, gentle, and great with children. They weigh between 4kg to 12kg, and stand between 30cm to 40cm tall. They come with a curly, low-shedding coat which makes it a great fit for those with allergies. They are moderately energetic and require regular exercise.",
+      "lifespan": "12 - 15 years on average",
+      "temperament": "Cavoodles are known for their friendly and loving nature, making the perfect fit for any family. They are also intelligent, easy to train and sociable dogs. They are typically gentle and have a great ability to adapt to different living situations, given they have enough stimulation and physical activity",
       "image": "/cavoodle.png"
     },
     {
       "name": "Labradoodle",
       "description": "The Labradoodle, a mix of Labrador Retriever and Poodle, is known for its playful personality and wavy or curly, low-shedding coat. This breed is highly sociable and often works as a therapy or service dog.",
       "characteristics": "Labradoodles are energetic, friendly, and eager to please. They get along well with children and other pets, making them an ideal choice for active families.",
-      "lifestyle": "These dogs need plenty of exercise, including daily walks, play sessions, or swimming. They thrive in homes with ample outdoor space but can adapt to city life if given enough activity.",
+      "lifespan": "These dogs need plenty of exercise, including daily walks, play sessions, or swimming. They thrive in homes with ample outdoor space but can adapt to city life if given enough activity.",
       "image": "/labradoodle.png"
     },
     {
       "name": "Groodle",
       "description": "The Groodle, a mix of Golden Retriever and Poodle, is a loving and sociable dog known for its soft, wavy, low-shedding coat. This breed combines the loyalty of a Golden Retriever with the intelligence of a Poodle.",
       "characteristics": "Groodles are gentle, affectionate, and highly sociable. They are great with children and other animals, making them perfect for family life.",
-      "lifestyle": "Groodles need regular exercise, including long walks, fetch, or agility activities. They thrive in homes where they can be an integral part of the family dynamic.",
+      "lifespan": "Groodles need regular exercise, including long walks, fetch, or agility activities. They thrive in homes where they can be an integral part of the family dynamic.",
       "image": "/groodle.png"
     },
     {
       "name": "Spoodle",
       "description": "The Spoodle, a cross between a Cocker Spaniel and a Poodle, is an energetic and loyal breed. With its curly or wavy coat, this dog is well-suited for active households.",
       "characteristics": "Spoodles are playful, affectionate, and great with kids. They have a natural inclination to please, making them easy to train.",
-      "lifestyle": "Spoodles require daily exercise and mental stimulation, such as training games or outdoor adventures. They thrive in homes where they receive plenty of attention.",
+      "lifespan": "Spoodles require daily exercise and mental stimulation, such as training games or outdoor adventures. They thrive in homes where they receive plenty of attention.",
       "image": "/spoodle.png"
     },
     {
       "name": "Dachshund",
       "description": "The Dachshund, also known as the 'sausage dog,' is a small breed with a distinctive long body and short legs. They are available in smooth, wire-haired, or long-haired coat varieties.",
       "characteristics": "Dachshunds are bold, curious, and loyal. They can be a bit stubborn but are deeply devoted to their families.",
-      "lifestyle": "Dachshunds are relatively low-maintenance but require regular walks to keep their weight in check. They can adapt to apartment living but need mental stimulation to prevent boredom.",
+      "lifespan": "Dachshunds are relatively low-maintenance but require regular walks to keep their weight in check. They can adapt to apartment living but need mental stimulation to prevent boredom.",
       "image": "/dachshund.png"
     },
     {
       "name": "Pug",
       "description": "The Pug is a small breed with a distinctive wrinkled face and short, smooth coat. Known for their clownish and loving nature, Pugs make excellent companions.",
       "characteristics": "Pugs are charming, mischievous, and affectionate. They enjoy being the center of attention and are great with kids.",
-      "lifestyle": "Pugs are well-suited to apartment living but need regular short walks to maintain a healthy weight. They are prone to overheating, so care is needed in hot weather.",
+      "lifespan": "Pugs are well-suited to apartment living but need regular short walks to maintain a healthy weight. They are prone to overheating, so care is needed in hot weather.",
       "image": "/pug.png"
     },
     {
-      "name": "French Bulldog",
-      "description": "The French Bulldog is a compact and muscular breed with bat-like ears and a smooth coat. They are known for their playful, adaptable, and affectionate personality.",
+      "name": "French-Bulldog",
+      "description": "The French Bulldog is a compact and muscular breed with bat-like ears and a smooth coat. They are small and sturdy, weighing in between 7kg to 12.5kg",
       "characteristics": "French Bulldogs are social, easygoing, and loyal. They enjoy being around people and are great with children.",
-      "lifestyle": "French Bulldogs are low-energy dogs requiring moderate exercise, such as daily walks. They thrive in urban settings but need careful monitoring in hot weather due to their short noses.",
+      "lifespan": "French Bulldogs are low-energy dogs requiring moderate exercise, such as daily walks. They thrive in urban settings but need careful monitoring in hot weather due to their short noses.",
       "image": "/french_bulldog.png"
     },
     {
       "name": "Bulldog",
       "description": "The Bulldog is a medium-sized breed with a distinctive wrinkled face, stocky build, and short coat. They are known for their calm and courageous demeanor.",
       "characteristics": "Bulldogs are gentle, loyal, and affectionate. They form strong bonds with their families and are particularly good with children.",
-      "lifestyle": "Bulldogs are relatively low-energy but require daily walks to stay healthy. They are well-suited to apartment living but need a watchful eye in hot weather due to their susceptibility to overheating.",
+      "lifespan": "Bulldogs are relatively low-energy but require daily walks to stay healthy. They are well-suited to apartment living but need a watchful eye in hot weather due to their susceptibility to overheating.",
       "image": "/bulldog.png"
     }
   ]
