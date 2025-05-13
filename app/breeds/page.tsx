@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import breedsData from '../../public/dogBreeds.json';
 import Image from 'next/image';
-import placeholder from '../../public/Untitled.png'
+import placeholder from '../../public/Untitled.png';
 import {
   Card,
   CardContent,
@@ -12,18 +12,26 @@ import {
 import { Fredoka, Red_Hat_Display } from 'next/font/google';
 import { Button } from '@/components/ui/button';
 
-const fredoka = Fredoka({subsets: ['latin'], weight: '600'})
+const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 
 const BreedsPage = () => {
   const breeds = breedsData.dogBreeds.filter((breeds) => {
-    if(!breeds.name.includes("oodle")) return breeds
+    if (!breeds.name.includes('oodle')) return breeds;
   });
 
-  breeds.unshift({name: "oodles", description: "blank", temperament: "blank", lifestyle: "blank", image: placeholder.src})
+  breeds.unshift({
+    name: 'oodles',
+    description: 'blank',
+    temperament: 'blank',
+    lifestyle: 'blank',
+    image: placeholder.src,
+  });
 
   return (
     <div className="p-6 min-h-screen pb-20 mx-auto">
-      <h1 className={`${fredoka.className} text-red-500 text-4xl font-bold text-center mb-8`}>
+      <h1
+        className={`${fredoka.className} text-red-500 text-4xl font-bold text-center mb-8`}
+      >
         Dog Breeds
       </h1>
       {/* Flexbox Container */}
@@ -43,12 +51,17 @@ const BreedsPage = () => {
                   alt={breed.name}
                 />
               </CardContent>
-              <CardFooter className={`${fredoka.className} bg-sky-900 text-white rounded-b-lg flex flex-row justify-center items-center h-[75px] p-0 -my-[1px] text-xl`}>
+              <CardFooter
+                className={`${fredoka.className} bg-sky-900 text-white rounded-b-lg flex flex-row justify-center items-center h-[75px] p-0 -my-[1px] text-xl`}
+              >
                 {breed.name}
               </CardFooter>
             </Card>
           </Link>
         ))}
+      </div>
+      <div className="w-full border-2 rounded-md">
+        List of dog breeds
       </div>
     </div>
   );

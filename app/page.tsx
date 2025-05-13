@@ -3,9 +3,9 @@ import dog from '../public/anime_puppy.png';
 import { Button } from '@/components/ui/button';
 import dogGroup from '../public/imagebottomdogs.png';
 import dogGroup2 from '../public/cornerbgremovedpuppies.png';
-import about from '../public/profile.png'
-import pawprint from '../public/pawprint.png'
-import dog2 from '../public/dog.png'
+import about from '../public/profile.png';
+import pawprint from '../public/pawprint.png';
+import dog2 from '../public/dog.png';
 import background from '../public/background.png'; // Import your background pattern
 import {
   Chewy,
@@ -89,16 +89,25 @@ export default function Home() {
                 </Button>
               </div>
             </a> */}
-            <div className="mt-4 flex flex-row gap-14 mb-[230px] 2xl:mb-4">
+            <div className="mt-4 flex md:flex-row flex-col gap-14 mb-[230px] 2xl:mb-4">
               <BrowseCard
                 link="./services"
                 title="services"
                 description="check out our services for your puppies"
                 images={[pawprint]}
               ></BrowseCard>{' '}
-              <BrowseCard link="./about" title="about" description="learn more about who we are and what we do" images={[about]}
+              <BrowseCard
+                link="./about"
+                title="about"
+                description="learn more about who we are and what we do"
+                images={[about]}
               ></BrowseCard>{' '}
-              <BrowseCard link="./breeds" title="breeds" description="view our selection of dog breeds" images={[dog2]}></BrowseCard>
+              <BrowseCard
+                link="./breeds"
+                title="breeds"
+                description="view our selection of dog breeds"
+                images={[dog2]}
+              ></BrowseCard>
             </div>
           </div>
         </div>
