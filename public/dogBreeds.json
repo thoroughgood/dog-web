@@ -1,73 +1,207 @@
 {
   "dogBreeds": [
     {
-      "name": "oodles",
-      "description": "Our oodles category consists of the highly sought after poodle crossbreeds that are available.",
-      "image": "/Untitled.png"
-    },
-    {
-      "name": "Poodle",
-      "description": "The Poodle is a highly intelligent and versatile breed, celebrated for its hypoallergenic, curly coat that comes in a range of colors. Available in toy, miniature, and standard sizes, Poodles are often regarded as one of the most trainable dog breeds, excelling in obedience and agility.",
-      "characteristics": "Poodles are alert, lively, and eager to please. They are friendly but can be a bit reserved around strangers, making early socialization important.",
-      "lifespan": "Poodles require daily mental and physical stimulation, such as training exercises, interactive play, or long walks. They thrive in active households where their intelligence is challenged.",
-      "image": "/poodle.png"
-    },
-    {
       "name": "Cavoodle",
-      "description": "The Cavoodle, also known as the Cavapoo, is a crossbreed between a Cavalier King Charles Spaniel and a Poodle. This hybrid dog is known for its friendly disposition and appealing characteristics.",
-      "characteristics": "Cavoodles are friendly, gentle, and great with children. They weigh between 4kg to 12kg, and stand between 30cm to 40cm tall. They come with a curly, low-shedding coat which makes it a great fit for those with allergies. They are moderately energetic and require regular exercise.",
-      "lifespan": "12 - 15 years on average",
-      "temperament": "Cavoodles are known for their friendly and loving nature, making the perfect fit for any family. They are also intelligent, easy to train and sociable dogs. They are typically gentle and have a great ability to adapt to different living situations, given they have enough stimulation and physical activity",
-      "image": "/cavoodle.png"
+      "description": "The Cavoodle is a charming hybrid dog that blends the gentle nature of the Cavalier King Charles Spaniel with the intelligence and hypoallergenic traits of the Poodle. It typically presents a soft, wavy or curly coat and an affectionate, expressive face that radiates warmth.",
+      "characteristics": "This small to medium-sized dog generally weighs between 5 to 12 kilograms and stands around 25 to 38 cm tall. The Cavoodle sports a low-shedding, often hypoallergenic coat, making it suitable for families with mild allergies, though it does require consistent grooming to stay tangle-free.",
+      "lifespan": "With proper care, Cavoodles can live between 12 to 15 years, benefiting from regular vet checkups and a balanced diet.",
+      "temperament": "Known for their gentle and friendly demeanor, Cavoodles are ideal family pets. They thrive in households that provide affection and mental stimulation, and they adapt well to both apartment and house living. Their sociable personality makes them excellent companions for children and the elderly alike."
     },
     {
-      "name": "Labradoodle",
-      "description": "The Labradoodle, a mix of Labrador Retriever and Poodle, is known for its playful personality and wavy or curly, low-shedding coat. This breed is highly sociable and often works as a therapy or service dog.",
-      "characteristics": "Labradoodles are energetic, friendly, and eager to please. They get along well with children and other pets, making them an ideal choice for active families.",
-      "lifespan": "These dogs need plenty of exercise, including daily walks, play sessions, or swimming. They thrive in homes with ample outdoor space but can adapt to city life if given enough activity.",
-      "image": "/labradoodle.png"
-    },
-    {
-      "name": "Groodle",
-      "description": "The Groodle, a mix of Golden Retriever and Poodle, is a loving and sociable dog known for its soft, wavy, low-shedding coat. This breed combines the loyalty of a Golden Retriever with the intelligence of a Poodle.",
-      "characteristics": "Groodles are gentle, affectionate, and highly sociable. They are great with children and other animals, making them perfect for family life.",
-      "lifespan": "Groodles need regular exercise, including long walks, fetch, or agility activities. They thrive in homes where they can be an integral part of the family dynamic.",
-      "image": "/groodle.png"
-    },
-    {
-      "name": "Spoodle",
-      "description": "The Spoodle, a cross between a Cocker Spaniel and a Poodle, is an energetic and loyal breed. With its curly or wavy coat, this dog is well-suited for active households.",
-      "characteristics": "Spoodles are playful, affectionate, and great with kids. They have a natural inclination to please, making them easy to train.",
-      "lifespan": "Spoodles require daily exercise and mental stimulation, such as training games or outdoor adventures. They thrive in homes where they receive plenty of attention.",
-      "image": "/spoodle.png"
+      "name": "French Bulldog",
+      "description": "The French Bulldog is a compact and muscular breed, instantly recognizable by its distinctive bat-like ears, flat snout, and endearing, wrinkled face. It possesses a confident and comical presence, which has made it a popular companion worldwide.",
+      "characteristics": "French Bulldogs typically weigh between 8 to 14 kilograms and have a short, smooth, low-maintenance coat. While their coat is easy to care for, they are prone to heat sensitivity due to their brachycephalic (short-nosed) anatomy, requiring careful monitoring in warm climates.",
+      "lifespan": "This breed generally enjoys a lifespan of 10 to 12 years, although potential owners should be aware of common respiratory and joint issues associated with the breed.",
+      "temperament": "Playful, affectionate, and occasionally stubborn, French Bulldogs are known for their charming personalities. They form strong bonds with their owners and do well in smaller spaces, making them ideal pets for city dwellers or apartment living. Their low energy needs also suit a more relaxed household."
     },
     {
       "name": "Dachshund",
-      "description": "The Dachshund, also known as the 'sausage dog,' is a small breed with a distinctive long body and short legs. They are available in smooth, wire-haired, or long-haired coat varieties.",
-      "characteristics": "Dachshunds are bold, curious, and loyal. They can be a bit stubborn but are deeply devoted to their families.",
-      "lifespan": "Dachshunds are relatively low-maintenance but require regular walks to keep their weight in check. They can adapt to apartment living but need mental stimulation to prevent boredom.",
-      "image": "/dachshund.png"
+      "description": "The Dachshund, affectionately known as the 'sausage dog,' is a breed characterized by its long body, short legs, and confident stance. Available in smooth, long-haired, or wire-haired coat types, the breed is visually unique and historically bred for hunting small game.",
+      "characteristics": "Dachshunds typically weigh between 5 to 14 kilograms depending on whether they are miniature or standard. Their coat type dictates grooming needs—smooth coats are low-maintenance, while long-haired and wire-haired variants require more frequent brushing.",
+      "lifespan": "This spirited breed has a life expectancy of around 12 to 16 years, although it is important to manage their weight and avoid excessive jumping due to their predisposition to back problems.",
+      "temperament": "Dachshunds are bold, curious, and lively, often forming strong attachments with their families. Though small, they can be quite vocal and protective, making them alert watchdogs. They thrive in environments where they receive both affection and structured activity."
     },
     {
       "name": "Pug",
-      "description": "The Pug is a small breed with a distinctive wrinkled face and short, smooth coat. Known for their clownish and loving nature, Pugs make excellent companions.",
-      "characteristics": "Pugs are charming, mischievous, and affectionate. They enjoy being the center of attention and are great with kids.",
-      "lifespan": "Pugs are well-suited to apartment living but need regular short walks to maintain a healthy weight. They are prone to overheating, so care is needed in hot weather.",
-      "image": "/pug.png"
+      "description": "The Pug is a small and robust breed recognized by its wrinkled face, large round eyes, and curled tail resting over its back. Its charming and often comical expressions have earned it a loyal following among dog enthusiasts.",
+      "characteristics": "Pugs typically weigh between 6 to 8 kilograms and have a short, dense coat that sheds throughout the year. Due to their flat faces, they are sensitive to heat and can be prone to breathing issues, necessitating a moderate and climate-conscious lifestyle.",
+      "lifespan": "Pugs generally live between 12 to 15 years and benefit from a balanced diet, weight management, and regular check-ups, particularly for respiratory and skin issues.",
+      "temperament": "Friendly, loyal, and loving, Pugs make excellent companions for families, singles, and seniors alike. They are social and affectionate, enjoying human interaction, and are typically very adaptable to a range of living situations, including apartments."
     },
     {
-      "name": "French-Bulldog",
-      "description": "The French Bulldog is a compact and muscular breed with bat-like ears and a smooth coat. They are small and sturdy, weighing in between 7kg to 12.5kg",
-      "characteristics": "French Bulldogs are social, easygoing, and loyal. They enjoy being around people and are great with children.",
-      "lifespan": "French Bulldogs are low-energy dogs requiring moderate exercise, such as daily walks. They thrive in urban settings but need careful monitoring in hot weather due to their short noses.",
-      "image": "/french_bulldog.png"
+      "name": "Chihuahua",
+      "description": "The Chihuahua is the world’s smallest dog breed, renowned for its outsized personality, large alert eyes, and pointed ears. Despite its tiny stature, it possesses a bold and spirited demeanor.",
+      "characteristics": "Chihuahuas usually weigh between 1.5 to 3 kilograms and come in both short-haired and long-haired coat varieties, with grooming needs ranging from minimal to moderate depending on the coat type.",
+      "lifespan": "They are one of the longest-living breeds, with lifespans ranging from 14 to 17 years when provided with a nutritious diet and regular health screenings.",
+      "temperament": "Chihuahuas are fiercely loyal and protective of their owners, often forming a strong bond with one person in particular. While affectionate, they can be wary of strangers and prefer calm households or those with older children who understand their delicate nature."
+    },
+    {
+      "name": "Pomeranian",
+      "description": "The Pomeranian is a toy-sized breed with a fox-like face, bright eyes, and an abundant double coat that gives it a fluffy, plush appearance. This breed carries itself with an alert and lively demeanor that far exceeds its small stature.",
+      "characteristics": "Weighing between 1.5 to 3.5 kilograms, Pomeranians have a dense, long coat that requires regular brushing to prevent tangles and maintain its beautiful volume. Despite their size, they are spirited and agile.",
+      "lifespan": "Pomeranians generally enjoy a long life of 12 to 16 years, thriving best with routine dental care, grooming, and mental stimulation.",
+      "temperament": "Vivacious, confident, and inquisitive, Pomeranians are known for their bold personalities. They form strong attachments with their families and do well in apartments or homes, provided they are given adequate attention and engagement. While small, they can be vocal and act as effective alert dogs."
+    },
+    {
+      "name": "Staffordshire Bull Terrier",
+      "description": "The Staffordshire Bull Terrier is a medium-sized, muscular breed known for its broad head, strong build, and expressive, loving eyes. It has a sleek, smooth coat and an overall appearance of strength and stability.",
+      "characteristics": "Typically weighing between 11 to 17 kilograms, this breed has a short, low-maintenance coat that comes in various colors. The breed’s muscular frame is compact and agile, suited for active play and exercise.",
+      "lifespan": "Staffordshire Bull Terriers commonly live between 12 to 14 years, provided they are kept physically active and mentally engaged.",
+      "temperament": "Despite their strong appearance, ‘Staffies’ are known for their affectionate and loyal nature. They are particularly good with children and are sometimes referred to as ‘nanny dogs.’ They thrive in active households where they receive both exercise and companionship, and they benefit from early socialization to promote positive interactions with other pets."
+    },
+    {
+      "name": "German Shepherd",
+      "description": "The German Shepherd is a large, noble breed known for its intelligence, loyalty, and commanding presence. With its erect ears, alert expression, and athletic body, it is often associated with police and military roles but is also a devoted family companion.",
+      "characteristics": "Weighing between 22 to 40 kilograms, the German Shepherd has a double coat that ranges from medium to long in length, requiring regular brushing to manage shedding and maintain a healthy appearance.",
+      "lifespan": "German Shepherds typically live between 9 to 13 years and require structured physical activity and mental stimulation to ensure a healthy life.",
+      "temperament": "Courageous, confident, and obedient, German Shepherds excel in families that provide firm but loving leadership. They are extremely loyal and protective, making them exceptional guard dogs. However, they also crave closeness and thrive in households where they are treated as an integral part of the family."
+    },
+    {
+      "name": "Labrador Retriever",
+      "description": "The Labrador Retriever is a well-balanced and athletic breed with a broad head, expressive eyes, and a thick, water-resistant coat. Labradors are widely recognized for their friendly and dependable nature, making them one of the most popular dog breeds worldwide.",
+      "characteristics": "Weighing between 25 to 36 kilograms, Labs have a short, dense coat that sheds seasonally and is relatively low-maintenance. They are naturally strong swimmers and highly energetic.",
+      "lifespan": "Labrador Retrievers live approximately 10 to 14 years, and their health benefits significantly from proper nutrition, regular exercise, and weight management.",
+      "temperament": "Gentle, intelligent, and highly trainable, Labradors are ideal for families, therapy roles, and active individuals. They are social animals who thrive on interaction and are particularly well-suited to homes with children or other pets."
+    },
+    {
+      "name": "Border Collie",
+      "description": "The Border Collie is a medium-sized, intensely focused breed known for its sharp intelligence and strong herding instincts. With a graceful build, attentive expression, and agile movements, it’s often considered the most intelligent of all dog breeds.",
+      "characteristics": "Typically weighing between 14 to 22 kilograms, Border Collies have a weather-resistant double coat that may be smooth or rough, requiring moderate grooming. Their athletic build makes them natural performers in agility and obedience sports.",
+      "lifespan": "Border Collies live between 12 to 15 years and benefit from physically and mentally stimulating routines to keep them happy and healthy.",
+      "temperament": "Highly energetic, loyal, and incredibly intelligent, Border Collies need an environment that offers structure and purpose. They are best suited for active families or individuals who can provide daily physical exercise and mental challenges. Without proper stimulation, they may become bored or exhibit unwanted behaviors."
+    },
+    {
+      "name": "British Bulldog",
+      "description": "The British Bulldog, often simply called the Bulldog, is a medium-sized breed with a distinctive wrinkled face, stocky frame, and iconic pushed-in nose. With its unmistakable rolling gait and loose skin, it presents a comical yet dignified appearance.",
+      "characteristics": "British Bulldogs usually weigh between 18 to 25 kilograms and have a short, smooth coat that requires minimal grooming. Their muscular build and short legs give them a powerful stance, though they are not built for endurance activities.",
+      "lifespan": "They generally have a lifespan of 8 to 10 years, and prospective owners should be aware of their susceptibility to respiratory, joint, and skin issues.",
+      "temperament": "Calm, courageous, and affectionate, British Bulldogs are ideal for families looking for a low-energy, loyal companion. They are particularly fond of lounging and tend to get along well with children and other pets when properly socialized."
     },
     {
       "name": "Bulldog",
-      "description": "The Bulldog is a medium-sized breed with a distinctive wrinkled face, stocky build, and short coat. They are known for their calm and courageous demeanor.",
-      "characteristics": "Bulldogs are gentle, loyal, and affectionate. They form strong bonds with their families and are particularly good with children.",
-      "lifespan": "Bulldogs are relatively low-energy but require daily walks to stay healthy. They are well-suited to apartment living but need a watchful eye in hot weather due to their susceptibility to overheating.",
-      "image": "/bulldog.png"
+      "description": "The Bulldog, commonly synonymous with the British Bulldog, is known for its broad shoulders, distinctive wrinkles, and relaxed demeanor. It has a muscular frame and a sweet, loyal expression that contrasts its tough appearance.",
+      "characteristics": "Typically weighing between 20 to 25 kilograms, the Bulldog has a short, fine coat and a solid, squat frame. Grooming is simple, but regular cleaning of facial wrinkles is essential to avoid infections.",
+      "lifespan": "This breed usually lives around 8 to 10 years and requires careful management of its weight and breathing, especially in warmer climates due to its brachycephalic features.",
+      "temperament": "Gentle, affectionate, and dependable, Bulldogs are beloved companions for families, singles, and seniors alike. They enjoy companionship and are especially tolerant of children. Despite their low energy levels, they appreciate short daily walks and thrive in an environment of consistent affection and calm."
+    },
+    {
+      "name": "Boxer",
+      "description": "The Boxer is a strong, athletic, and energetic breed with a distinctive square jaw and alert expression. Its sleek, muscular frame is matched with a playful, exuberant spirit that makes it a popular family pet.",
+      "characteristics": "Boxers generally weigh between 25 to 32 kilograms and have a short, tight coat that is easy to maintain. Their physique reflects both power and agility, suitable for active lifestyles.",
+      "lifespan": "Boxers typically live between 10 to 12 years, though they may be predisposed to certain genetic heart and cancer conditions which should be monitored with routine veterinary care.",
+      "temperament": "Boxers are known for their playful, loyal, and protective nature. They are excellent with children and require ample exercise to match their high energy. Early training and socialization are essential, as they can be exuberant and strong-willed if left untrained."
+    },
+    {
+      "name": "Maltese Terrier",
+      "description": "The Maltese Terrier is a toy-sized breed known for its flowing, silky white coat and alert, expressive face. It carries itself with grace and confidence, often appearing elegant and cheerful in equal measure.",
+      "characteristics": "Weighing around 3 to 4 kilograms, the Maltese has a fine, straight coat that requires daily grooming to avoid matting and maintain its pristine look. Their compact size makes them suitable for small living spaces.",
+      "lifespan": "Maltese Terriers typically enjoy a long life of 12 to 15 years, benefiting from consistent grooming, proper nutrition, and routine vet visits.",
+      "temperament": "Affectionate, lively, and intelligent, Maltese Terriers thrive in families that offer companionship and moderate playtime. They are best suited to gentle households and adapt well to apartment living, often forming close bonds with their owners."
+    },
+    {
+      "name": "Poodle",
+      "description": "The Poodle is a highly intelligent and elegant breed known for its distinctive curly coat and dignified bearing. Available in standard, miniature, and toy sizes, the Poodle maintains its signature look across variations while adapting well to various living environments.",
+      "characteristics": "Depending on size, Poodles can weigh from 4 kilograms (toy) up to 30 kilograms (standard). Their dense, curly coat is low-shedding and often suitable for allergy-sensitive households, though it requires regular grooming and trimming.",
+      "lifespan": "Poodles typically live between 12 to 15 years and are generally healthy with proper care, though regular grooming is essential for their coat and skin health.",
+      "temperament": "Alert, active, and highly trainable, Poodles are ideal for owners who enjoy an interactive and engaging companion. They excel in obedience and agility activities and are well-suited to families who can match their mental and physical stimulation needs."
+    },
+    {
+      "name": "Oodle (Types)",
+      "description": "Oodles refer to a group of Poodle mixes that inherit the Poodle’s intelligence and hypoallergenic coat, combined with the traits of other popular breeds. Common varieties include the Labradoodle (Labrador x Poodle), Cavoodle (Cavalier King Charles Spaniel x Poodle), and Groodle (Golden Retriever x Poodle), each with its own distinct appearance and personality.",
+      "characteristics": "Oodles vary in size depending on the breed mix, ranging from toy-sized (like Cavoodles) to larger varieties (like Labradoodles). Their coats are typically curly or wavy and low-shedding, requiring regular brushing and grooming to maintain their condition and prevent matting.",
+      "lifespan": "Most Oodles live between 12 to 15 years, with their longevity benefiting from their hybrid vigor and the generally robust health of their parent breeds.",
+      "temperament": "Friendly, affectionate, and highly trainable, Oodles are popular for their versatility and suitability to families, singles, and seniors alike. Their adaptable nature means they thrive in many living situations, though they require mental stimulation and regular exercise to remain happy and well-behaved."
+    },
+    {
+      "name": "Shih Tzu",
+      "description": "The Shih Tzu is a toy dog breed with a luxurious flowing coat, a short snout, and a proud bearing that reflects its royal Chinese origins. It has a warm, affectionate face framed by a long fringe, often tied back in a topknot.",
+      "characteristics": "Typically weighing between 4 to 7 kilograms, Shih Tzus have a long, dense double coat that requires daily brushing and regular grooming to keep it healthy and tangle-free. Their compact size makes them well-suited for indoor living.",
+      "lifespan": "Shih Tzus generally live between 10 to 16 years, enjoying a long life when cared for with consistent grooming, dental hygiene, and regular veterinary attention.",
+      "temperament": "Affectionate, playful, and alert, Shih Tzus are ideal for families, seniors, and apartment dwellers. They are friendly and typically get along well with children and other pets, thriving on companionship and gentle playtime rather than rigorous exercise."
+    },
+    {
+      "name": "Cocker Spaniel",
+      "description": "The Cocker Spaniel is a medium-sized dog with long, silky ears and expressive eyes that give it a sweet, endearing look. With a soft, wavy coat and a wagging tail, it embodies charm and a lively spirit.",
+      "characteristics": "Weighing between 12 to 16 kilograms, Cocker Spaniels have a dense, medium-length coat that requires regular grooming to prevent tangles and ear infections. Their build is compact yet athletic, well-suited for both play and cuddling.",
+      "lifespan": "Cocker Spaniels typically live between 12 to 15 years, and with proper grooming, exercise, and ear care, they remain vibrant well into their senior years.",
+      "temperament": "Gentle, affectionate, and eager to please, Cocker Spaniels make excellent companions for families with children or active individuals. They enjoy being involved in daily activities and thrive in homes where they receive ample attention and exercise."
+    },
+    {
+      "name": "Aussie Bulldog",
+      "description": "The Aussie Bulldog is a modern Australian breed developed to maintain the strong, affectionate nature of the traditional Bulldog while improving its stamina and overall health. It has a broad chest, a muscular body, and a friendly face often marked with charming wrinkles.",
+      "characteristics": "Aussie Bulldogs generally weigh between 28 to 35 kilograms and have a smooth, short coat that sheds moderately. They are sturdier and more agile than their British counterparts, with improved breathing and endurance.",
+      "lifespan": "Aussie Bulldogs tend to live between 10 to 13 years, with better resilience to heat and physical activity than traditional Bulldogs, though they still benefit from regular vet care and moderate exercise.",
+      "temperament": "Loyal, good-natured, and sociable, Aussie Bulldogs make wonderful companions for families, especially those with children. They are typically easygoing but can be protective if needed, thriving best in homes where they are included as part of the family."
+    },
+    {
+      "name": "Rottweiler",
+      "description": "The Rottweiler is a large, powerful breed known for its strong frame, black coat with rich tan markings, and a confident, steady gaze. Originally bred for herding and guarding, the Rottweiler has a commanding presence and a calm, intelligent demeanor.",
+      "characteristics": "Weighing between 35 to 60 kilograms, Rottweilers have a short, dense coat that is easy to groom but sheds seasonally. Their muscular build requires structured physical activity to maintain strength and balance.",
+      "lifespan": "Rottweilers typically live between 8 to 10 years and benefit from early training, regular exercise, and consistent health monitoring to ensure a balanced and healthy life.",
+      "temperament": "Protective, loyal, and disciplined, Rottweilers are excellent family dogs when properly trained and socialized. They require confident ownership and do best in households that can provide firm, loving guidance along with opportunities for physical and mental stimulation."
+    },
+    {
+      "name": "Cattle Dogs",
+      "description": "Australian Cattle Dogs, also known as Blue Heelers or Queensland Heelers, are sturdy, medium-sized working dogs originally bred for herding cattle in harsh Australian conditions. They are compact, agile, and possess an alert, watchful expression, with a coat that often features a mottled or speckled blue or red pattern.",
+      "characteristics": "Typically weighing between 15 to 22 kilograms, Cattle Dogs have a dense, weather-resistant double coat that protects them in rugged environments and requires minimal grooming. Their muscular, balanced build supports agility and endurance.",
+      "lifespan": "Cattle Dogs are known for their hardiness and longevity, with a typical lifespan of 12 to 16 years when provided with sufficient mental and physical stimulation.",
+      "temperament": "Highly intelligent, energetic, and loyal, Cattle Dogs are best suited for active individuals or families with a rural lifestyle or a strong commitment to daily exercise. They bond closely with their owners and excel in tasks or structured activities, but may become bored or mischievous if under-stimulated."
+    },
+    {
+      "name": "Silky Terrier",
+      "description": "The Silky Terrier is a small, elegant breed with a refined appearance, highlighted by its long, glossy coat and bright, inquisitive eyes. It resembles a Yorkshire Terrier in style but is slightly larger and more robust.",
+      "characteristics": "Weighing around 4 to 5 kilograms, the Silky Terrier has a fine, silky coat that hangs straight and requires regular brushing to prevent tangles. Its small stature is matched by a bold, confident posture.",
+      "lifespan": "Silky Terriers enjoy a long lifespan of around 12 to 15 years, particularly when given proper grooming, nutrition, and routine vet check-ups.",
+      "temperament": "Alert, curious, and spirited, Silky Terriers are excellent companions for apartment dwellers or those looking for a small dog with a big personality. They are affectionate and enjoy being close to their humans but also appreciate playtime and mental engagement."
+    },
+    {
+      "name": "Jack Russell Terrier",
+      "description": "The Jack Russell Terrier is a small but highly energetic breed with a strong prey drive and a lively, expressive face. It features a compact, athletic body with either a smooth or broken coat, and often displays a white coat with tan or black markings.",
+      "characteristics": "Typically weighing between 6 to 8 kilograms, Jack Russells are muscular and agile with a weatherproof coat that requires minimal grooming. Their sturdy build supports their intense activity levels and agility.",
+      "lifespan": "Jack Russell Terriers are known for their vitality and longevity, commonly living 13 to 16 years when properly exercised and stimulated.",
+      "temperament": "Fearless, intelligent, and enthusiastic, Jack Russells require active homes with plenty of physical and mental stimulation. They do best with owners who can match their intensity and provide consistent training. While affectionate and playful, they may not always be tolerant of small children or other pets without early socialization."
+    },
+    {
+      "name": "Bull Terrier",
+      "description": "The Bull Terrier is an unmistakable breed with a muscular body and a unique egg-shaped head that gives it a distinctive look. Its small, triangular eyes and powerful stance convey a mix of strength, charm, and eccentricity.",
+      "characteristics": "Bull Terriers usually weigh between 22 to 38 kilograms and have a short, flat coat that is easy to groom. Their body is robust and compact, ideal for physical activity and companionship.",
+      "lifespan": "They typically live between 10 to 14 years, with health management including skin care and attention to inherited conditions helping them maintain quality of life.",
+      "temperament": "Bold, mischievous, and affectionate, Bull Terriers are playful companions who thrive in environments where they are engaged and challenged. They form strong bonds with their families and enjoy being involved in daily life, though they benefit from consistent training and supervision around other animals."
+    },
+    {
+      "name": "Doberman Pinscher",
+      "description": "The Doberman Pinscher is a sleek, powerful, and elegant breed known for its athletic build and intelligent gaze. Its short, smooth coat accentuates its muscular frame, and its alert, noble demeanor gives it an air of sophistication and strength.",
+      "characteristics": "Typically weighing between 30 to 45 kilograms, Dobermans have a tight, low-maintenance coat and a well-defined physique suited for high activity levels. Their appearance combines grace with speed and stamina.",
+      "lifespan": "Dobermans usually live around 10 to 13 years, though they require attention to cardiac health and regular vet care to avoid hereditary conditions.",
+      "temperament": "Loyal, highly trainable, and vigilant, Dobermans are exceptional family guardians and companions for experienced dog owners. They thrive on structure, exercise, and human interaction, and they adapt best to homes that offer both affection and firm, fair leadership."
+    },
+    {
+      "name": "Australian Kelpie",
+      "description": "The Australian Kelpie is a lean, energetic working dog with a sharp gaze and an alert expression, bred primarily for herding livestock across vast terrain. It has a sleek coat, pricked ears, and a confident posture that reflects its high intelligence and stamina.",
+      "characteristics": "Weighing between 14 to 21 kilograms, the Kelpie has a short, weather-resistant coat that is low-maintenance and well-suited for outdoor work. Its athletic build makes it agile, fast, and resilient.",
+      "lifespan": "Australian Kelpies typically live between 12 to 15 years, often remaining active and fit well into their senior years when given proper care and engagement.",
+      "temperament": "Focused, intelligent, and extremely energetic, Kelpies are best suited for active households, farms, or owners who can provide consistent tasks or agility training. They are loyal and thrive in environments that offer routine, challenges, and meaningful work."
+    },
+    {
+      "name": "Australian Shepherd",
+      "description": "The Australian Shepherd is a medium-sized, versatile herding breed with a striking merle coat, expressive eyes (often blue or heterochromatic), and a well-balanced, athletic body. Despite its name, the breed was developed in the United States for ranch work.",
+      "characteristics": "Weighing between 18 to 30 kilograms, Aussies have a thick double coat that can be straight or slightly wavy, requiring regular grooming. Their agile, muscular frame supports their high energy and herding drive.",
+      "lifespan": "Australian Shepherds typically live between 12 to 15 years and thrive with proper mental and physical stimulation, as well as routine grooming and veterinary care.",
+      "temperament": "Intelligent, loyal, and eager to work, Aussies form strong bonds with their owners and excel in active homes. They enjoy structured activities like obedience, agility, or even dog sports, and need engagement to prevent boredom or destructive behaviors."
+    },
+    {
+      "name": "Golden Retriever",
+      "description": "The Golden Retriever is a large, friendly breed with a thick golden coat, soulful eyes, and a gentle expression. Its balanced build and flowing feathered coat give it a regal yet approachable appearance.",
+      "characteristics": "Weighing between 25 to 34 kilograms, Golden Retrievers have a dense, water-repellent double coat that requires regular brushing. Their sturdy, athletic build supports an active lifestyle and friendly play.",
+      "lifespan": "Golden Retrievers typically live between 10 to 12 years, though maintaining a healthy weight and lifestyle can extend their longevity and quality of life.",
+      "temperament": "Affectionate, gentle, and intelligent, Golden Retrievers are among the most family-oriented breeds. They are highly trainable and sociable, excelling in therapy work and obedience. Their easygoing nature makes them suitable for households with children, other pets, or first-time dog owners."
+    },
+    {
+      "name": "Cavalier King Charles Spaniel",
+      "description": "The Cavalier King Charles Spaniel is a small, graceful toy breed with an expressive face, long feathered ears, and a silky, medium-length coat. Its gentle eyes and endearing expression make it one of the most affectionate and charming breeds. Originally bred as a companion for royalty, it retains its noble bearing while being incredibly friendly and approachable.",
+      "characteristics": "This breed typically weighs between 5.5 to 8 kilograms and has a soft, flowing coat that may come in several distinct color combinations including Blenheim (chestnut and white), tricolor, ruby, or black and tan. Regular grooming is necessary to keep its coat free of tangles and to maintain cleanliness around its feathered ears and tail.",
+      "lifespan": "Cavalier King Charles Spaniels usually live between 12 to 15 years. Routine veterinary care, especially monitoring for heart conditions and maintaining a healthy weight, helps to ensure a longer and healthier life.",
+      "temperament": "Cavaliers are affectionate, gentle, and sociable, making them ideal for families, singles, or seniors. They adapt well to both active and more relaxed households, provided they receive ample affection and light exercise. Known for their friendliness with children and other pets, they thrive as true companion dogs and are happiest when they are close to their people."
     }
   ]
 }
