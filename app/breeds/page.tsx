@@ -13,19 +13,22 @@ import { Fredoka, Red_Hat_Display } from 'next/font/google';
 import { Button } from '@/components/ui/button';
 
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
-
+/* Need to code for 9 most popular dog breeds, rest go in a list */
 const BreedsPage = () => {
-  const breeds = breedsData.dogBreeds.filter((breeds) => {
-    if (!breeds.name.includes('oodle')) return breeds;
-  });
+  /* This removes any dog breed with "oodle", there will be one category for them */
+  /* also limits to first 9 dog breeds in list.  */
+  const breeds = [];
+  for (const breed of breedsData.dogBreeds) {
+    if (!breed.name.includes('oodle')) {
+      breeds.push(breed);
+    }
+    if (breeds.length === 9) break;
+  }
 
-  breeds.unshift({
-    name: 'oodles',
-    description: 'blank',
-    temperament: 'blank',
-    lifestyle: 'blank',
-    image: placeholder.src,
-  });
+  const breedsList = breedsData.dogBreeds.filter(
+    (breed) => !breeds.includes(breed)
+  );
+  console.log(breedsList);
 
   return (
     <div className="p-6 min-h-screen pb-20 mx-auto">
@@ -39,7 +42,10 @@ const BreedsPage = () => {
         {breeds.map((breed) => (
           <Link
             key={breed.name}
-            href={`/breeds/${breed.name.toLowerCase()}`}
+            href={`/breeds/${breed.name
+              .toLowerCase()
+              .split(' ')
+              .join('')}`}
             className="block w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] shadow-lg hover:shadow-xl transform rounded-xl hover:-translate-y-1 transition duration-300"
           >
             <Card className="bg-white h-full">

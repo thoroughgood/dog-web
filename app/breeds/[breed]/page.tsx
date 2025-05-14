@@ -13,7 +13,9 @@ const fredoka = Fredoka({ subsets: ['latin'], weight: '500' });
 export default function Page() {
   const pathname = usePathname().split('/')[2];
   const breed = breedsData.dogBreeds.find(
-    (b) => b.name.toLowerCase() === pathname.toLowerCase()
+    (b) =>
+      b.name.toLowerCase().split(' ').join('') ===
+      pathname.toLowerCase()
   );
 
   if (!breed) {
