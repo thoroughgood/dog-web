@@ -24,10 +24,12 @@ export default function Page() {
 
   return (
     <div
-      className={`min-h-screen px-4 sm:px-8 md:px-16 lg:px-32 bg-blue-50 py-8 ${redHat.className}`}
+      className={`min-h-screen px-4 sm:px-8 md:px-16 lg:px-32 py-8 ${redHat.className}`}
     >
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-center sm:text-left text-gray-800 mb-6">
+        <h1
+          className={`${fredoka.className} text-sky-900 text-4xl font-bold text-center flex justify-center sm:text-left mb-6`}
+        >
           {breed.name}
         </h1>
 

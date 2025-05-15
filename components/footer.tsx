@@ -11,58 +11,58 @@ export default function Footer() {
           {/* Column 1: About */}
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="text-lg font-semibold mb-2">Breeds</h3>
-            <div className="text-sm text-gray-300 flex flex-col">
+            <div className="text-md flex flex-col text-gray-300 ">
               <Link
                 href="breeds/poodle"
-                className="text-gray-300 hover:underline hover:text-red-400"
+                className="hover:underline hover:text-red-400"
               >
                 Poodle
               </Link>
               <Link
                 href="breeds/cavoodle"
-                className="text-gray-300 hover:underline hover:text-red-400"
+                className="hover:underline hover:text-red-400"
               >
                 Cavoodle
               </Link>
               <Link
                 href="breeds/labradoodle"
-                className="text-gray-300 hover:underline hover:text-red-400"
+                className="hover:underline hover:text-red-400"
               >
                 Labradoodle
               </Link>
               <Link
                 href="breeds/groodle"
-                className="text-gray-300 hover:underline hover:text-red-400"
+                className="hover:underline hover:text-red-400"
               >
                 Groodle
               </Link>
               <Link
                 href="breeds/spoodle"
-                className="text-gray-300 hover:underline hover:text-red-400"
+                className="hover:underline hover:text-red-400"
               >
                 Spoodle
               </Link>
               <Link
                 href="breeds/dachshund"
-                className="text-gray-300 hover:underline hover:text-red-400"
+                className="hover:underline hover:text-red-400"
               >
                 Dachshund
               </Link>
               <Link
                 href="breeds/pugs"
-                className="text-gray-300 hover:underline hover:text-red-400"
+                className="hover:underline hover:text-red-400"
               >
                 Pugs
               </Link>
               <Link
                 href="breeds/frenchbulldog"
-                className="text-gray-300 hover:underline hover:text-red-400"
+                className="hover:underline hover:text-red-400"
               >
                 French Bulldog
               </Link>
               <Link
                 href="breeds/bulldog"
-                className="text-gray-300 hover:underline hover:text-red-400"
+                className="hover:underline hover:text-red-400"
               >
                 Bulldog
               </Link>
@@ -74,32 +74,26 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-2">
               Quick Links
             </h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  className="text-gray-300 hover:text-red-400 hover:underline"
-                  href="../"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-300 hover:text-red-400 hover:underline"
-                  href="../about"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="text-gray-300 hover:text-red-500 hover:underline"
-                  href="../contact"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
+            <div className="text-md flex flex-col text-gray-300">
+              <Link
+                href="../"
+                className="hover:underline hover:text-red-400"
+              >
+                Home
+              </Link>
+              <Link
+                href="../about"
+                className="hover:underline hover:text-red-400"
+              >
+                About Us
+              </Link>
+              <Link
+                href="../contact"
+                className="hover:underline hover:text-red-400"
+              >
+                Contact Us
+              </Link>
+            </div>
           </div>
 
           {/* Column 3: Social */}

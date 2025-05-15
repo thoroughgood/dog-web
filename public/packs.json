@@ -1,0 +1,27 @@
+{
+  "packs": [
+    {
+      "name": "Starter Pack",
+      "slogan": "Set yourself up for your new puppy with these essential items",
+      "price": "159.99",
+      "items": [
+        "Bag Premium Dry Puppy Food",
+        "Collar",
+        "Lead",
+        "Poo Bag",
+        "Steel Water Bowl",
+        "Steel Food Bowl",
+        "Puppy Bed",
+        "Training Pads Pack",
+        "Puppy Shampoo",
+        "Puppy Toy"
+      ]
+    },
+    {
+      "name": "Food Pack",
+      "slogan": "Prepare the basics and try out different foods!",
+      "price": "49.99",
+      "items": ["Premium Dry Food", "Puppy Roll"]
+    }
+  ]
+}

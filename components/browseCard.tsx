@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from './ui/card';
 import { StaticImageData } from 'next/image';
+import { Fredoka } from 'next/font/google';
 
 interface BrowseCardProps {
   link: string;
@@ -16,7 +17,7 @@ interface BrowseCardProps {
   description: string;
   images?: StaticImageData[];
 }
-
+const fredoka = Fredoka({ subsets: ['latin'], weight: '500' });
 export default function BrowseCard({
   link,
   title,
@@ -27,7 +28,9 @@ export default function BrowseCard({
     <Link href={link}>
       <Card className="w-[250px] shadow-lg shadow-zinc-400 border-zinc-300 duration-100 ease-in-out h-[200px] hover:bg-gray-100">
         <CardHeader>
-          <CardTitle className="text-red-500 self-center font-bold text-2xl">
+          <CardTitle
+            className={`text-red-500 tracking-wide self-center font-bold text-2xl`}
+          >
             {title}
           </CardTitle>
 

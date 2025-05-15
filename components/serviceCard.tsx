@@ -9,7 +9,9 @@ import {
   CardTitle,
 } from './ui/card';
 import { StaticImageData } from 'next/image';
+import { Fredoka } from 'next/font/google';
 
+const fredoka = Fredoka({ subsets: ['latin'], weight: '500' });
 interface serviceCardProps {
   link: string;
   title: string;
@@ -27,7 +29,9 @@ export default function ServiceCard({
     <Link href={link}>
       <Card className="w-[350px] shadow-md duration-100 ease-in-out h-[200px] hover:bg-gray-100">
         <CardHeader>
-          <CardTitle className="text-red-500 self-center font-bold text-2xl">
+          <CardTitle
+            className={`text-red-500 ${fredoka.className} self-center font-bold text-2xl`}
+          >
             {title}
           </CardTitle>
 

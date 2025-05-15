@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import breedsData from '../../public/dogBreeds.json';
 import Image from 'next/image';
-import placeholder from '../../public/Untitled.png';
 import {
   Card,
   CardContent,
@@ -46,13 +45,13 @@ const BreedsPage = () => {
               .toLowerCase()
               .split(' ')
               .join('')}`}
-            className="block w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] shadow-lg hover:shadow-xl transform rounded-xl hover:-translate-y-1 transition duration-300"
+            className="block w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(20%-18px)] shadow-lg hover:shadow-xl transform rounded-xl hover:-translate-y-1 transition duration-300"
           >
             <Card className="bg-white h-full">
               <CardContent className="h-[250px] flex justify-center items-center overflow-hidden">
                 <Image
-                  className="object-cover rounded-lg overflow-hidden sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] max-h-[250px]"
-                  src={placeholder}
+                  className="object-fit rounded-lg overflow-hidden sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] max-h-[250px]"
+                  src={breed.image}
                   fill={true}
                   alt={breed.name}
                 />

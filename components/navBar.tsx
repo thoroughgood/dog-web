@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="bg-sky-900 text-white">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-        <div className="flex flex-row items-center justify-between h-24">
+        <div className="flex flex-row items-center justify-between w-full h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
@@ -24,7 +24,7 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Icon */}
-          <div className="sm:hidden">
+          <div className="flex sm:hidden ml-auto">
             <button
               onClick={() => setIsOpen(!isVisible)}
               className="text-white hover:text-gray-400 focus:outline-none"

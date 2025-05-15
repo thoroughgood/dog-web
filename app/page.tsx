@@ -27,7 +27,7 @@ export default function Home() {
     <>
       <div className="bg-slate-400 w-full p-4 flex justify-center flex-col items-center shadow-md">
         <div
-          className={`text-2xl text-slate-800 font-bold text-center`}
+          className={`text-2xl text-slate-800 font-extrabold text-center`}
         >
           Let us save you the hassle of finding the perfect breeder
         </div>
@@ -78,7 +78,7 @@ export default function Home() {
               your door.
             </div>
           </div>
-          <div className="text-[rgb(186,76,77)] font-bold text-xl w-full flex text-center justify-center items-center flex-col">
+          <div className="text-[rgb(186,76,77)] font-bold text-xl w-full flex text-center justify-center items-center flex-col mt-4">
             Interested in what we've got to offer? Search our range!
             {/* <a href="./breeds" className="">
               <div className="text-2xl pt-4">
@@ -89,23 +89,23 @@ export default function Home() {
                 </Button>
               </div>
             </a> */}
-            <div className="mt-4 flex md:flex-row flex-col gap-14 mb-[230px] 2xl:mb-4">
+            <div className="mt-4 flex md:flex-row flex-col gap-14 mb-[230px] 2xl:mb-8">
               <BrowseCard
                 link="./services"
-                title="services"
-                description="check out our services for your puppies"
+                title="SERVICES"
+                description="Check out our services for your puppies"
                 images={[pawprint]}
               ></BrowseCard>{' '}
               <BrowseCard
                 link="./about"
-                title="about"
-                description="learn more about who we are and what we do"
+                title="ABOUT"
+                description="Learn more about who we are and what we do"
                 images={[about]}
               ></BrowseCard>{' '}
               <BrowseCard
                 link="./breeds"
-                title="breeds"
-                description="view our selection of dog breeds"
+                title="BREEDS"
+                description="View our selection of dog breeds"
                 images={[dog2]}
               ></BrowseCard>
             </div>

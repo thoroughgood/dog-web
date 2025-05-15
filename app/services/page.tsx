@@ -21,13 +21,13 @@ const ServicesPage = () => {
 
       <div className="flex flex-col md:flex-row gap-6 md:justify-center items-center">
         <ServiceCard
-          link="/puppy-pack"
+          link="/services/starterpack"
           title="$159.99 Puppy Pack"
           description="Get started with a kit for your puppy"
           images={[bowl, bone, ball]}
         />
         <ServiceCard
-          link="/puppy-food-pack"
+          link="/services/foodpack"
           title="$49.99 Puppy Food Pack"
           description="Food for all your nutritious needs"
           images={[bowl, bone, ball]}
