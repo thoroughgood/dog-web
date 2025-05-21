@@ -26,7 +26,6 @@ const BreedsPage = () => {
   const breedsList = breedsData.dogBreeds.filter(
     (breed) => !breeds.includes(breed)
   );
-  console.log(breedsList);
 
   return (
     <div className="p-6 min-h-screen pb-20 mx-auto">

@@ -3,7 +3,7 @@ export default function Custom404() {
     <div className="max-w-6xl mt-12">
       <div className="text-4xl font-bold text-red-600 pl-4">
         {' '}
-        Uh oh! You're not supposed to be here.
+        Uh oh! You&apos;re not supposed to be here.
       </div>
       <div className="text-red-600 text-lg p-4">
         {' '}

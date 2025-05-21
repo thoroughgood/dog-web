@@ -3,8 +3,8 @@ import breedsData from '../../../public/dogBreeds.json';
 import { notFound, usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Fredoka, Red_Hat_Display } from 'next/font/google';
-import { EmailForm } from '@/components/contactForm';
-import { Button } from '@/components/ui/button';
+/* import { EmailForm } from '@/components/contactForm';
+ */import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
@@ -34,7 +34,7 @@ export default function Page() {
         </h1>
 
         <div className="flex flex-col xl:flex-row gap-6 items-center xl:items-start">
-          <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex justify-center">
+          <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col justify-center">
             <Image
               className="border-2 border-gray-300 rounded-lg w-full"
               src={breed.image}
@@ -42,9 +42,11 @@ export default function Page() {
               height={500}
               alt={breed.name}
             />
+            <Link href="../contact"><button className="rounded-md w-full bg-sky-900 text-white p-3 mt-2 font-bold">ENQUIRE</button></Link>
           </div>
 
           <div className="w-full xl:w-2/3 flex flex-col text-gray-700 gap-4">
+          
             {breed.name === 'oodles' ? (
               <>
                 <div className="text-center xl:text-left font-semibold">
@@ -97,7 +99,9 @@ export default function Page() {
                 </div>
               </>
             ) : (
-              <>
+              <div className="text-lg">
+
+        
                 <div>
                   <strong>Description:</strong> {breed.description}
                 </div>
@@ -111,13 +115,13 @@ export default function Page() {
                 <div>
                   <strong>Temperament:</strong> {breed.temperament}
                 </div>
-              </>
+              </div>
             )}
           </div>
         </div>
 
         <div className="flex flex-col items-center xl:items-start mt-6 xl:w-1/2">
-          <EmailForm breed={breed.name} />
+          {/* <EmailForm breed={breed.name} /> */}
         </div>
       </div>
     </div>

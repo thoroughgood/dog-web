@@ -3,8 +3,6 @@ import { Open_Sans } from 'next/font/google';
 import './globals.css';
 import NavBar from '@/components/navBar';
 import Footer from '@/components/footer';
-import Image from 'next/image';
-import bg1 from '../public/background.png';
 const open_sans = Open_Sans({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {

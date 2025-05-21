@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import Contact, { EmailForm } from '@/components/contactForm';
+import { EmailForm } from '@/components/contactForm';
 import { Button } from '@/components/ui/button';
 import { Fredoka } from 'next/font/google';
 
@@ -11,7 +10,7 @@ export default function Home() {
       <main className="flex flex-col text-left text-black gap-10 items-center justify-center mt-8">
         <h1 className={`${fredoka.className} text-red-500 text-4xl md:text-4xl font-bold text-center`}>Contact Us</h1>
         
-        <div className="flex flex-col sm:flex-row gap-8 w-full max-w-4xl items-center">
+        <div className="flex flex-col sm:flex-row gap-8 w-full max-w-4xl items-center mt-16">
           <div className="w-full sm:w-1/2 shadow-md shadow-gray-400 rounded-md bg-white">
             <EmailForm />
           </div>

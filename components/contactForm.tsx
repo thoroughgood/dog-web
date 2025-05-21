@@ -1,7 +1,8 @@
 'use client';
-import { zodResolver } from '@hookform/resolvers/zod';
+
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import React from 'react';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Button } from '../components/ui/button';
 import {
@@ -20,7 +21,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from './ui/select';
-import breedsData from '../public/dogBreeds.json'
+import { CheckCircle, Loader2 } from 'lucide-react';
+import breedsData from '../public/dogBreeds.json';
 
 const FormSchema = z.object({
   name: z.string().min(1, {
@@ -39,32 +41,73 @@ const FormSchema = z.object({
 });
 
 interface EmailFormProps {
-  breed?: string; // breed prop is now optional
+  breed?: string;
 }
 
 export function EmailForm({ breed }: EmailFormProps) {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
-      breed: breed || 'Poodle', // Default value for breed if not passed as a prop
+      name: '',
+      email: '',
+      message: '',
+      breed: '',
+      colour: '',
     },
   });
-  
-  const breeds = breedsData.dogBreeds
+
+  const { reset } = form;
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
+
+  const breeds = breedsData.dogBreeds;
+
+  const onSubmit = async (values: z.infer<typeof FormSchema>) => {
+    setIsSubmitting(true);
+    setIsSuccess(false);
+    setIsError(false);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'c8e4e02b-95cf-442e-b8a7-a44a896fdae2',
+          ...values,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setIsSuccess(true);
+        reset({ breed: breed || 'Poodle' });
+      } else {
+        setIsError(true);
+      }
+    } catch (error) {
+      console.error('Unexpected error:', error);
+      setIsError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-sky-900 rounded-md p-6 w-full mx-auto" // Changed max-w-xl to max-w-2xl for a wider form
+        className="bg-sky-900 rounded-md p-6 w-full mx-auto"
       >
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-white">
-                Name
-              </FormLabel>
+              <FormLabel className="pl-1 font-bold text-white">Name</FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -85,9 +128,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-white">
-                Email
-              </FormLabel>
+              <FormLabel className="pl-1 font-bold text-white">Email</FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -108,9 +149,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-white pl-1 font-bold">
-                Message
-              </FormLabel>
+              <FormLabel className="text-white pl-1 font-bold">Message</FormLabel>
               <FormControl>
                 <Textarea
                   className="bg-gray-100 text-black"
@@ -132,21 +171,19 @@ export function EmailForm({ breed }: EmailFormProps) {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-white">Breed</FormLabel>
-              <Select
-                value={field.value} // Bind the value to form state
-                onValueChange={field.onChange} // Update form state when selection changes
-              >
+              <Select value={field.value} onValueChange={field.onChange}>
                 <FormControl>
                   <SelectTrigger className="bg-white">
                     <SelectValue placeholder="Select a breed" />
                   </SelectTrigger>
                 </FormControl>
-                
                 <SelectContent>
-                {breeds.map((breed) => (
-                  <SelectItem key={breed.name} value={breed.name}>{breed.name}</SelectItem>)
-                )}
-                <SelectItem value="other">Other</SelectItem>
+                  {breeds.map((breed) => (
+                    <SelectItem key={breed.name} value={breed.name}>
+                      {breed.name}
+                    </SelectItem>
+                  ))}
+                  <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
               {form.formState.errors.breed && (
@@ -162,9 +199,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="colour"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-white pl-1 font-bold">
-                Colour
-              </FormLabel>
+              <FormLabel className="text-white pl-1 font-bold">Colour</FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -182,43 +217,34 @@ export function EmailForm({ breed }: EmailFormProps) {
         />
         <div className="flex justify-center w-full">
           <Button
-          type="submit"
-          className="bg-red-500 hover:bg-red-400 text-white font-extrabold mt-4 flex"
-        >
-          SEND EMAIL
-        </Button>
+            type="submit"
+            className="bg-red-500 hover:bg-red-400 text-white font-extrabold mt-4 flex"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="animate-spin mr-2" size={20} />
+                Sending...
+              </>
+            ) : (
+              'SEND EMAIL'
+            )}
+          </Button>
         </div>
+
+        {isSuccess && (
+          <div className="mt-4 text-green-400 flex items-center justify-center gap-2">
+            <CheckCircle className="text-green-400" size={20} />
+            <span>Your message has been sent!</span>
+          </div>
+        )}
+
+        {isError && (
+          <div className="mt-4 text-red-500 flex flex-col items-center justify-center gap-2">
+            <span>Something went wrong. Please try again later. If the problem persists, please send us an email directly</span>
+          </div>
+        )}
       </form>
     </Form>
   );
-}
-
-async function onSubmit(values: z.infer<typeof FormSchema>) {
-  console.log("In on submit")
-  try {
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify({
-        access_key: 'c8e4e02b-95cf-442e-b8a7-a44a896fdae2',
-        name: values.name,
-        email: values.email,
-        message: values.message,
-        breed: values.breed,
-        colour: values.colour,
-      }),
-    });
-
-    const result = await response.json();
-    if (result.success) {
-      console.log('Email sent successfully:', result);
-    } else {
-      console.error('Error sending email:', result);
-    }
-  } catch (error) {
-    console.error('Unexpected error:', error);
-  }
 }

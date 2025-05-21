@@ -9,7 +9,6 @@ import {
   CardTitle,
 } from './ui/card';
 import { StaticImageData } from 'next/image';
-import { Fredoka } from 'next/font/google';
 
 interface BrowseCardProps {
   link: string;
@@ -17,7 +16,6 @@ interface BrowseCardProps {
   description: string;
   images?: StaticImageData[];
 }
-const fredoka = Fredoka({ subsets: ['latin'], weight: '500' });
 export default function BrowseCard({
   link,
   title,

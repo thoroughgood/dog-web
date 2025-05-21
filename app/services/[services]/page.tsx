@@ -3,8 +3,6 @@ import packsData from '../../../public/packs.json';
 import { notFound, usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Fredoka, Red_Hat_Display } from 'next/font/google';
-import { EmailForm } from '@/components/contactForm';
-import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import placeholder from '../../../public/Untitled.png';
 

@@ -5,7 +5,6 @@ import image from '../public/pickapooch_1.webp';
 import Image from 'next/image';
 const Navbar = () => {
   const [isVisible, setIsOpen] = useState(false);
-  console.log(isVisible);
 
   return (
     <nav className="bg-sky-900 text-white">
