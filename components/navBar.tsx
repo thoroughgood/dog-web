@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="bg-sky-900 text-white">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-        <div className="flex flex-row items-center justify-between w-full h-24">
+        <div className="flex flex-row items-center font-extrabold justify-between w-full h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">

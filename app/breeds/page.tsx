@@ -65,8 +65,18 @@ const BreedsPage = () => {
           </Link>
         ))}
       </div>
-      <div className="w-full border-2 rounded-md">
+      <div className="w-auto">
         List of dog breeds
+        <ul>
+        {breedsList.map(breed => (
+          <Link key={breed.name} href={`/breeds/${breed.name
+            .toLowerCase()
+            .split(' ')
+            .join('')}`} className="hover:underline hover:text-blue-500">
+            <li >{breed.name}</li>
+          </Link>
+        ))} 
+        </ul>
       </div>
     </div>
   );

@@ -6,12 +6,12 @@ export default function About() {
 
   return (
     <div className="flex flex-col items-center px-6 py-12 min-h-screen">
-      <div className={`${fredoka.className} text-4xl font-bold text-red-600 mb-6 text-center uppercase`}>
+      <div className={`${fredoka.className} text-4xl font-bold text-red-600 mb-6 text-center`}>
         About Us
       </div>
       <div className="max-w-3xl bg-white shadow-lg rounded-2xl p-8 space-y-6">
         <p className="text-lg text-gray-700">
-          Welcome to <span className="font-semibold text-red-500">PickAPooch</span>, your trusted source for healthy, happy,
+          Welcome to <span className="font-semibold text-red-500">Pick A Pooch</span>, your trusted source for healthy, happy,
           and adorable puppies delivered to your door. We believe in making the process of choosing your new furry friend as
           simple, convenient, and enjoyable as possible.
         </p>
@@ -29,7 +29,7 @@ export default function About() {
         </p>
         <p className="text-lg text-gray-700">
           Over the years, I have met many different breeders and owners, developed great friendships, and partnered with them to create
-          <span className="font-semibold text-red-500"> PickAPooch</span>—a service that takes the hassle out of choosing your next perfect puppy.
+          <span className="font-semibold text-red-500"> Pick A Pooch</span>—a service that takes the hassle out of choosing your next perfect puppy.
           You select your desired breed and pay your deposit, all from the comfort of your home. Once your puppy has been selected,
           we will handle the rest, bringing your puppy directly to your home and ensuring the process is as easy and stress-free as possible.
         </p>

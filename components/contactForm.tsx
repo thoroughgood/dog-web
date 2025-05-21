@@ -21,6 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from './ui/select';
+import breedsData from '../public/dogBreeds.json'
 
 const FormSchema = z.object({
   name: z.string().min(1, {
@@ -49,7 +50,8 @@ export function EmailForm({ breed }: EmailFormProps) {
       breed: breed || 'Poodle', // Default value for breed if not passed as a prop
     },
   });
-
+  
+  const breeds = breedsData.dogBreeds
   return (
     <Form {...form}>
       <form
@@ -140,21 +142,12 @@ export function EmailForm({ breed }: EmailFormProps) {
                     <SelectValue placeholder="Select a breed" />
                   </SelectTrigger>
                 </FormControl>
+                
                 <SelectContent>
-                  <SelectItem value="Poodle">Poodle</SelectItem>
-                  <SelectItem value="Cavoodle">Cavoodle</SelectItem>
-                  <SelectItem value="Labradoodle">
-                    Labradoodle
-                  </SelectItem>
-                  <SelectItem value="Groodle">Groodle</SelectItem>
-                  <SelectItem value="Spoodle">Spoodle</SelectItem>
-                  <SelectItem value="Dachshund">Dachshund</SelectItem>
-                  <SelectItem value="Pug">Pug</SelectItem>
-                  <SelectItem value="French Bulldog">
-                    French Bulldog
-                  </SelectItem>
-                  <SelectItem value="Bulldog">Bulldog</SelectItem>
-                  <SelectItem value="Other">Other</SelectItem>
+                {breeds.map((breed) => (
+                  <SelectItem key={breed.name} value={breed.name}>{breed.name}</SelectItem>)
+                )}
+                <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
               {form.formState.errors.breed && (

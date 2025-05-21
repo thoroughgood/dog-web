@@ -38,7 +38,7 @@ const ServicesPage = () => {
         <p>
           At{' '}
           <span className="font-semibold text-red-500">
-            PickAPooch
+            Pick A Pooch
           </span>
           , we make finding your new furry friend easy and
           stress-free. Established in 2024, our mission is to connect

@@ -8,8 +8,8 @@ const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 export default function Home() {
   return (
     <div className="flex flex-col max-w-7xl min-h-screen pb-20 mx-auto px-4 md:px-8">
-      <main className="flex flex-col text-left text-black gap-10 items-center justify-center mt-16">
-        <h1 className={`${fredoka.className} text-red-500 text-5xl md:text-7xl font-bold text-center`}>CONTACT US</h1>
+      <main className="flex flex-col text-left text-black gap-10 items-center justify-center mt-8">
+        <h1 className={`${fredoka.className} text-red-500 text-4xl md:text-4xl font-bold text-center`}>Contact Us</h1>
         
         <div className="flex flex-col sm:flex-row gap-8 w-full max-w-4xl items-center">
           <div className="w-full sm:w-1/2 shadow-md shadow-gray-400 rounded-md bg-white">

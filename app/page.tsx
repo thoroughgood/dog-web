@@ -72,13 +72,13 @@ export default function Home() {
             We procure highly desirable dog breeds from our select
             range of dog breeders.
             <div
-              className={`${open_sans.className} text-slate-700 text-lg font-normal`}
+              className={`${open_sans.className} text-slate-700 text-lg font-normal mt-2`}
             >
               The right puppy, at the right price, delivered right to
               your door.
             </div>
           </div>
-          <div className="text-[rgb(186,76,77)] font-bold text-xl w-full flex text-center justify-center items-center flex-col mt-4">
+          <div className="text-[rgb(186,76,77)] font-bold text-xl w-full flex text-center justify-center items-center flex-col mt-2">
             Interested in what we've got to offer? Search our range!
             {/* <a href="./breeds" className="">
               <div className="text-2xl pt-4">
