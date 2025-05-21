@@ -5,125 +5,339 @@ import dogGroup2 from '../public/cornerbgremovedpuppies.png';
 import about from '../public/profile.png';
 import pawprint from '../public/pawprint.png';
 import dog2 from '../public/dog.png';
-import {
-  Fredoka,
-  Open_Sans,
-} from 'next/font/google';
+import { Fredoka, Open_Sans } from 'next/font/google';
 import BrowseCard from '@/components/browseCard';
+import Link from 'next/link';
+
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 const open_sans = Open_Sans({ subsets: ['latin'], weight: '400' });
+
 export default function Home() {
   return (
     <>
-      <div className="bg-slate-400 w-full p-4 flex justify-center flex-col items-center shadow-md">
-        <div
-          className={`text-2xl text-slate-800 font-extrabold text-center`}
-        >
-          Let us save you the hassle of finding the perfect breeder
-        </div>
-        <div className="w-full text-black text-center">
-          At Pick A Pooch, we do all the searching for you.
+      {/* Hero Section - Enhanced with gradient and better spacing */}
+      <div className="bg-gradient-to-br from-blue-600 to-blue-400 w-full py-16 flex justify-center flex-col items-center shadow-xl relative overflow-hidden">
+        <div className="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <div
+            className={`${fredoka.className} text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 leading-tight`}
+          >
+            Let us save you the hassle of finding the perfect breeder
+          </div>
+          <div
+            className={`${open_sans.className} text-xl md:text-2xl text-blue-50 max-w-2xl mx-auto leading-relaxed`}
+          >
+            At Pick A Pooch, we do all the searching for you.
+          </div>
+          <Link href="/breeds">
+            <div className="mt-8 inline-block bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+              Start Your Search Today
+            </div>
+          </Link>
         </div>
       </div>
 
-      {/* Main content with repeating background */}
-      <main className="flex flex-col text-left text-black gap-8 items-start">
-        <div className="flex flex-row pt-4 lg:gap-32 md:gap-16 sm:gap-4 max-w-screen-xl self-center md:px-[60px] sm: px-0">
-          {/* there should be another div somewhere here to contain sydney-based and the delivering to the greater sydney regions
-          that way we can size the flex box, and then have the items centered inside the flex box - TODO: fix the shitty margin soln*/}
-          <div
-            className={`${fredoka.className} w-1/2 text-sky-900 rounded-sm text-4xl md:text-5xl flex flex-col justify-center pl-5 `}
-          >
-            <div className="max-w-[400px] w-[600px] justify-center">
-              SYDNEY-BASED.
+      {/* Main content */}
+      <main className="flex flex-col text-left text-black">
+        {/* Sydney-based section - Enhanced with better layout */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+              <div className="flex-1 text-center lg:text-left">
+                <div
+                  className={`${fredoka.className} text-sky-900 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight`}
+                >
+                  SYDNEY-BASED.
+                </div>
+                <div
+                  className={`${open_sans.className} text-xl md:text-2xl text-slate-600 leading-relaxed max-w-lg`}
+                >
+                  Delivering to the Greater Sydney regions
+                </div>
+                <div className="mt-8 flex flex-wrap gap-4 text-blue-800 justify-center lg:justify-start">
+                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
+                    Greater Sydney
+                  </span>
+                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
+                    South Coast
+                  </span>
+                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
+                    Central Coast
+                  </span>
+                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
+                    Shoalhaven
+                  </span>
+                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
+                    Illawarra
+                  </span>
+                </div>
+              </div>
+              <div className="flex-1 flex justify-center">
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-red-200 rounded-3xl blur-xl opacity-30"></div>
+                  <Image
+                    className="relative rounded-3xl shadow-2xl max-w-md w-full"
+                    src={dog.src}
+                    layout="responsive"
+                    width="400"
+                    height="400"
+                    alt="Happy dog with tongue out"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
+        </section>
+
+        {/* Value proposition section - Enhanced */}
+        <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+          <div className="max-w-6xl mx-auto px-6 text-center">
             <div
-              className={`${open_sans.className} text-lg font-medium text-slate-700 pt-4 max-w-[400px]`}
+              className={`${fredoka.className} text-sky-900 text-4xl md:text-5xl font-bold mb-8 leading-tight`}
             >
-              Delivering to the Greater Sydney, South Coast and
-              Central Coast regions
+              We procure highly desirable dog breeds from our select
+              range of dog breeders.
             </div>
-          </div>
-          <div className="w-1/2 flex justify-center">
-            <Image
-              className="rounded p-1 max-w-[250px]"
-              src={dog.src}
-              layout="responsive"
-              width="400"
-              height="400"
-              alt="Happy dog with tongue out"
-            />
-          </div>
-        </div>
-        <div className="bg-neutral-200/70 self-center w-screen pt-4 flex flex-col gap-4">
-          <div
-            className={`${fredoka.className} text-sky-900 text-2xl flex flex-col justify-center w-full font-bold items-center ml-0 px-4 text-center`}
-          >
-            We procure highly desirable dog breeds from our select
-            range of dog breeders.
             <div
-              className={`${open_sans.className} text-slate-700 text-lg font-normal mt-2`}
+              className={`${open_sans.className} text-slate-600 text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed`}
             >
               The right puppy, at the right price, delivered right to
               your door.
             </div>
-          </div>
-          <div className="text-[rgb(186,76,77)] font-bold text-xl w-full flex text-center justify-center items-center flex-col mt-2">
-            Interested in what we&apos;ve got to offer? Search our range!
-            {/* <a href="./breeds" className="">
-              <div className="text-2xl pt-4">
-                <Button
-                  className={`${redHat.className} items-center bg-red-500 text-white primary max-w-auto p-4 text-xl font-black hover:bg-blue-500 duration-300 ease-in-out`}
+
+            {/* Benefits grid */}
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <h3
+                  className={`${fredoka.className} text-xl font-bold text-sky-900 mb-3`}
                 >
-                  Browse breeds
-                </Button>
+                  Vetted Breeders
+                </h3>
+                <p
+                  className={`${open_sans.className} text-slate-600`}
+                >
+                  All our breeders are carefully selected and verified
+                  for quality and ethics.
+                </p>
               </div>
-            </a> */}
-            <div className="mt-4 flex md:flex-row flex-col gap-14 mb-[230px] 2xl:mb-8">
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                </div>
+                <h3
+                  className={`${fredoka.className} text-xl font-bold text-sky-900 mb-3`}
+                >
+                  Fast Matching
+                </h3>
+                <p
+                  className={`${open_sans.className} text-slate-600`}
+                >
+                  We quickly connect you with the perfect puppy that
+                  matches your preferences.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-8 h-8 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m0 0H17M9 19v.01M20 19v.01"
+                    />
+                  </svg>
+                </div>
+                <h3
+                  className={`${fredoka.className} text-xl font-bold text-sky-900 mb-3`}
+                >
+                  Door Delivery
+                </h3>
+                <p
+                  className={`${open_sans.className} text-slate-600`}
+                >
+                  Safe and comfortable delivery directly to your home
+                  across Sydney regions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-gradient-to-r from-red-500 to-red-600">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <div
+              className={`${fredoka.className} text-white text-3xl md:text-4xl font-bold mb-6`}
+            >
+              Interested in what we&apos;ve got to offer? Search our
+              range!
+            </div>
+            <div className="flex flex-col items-center md:flex-row gap-8 mt-12">
               <BrowseCard
                 link="./services"
                 title="SERVICES"
                 description="Check out our services for your puppies"
                 images={[pawprint]}
-              ></BrowseCard>{' '}
+              />
               <BrowseCard
                 link="./about"
                 title="ABOUT"
                 description="Learn more about who we are and what we do"
                 images={[about]}
-              ></BrowseCard>{' '}
+              />
               <BrowseCard
                 link="./breeds"
                 title="BREEDS"
                 description="View our selection of dog breeds"
                 images={[dog2]}
-              ></BrowseCard>
+              />
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Testimonial or Stats Section - NEW */}
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-6">
+            <div
+              className={`${fredoka.className} text-center text-sky-900 text-4xl md:text-5xl font-bold mb-16`}
+            >
+              Trusted by Sydney Dog Lovers
+            </div>
+            <div className="grid md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div
+                  className={`${fredoka.className} text-4xl font-bold text-red-500 mb-2`}
+                >
+                  500+
+                </div>
+                <div
+                  className={`${open_sans.className} text-slate-600 text-lg`}
+                >
+                  Happy Families
+                </div>
+              </div>
+              <div className="text-center">
+                <div
+                  className={`${fredoka.className} text-4xl font-bold text-blue-500 mb-2`}
+                >
+                  50+
+                </div>
+                <div
+                  className={`${open_sans.className} text-slate-600 text-lg`}
+                >
+                  Trusted Breeders
+                </div>
+              </div>
+              <div className="text-center">
+                <div
+                  className={`${fredoka.className} text-4xl font-bold text-red-500 mb-2`}
+                >
+                  27
+                </div>
+                <div
+                  className={`${open_sans.className} text-slate-600 text-lg`}
+                >
+                  Dog Breeds
+                </div>
+              </div>
+              <div className="text-center">
+                <div
+                  className={`${fredoka.className} text-4xl font-bold text-blue-500 mb-2`}
+                >
+                  5
+                </div>
+                <div
+                  className={`${open_sans.className} text-slate-600 text-lg`}
+                >
+                  Service Regions
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="py-20 bg-gradient-to-br from-sky-900 to-blue-800 text-white text-center">
+          <div className="max-w-4xl mx-auto px-6">
+            <div
+              className={`${fredoka.className} text-4xl md:text-5xl font-bold mb-6`}
+            >
+              Ready to Find Your Perfect Companion?
+            </div>
+            <div
+              className={`${open_sans.className} text-xl mb-8 opacity-90`}
+            >
+              Let us do the hard work while you prepare for your new
+              family member.
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-red-500 hover:bg-white hover:text-red-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105">
+                Get Started Now
+              </button>
+              <button className="border-2 border-white text-white hover:bg-white hover:text-sky-900 px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 duration-300">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
-      {/* The bottom image sections */}
-      <div className="relative w-full ">
-        <div className="absolute bottom-[-34px] transform left-0">
+
+      {/* Bottom decorative images - Enhanced positioning */}
+      <div className="relative">
+        <div className="absolute bottom-[-37px] left-0 z-10">
           <Image
-            className="rounded"
+            className="rounded-tr-3xl"
             src={dogGroup.src}
-            width="275"
-            height="300"
+            width="300"
+            height="320"
             alt="Group of dogs"
           />
         </div>
-      </div>
-      <div className="relative w-full">
-        <div className="absolute bottom-[-50px] transform right-0">
+        <div className="absolute bottom-[-55px] right-0 z-10">
           <Image
-            className="rounded"
+            className="rounded-tl-3xl"
             src={dogGroup2.src}
-            width="275"
-            height="300"
+            width="300"
+            height="320"
             alt="Group of dogs"
           />
         </div>
+        {/* Spacer to prevent content overlap */}
+        <div className=" h-44"></div>
       </div>
     </>
   );
