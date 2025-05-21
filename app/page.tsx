@@ -1,25 +1,15 @@
 import Image from 'next/image';
 import dog from '../public/anime_puppy.png';
-import { Button } from '@/components/ui/button';
 import dogGroup from '../public/imagebottomdogs.png';
 import dogGroup2 from '../public/cornerbgremovedpuppies.png';
 import about from '../public/profile.png';
 import pawprint from '../public/pawprint.png';
 import dog2 from '../public/dog.png';
-import background from '../public/background.png'; // Import your background pattern
 import {
-  Chewy,
-  Modak,
-  Red_Hat_Display,
-  Gluten,
   Fredoka,
   Open_Sans,
 } from 'next/font/google';
-import localFont from 'next/font/local';
 import BrowseCard from '@/components/browseCard';
-const modak = Modak({ subsets: ['latin'], weight: '400' });
-const redHat = Red_Hat_Display({ subsets: ['latin'] });
-const gluten = Gluten({ subsets: ['latin'], weight: '500' });
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 const open_sans = Open_Sans({ subsets: ['latin'], weight: '400' });
 export default function Home() {
@@ -79,7 +69,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-[rgb(186,76,77)] font-bold text-xl w-full flex text-center justify-center items-center flex-col mt-2">
-            Interested in what we've got to offer? Search our range!
+            Interested in what we&apos;ve got to offer? Search our range!
             {/* <a href="./breeds" className="">
               <div className="text-2xl pt-4">
                 <Button

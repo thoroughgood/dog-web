@@ -1,13 +1,9 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import bowl from '../../public/dog-dish-svgrepo-com.svg';
 import bone from '../../public/bone-svgrepo-com.svg';
 import ball from '../../public/tennis-ball-2-svgrepo-com.svg';
-import { Fredoka, Red_Hat_Display } from 'next/font/google';
-import { Button } from '@/components/ui/button';
+import { Fredoka } from 'next/font/google';
 import ServiceCard from '../../components/serviceCard';
 
-const redHat = Red_Hat_Display({ subsets: ['latin'] });
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 
 const ServicesPage = () => {

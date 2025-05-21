@@ -4,19 +4,18 @@ import Image from 'next/image';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
-  CardTitle,
 } from '@/components/ui/card';
-import { Fredoka, Red_Hat_Display } from 'next/font/google';
-import { Button } from '@/components/ui/button';
-
+import { Fredoka } from 'next/font/google';
+interface Breed {
+ name: string; description: string; characteristics: string; lifespan: string; temperament: string; image: string; 
+}
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 /* Need to code for 9 most popular dog breeds, rest go in a list */
 const BreedsPage = () => {
   /* This removes any dog breed with "oodle", there will be one category for them */
   /* also limits to first 9 dog breeds in list.  */
-  const breeds = [];
+  const breeds: Breed[] = [];
   for (const breed of breedsData.dogBreeds) {
     if (!breed.name.includes('oodle')) {
       breeds.push(breed);
