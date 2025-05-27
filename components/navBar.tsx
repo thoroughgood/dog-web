@@ -15,8 +15,8 @@ const Navbar = () => {
             <Link href="/">
               <Image
                 alt="Dog sticking head out of van logo image"
-                width="100"
-                height="100"
+                width="150"
+                height="150"
                 src={image.src}
               ></Image>
             </Link>

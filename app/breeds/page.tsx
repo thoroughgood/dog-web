@@ -1,14 +1,15 @@
 import Link from 'next/link';
 import breedsData from '../../public/dogBreeds.json';
 import Image from 'next/image';
-import {
-  Card,
-  CardContent,
-  CardFooter,
-} from '@/components/ui/card';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Fredoka } from 'next/font/google';
 interface Breed {
- name: string; description: string; characteristics: string; lifespan: string; temperament: string; image: string; 
+  name: string;
+  description: string;
+  characteristics: string;
+  lifespan: string;
+  temperament: string;
+  image: string;
 }
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 /* Need to code for 9 most popular dog breeds, rest go in a list */
@@ -16,10 +17,15 @@ const BreedsPage = () => {
   /* This removes any dog breed with "oodle", there will be one category for them */
   /* also limits to first 9 dog breeds in list.  */
   const breeds: Breed[] = [];
+  //cavoodle are only "oodle" not included in the oodle's category"
   for (const breed of breedsData.dogBreeds) {
-    if (!breed.name.includes('oodle')) {
+    if (
+      !breed.name.includes('oodle') ||
+      breed.name.includes('Cavoodle')
+    ) {
       breeds.push(breed);
     }
+    console.log(breed.name);
     if (breeds.length === 9) break;
   }
 
@@ -66,14 +72,18 @@ const BreedsPage = () => {
       <div className="w-auto">
         List of dog breeds
         <ul>
-        {breedsList.map(breed => (
-          <Link key={breed.name} href={`/breeds/${breed.name
-            .toLowerCase()
-            .split(' ')
-            .join('')}`} className="hover:underline hover:text-blue-500">
-            <li >{breed.name}</li>
-          </Link>
-        ))} 
+          {breedsList.map((breed) => (
+            <Link
+              key={breed.name}
+              href={`/breeds/${breed.name
+                .toLowerCase()
+                .split(' ')
+                .join('')}`}
+              className="hover:underline hover:text-blue-500"
+            >
+              <li>{breed.name}</li>
+            </Link>
+          ))}
         </ul>
       </div>
     </div>

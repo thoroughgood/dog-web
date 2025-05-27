@@ -4,7 +4,7 @@ import { notFound, usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Fredoka, Red_Hat_Display } from 'next/font/google';
 /* import { EmailForm } from '@/components/contactForm';
- */import { Button } from '@/components/ui/button';
+ */ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
@@ -42,11 +42,14 @@ export default function Page() {
               height={500}
               alt={breed.name}
             />
-            <Link href="../contact"><button className="rounded-md w-full bg-sky-900 text-white p-3 mt-2 font-bold">ENQUIRE</button></Link>
+            <Link href={`../contact?breed=${breed.name}`}>
+              <button className="rounded-md w-full bg-sky-900 text-white p-3 mt-2 font-bold">
+                ENQUIRE
+              </button>
+            </Link>
           </div>
 
           <div className="w-full xl:w-2/3 flex flex-col text-gray-700 gap-4">
-          
             {breed.name === 'oodles' ? (
               <>
                 <div className="text-center xl:text-left font-semibold">
@@ -100,8 +103,6 @@ export default function Page() {
               </>
             ) : (
               <div className="text-lg">
-
-        
                 <div>
                   <strong>Description:</strong> {breed.description}
                 </div>

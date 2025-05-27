@@ -34,7 +34,7 @@ const FormSchema = z.object({
   message: z.string().min(10, {
     message: 'Message must be at least 10 characters',
   }),
-  breed: z.string({ message: 'There was a problem :(' }),
+  breed: z.string({ message: 'There was a problem :(' }).nullable(),
   colour: z.string().min(1, {
     message: 'Colour must have at least one character',
   }),
@@ -45,13 +45,16 @@ interface EmailFormProps {
 }
 
 export function EmailForm({ breed }: EmailFormProps) {
+  if (breed === null) {
+    breed = undefined;
+  }
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
       name: '',
       email: '',
       message: '',
-      breed: '',
+      breed: '' || breed,
       colour: '',
     },
   });
@@ -69,17 +72,20 @@ export function EmailForm({ breed }: EmailFormProps) {
     setIsError(false);
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({
-          access_key: 'c8e4e02b-95cf-442e-b8a7-a44a896fdae2',
-          ...values,
-        }),
-      });
+      const response = await fetch(
+        'https://api.web3forms.com/submit',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify({
+            access_key: 'c8e4e02b-95cf-442e-b8a7-a44a896fdae2',
+            ...values,
+          }),
+        }
+      );
 
       const result = await response.json();
       if (result.success) {
@@ -107,7 +113,9 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-white">Name</FormLabel>
+              <FormLabel className="pl-1 font-bold text-white">
+                Name
+              </FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -128,7 +136,9 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="pl-1 font-bold text-white">Email</FormLabel>
+              <FormLabel className="pl-1 font-bold text-white">
+                Email
+              </FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -149,7 +159,9 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-white pl-1 font-bold">Message</FormLabel>
+              <FormLabel className="text-white pl-1 font-bold">
+                Message
+              </FormLabel>
               <FormControl>
                 <Textarea
                   className="bg-gray-100 text-black"
@@ -171,7 +183,10 @@ export function EmailForm({ breed }: EmailFormProps) {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-white">Breed</FormLabel>
-              <Select value={field.value} onValueChange={field.onChange}>
+              <Select
+                value={field.value}
+                onValueChange={field.onChange}
+              >
                 <FormControl>
                   <SelectTrigger className="bg-white">
                     <SelectValue placeholder="Select a breed" />
@@ -199,7 +214,9 @@ export function EmailForm({ breed }: EmailFormProps) {
           name="colour"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-white pl-1 font-bold">Colour</FormLabel>
+              <FormLabel className="text-white pl-1 font-bold">
+                Colour
+              </FormLabel>
               <FormControl>
                 <Input
                   className="bg-gray-100 text-black"
@@ -241,7 +258,10 @@ export function EmailForm({ breed }: EmailFormProps) {
 
         {isError && (
           <div className="mt-4 text-red-500 flex flex-col items-center justify-center gap-2">
-            <span>Something went wrong. Please try again later. If the problem persists, please send us an email directly</span>
+            <span>
+              Something went wrong. Please try again later. If the
+              problem persists, please send us an email directly
+            </span>
           </div>
         )}
       </form>

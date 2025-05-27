@@ -27,7 +27,11 @@ export default function Home() {
           <div
             className={`${open_sans.className} text-xl md:text-2xl text-blue-50 max-w-2xl mx-auto leading-relaxed`}
           >
-            At Pick A Pooch, we do all the searching for you.
+            At{' '}
+            <span className={`${fredoka.className}`}>
+              Pick A Pooch
+            </span>
+            , we do all the searching for you.
           </div>
           <Link href="/breeds">
             <div className="mt-8 inline-block bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
@@ -242,7 +246,7 @@ export default function Home() {
                 <div
                   className={`${fredoka.className} text-4xl font-bold text-red-500 mb-2`}
                 >
-                  500+
+                  100+
                 </div>
                 <div
                   className={`${open_sans.className} text-slate-600 text-lg`}

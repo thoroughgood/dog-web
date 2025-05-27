@@ -70,3 +70,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.pick-a-pooch {
+  @apply font-bold uppercase text-transparent bg-clip-text text-2xl;
+  background-image: linear-gradient(to right, #ff0000, #0055ff);
+  font-family: 'Fredoka', sans-serif;
+}
