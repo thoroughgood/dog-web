@@ -17,11 +17,11 @@ const BreedsPage = () => {
   /* This removes any dog breed with "oodle", there will be one category for them */
   /* also limits to first 9 dog breeds in list.  */
   const breeds: Breed[] = [];
-  //cavoodle are only "oodle" not included in the oodle's category"
+  //Removes all oodle variations, poodle is not part of this and Cavoodle is most popular so we take it out of the pool
   for (const breed of breedsData.dogBreeds) {
     if (
       !breed.name.includes('oodle') ||
-      breed.name.includes('Cavoodle')
+      (breed.name.includes('Cavoodle') || breed.name.includes('Poodle'))
     ) {
       breeds.push(breed);
     }

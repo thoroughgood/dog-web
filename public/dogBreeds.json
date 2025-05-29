@@ -231,6 +231,14 @@
       "lifespan": "Cavalier King Charles Spaniels usually live between 12 to 15 years. Routine veterinary care, especially monitoring for heart conditions and maintaining a healthy weight, helps to ensure a longer and healthier life.",
       "temperament": "Cavaliers are affectionate, gentle, and sociable, making them ideal for families, singles, or seniors. They adapt well to both active and more relaxed households, provided they receive ample affection and light exercise. Known for their friendliness with children and other pets, they thrive as true companion dogs and are happiest when they are close to their people.",
       "image": "./Untitled.png"
+    },
+    {
+      "name": "Beagle",
+      "description": "The Beagle is a small to medium-sized hound with a sturdy, compact frame and an inquisitive expression, often accentuated by its long, floppy ears and soulful eyes. Known for its strong sense of smell and cheerful demeanor, the Beagle carries itself with a curious and friendly charm that has made it one of the most beloved family breeds worldwide.",
+      "characteristics": "Beagles typically weigh between 9 to 11 kilograms and feature a short, dense coat that comes in a variety of hound color patterns such as tri-color (black, white, and tan) or lemon and white. Their coat is easy to maintain with minimal grooming, and their build supports agility and endurance.",
+      "lifespan": "Beagles generally live between 12 to 15 years, with regular exercise, a balanced diet, and routine veterinary care contributing significantly to their health and longevity.",
+      "temperament": "Beagles are sociable, intelligent, and affectionate, thriving in homes that can provide consistent interaction and moderate exercise. They are particularly good with children and other dogs, making them excellent additions to family households. While friendly and eager to please, Beagles can be a bit stubborn due to their scent-driven instincts, so early training and firm, patient guidance are beneficial.",
+      "image": "/dog/Beagle_DogBreeds_001.png"
     }
   ]
 }

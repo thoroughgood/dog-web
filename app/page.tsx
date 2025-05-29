@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import dog from '../public/anime_puppy.png';
-import dogGroup from '../public/imagebottomdogs.png';
+import dogGroup from '../public/Beagle_DogBreeds_011.png';
 import dogGroup2 from '../public/cornerbgremovedpuppies.png';
 import about from '../public/profile.png';
 import pawprint from '../public/pawprint.png';
