@@ -2,7 +2,7 @@
 import { EmailForm } from '@/components/contactForm';
 import { Button } from '@/components/ui/button';
 import { Fredoka } from 'next/font/google';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 

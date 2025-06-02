@@ -42,7 +42,7 @@ const FormSchema = z.object({
 });
 
 interface EmailFormProps {
-  breed?: string;
+  breed?: string | null;
 }
 
 export function EmailForm({ breed }: EmailFormProps) {
