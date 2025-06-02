@@ -31,10 +31,11 @@ const FormSchema = z.object({
   email: z.string().email('Invalid email address').min(2, {
     message: 'Email must be at least 2 characters',
   }),
+  number: z.number().min(8).optional().or(z.literal('')),
   message: z.string().min(10, {
     message: 'Message must be at least 10 characters',
   }),
-  breed: z.string({ message: 'There was a problem :(' }).nullable(),
+  breed: z.string({ message: 'There was a problem :(' }),
   colour: z.string().min(1, {
     message: 'Colour must have at least one character',
   }),
@@ -53,6 +54,7 @@ export function EmailForm({ breed }: EmailFormProps) {
     defaultValues: {
       name: '',
       email: '',
+      number: '',
       message: '',
       breed: '' || breed,
       colour: '',
@@ -137,7 +139,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="pl-1 font-bold text-white">
-                Email
+                Contact Email
               </FormLabel>
               <FormControl>
                 <Input
@@ -149,6 +151,29 @@ export function EmailForm({ breed }: EmailFormProps) {
               {form.formState.errors.email && (
                 <p className="text-red-500 text-sm">
                   {form.formState.errors.email.message}
+                </p>
+              )}
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="number"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="pl-1 font-bold text-white">
+                Phone Number (optional)
+              </FormLabel>
+              <FormControl>
+                <Input
+                  className="bg-gray-100 text-black"
+                  placeholder="Phone Number"
+                  {...field}
+                />
+              </FormControl>
+              {form.formState.errors.name && (
+                <p className="text-red-500 text-sm">
+                  {form.formState.errors.name.message}
                 </p>
               )}
             </FormItem>
@@ -232,6 +257,7 @@ export function EmailForm({ breed }: EmailFormProps) {
             </FormItem>
           )}
         />
+
         <div className="flex justify-center w-full">
           <Button
             type="submit"

@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isVisible, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-sky-900 text-white">
+    <nav className="bg-gradient-to-br from-sky-900 to-blue-800 text-white">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         <div className="flex flex-row items-center font-extrabold justify-between w-full h-24">
           {/* Logo */}
@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Icon */}
-          <div className="flex sm:hidden ml-auto">
+          <div className="flex md:hidden ml-auto">
             <button
               onClick={() => setIsOpen(!isVisible)}
               className="text-white hover:text-gray-400 focus:outline-none"
@@ -50,8 +50,14 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden sm:flex">
+          <div className="hidden md:flex">
             <div className="flex space-x-12 text-lg font-bold">
+              <Link href="/">
+                <div className="hover:text-gray-300 hover:underline">
+                  HOME
+                </div>
+              </Link>
+
               <Link href="/breeds">
                 <div className="hover:text-gray-300 hover:underline">
                   BREEDS
@@ -64,7 +70,7 @@ const Navbar = () => {
               </Link>
               <Link href="/about">
                 <div className="hover:text-gray-300 hover:underline">
-                  ABOUT US
+                  ABOUT
                 </div>
               </Link>
               {/* <Link href="/services">
@@ -78,7 +84,7 @@ const Navbar = () => {
             </div>
           </div>
           <a href="tel:+61431892647">
-            <div className="hover:bg-red-400 duration-300 ease-in-out border-white border-2 flex-row items-center gap-2 hidden sm:flex bg-red-500 p-2 rounded-full">
+            <div className="hover:bg-red-400 duration-300 ease-in-out border-white border-2 flex-row items-center gap-2 hidden md:flex bg-red-500 p-2 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="white"
@@ -101,7 +107,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`sm:hidden transition-all duration-500 ease-in-out ${
+        className={`md:hidden transition-all duration-500 ease-in-out ${
           isVisible ? 'max-h-96' : 'max-h-0' // Increased max-height for smoother transition
         } overflow-hidden`}
       >
@@ -110,6 +116,12 @@ const Navbar = () => {
             isVisible ? 'translate-y-0' : '-translate-y-4'
           }`}
         >
+          <Link href="/">
+            <div className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+              Home
+            </div>
+          </Link>
+
           <Link href="/breeds">
             <div className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
               Breeds
@@ -122,7 +134,7 @@ const Navbar = () => {
           </Link>
           <Link href="/about">
             <div className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
-              About Us
+              About
             </div>
           </Link>
           {/* <Link href="/services">

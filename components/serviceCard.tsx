@@ -30,7 +30,7 @@ export default function ServiceCard({
       <Card className="w-[350px] shadow-md duration-100 ease-in-out h-[200px] hover:bg-gray-100">
         <CardHeader>
           <CardTitle
-            className={`text-red-500 ${fredoka.className} self-center font-bold text-2xl`}
+            className={`text-sky-900 ${fredoka.className} self-center font-bold text-2xl`}
           >
             {title}
           </CardTitle>

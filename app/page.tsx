@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import dog from '../public/anime_puppy.png';
-import dogGroup from '../public/Beagle_DogBreeds_011.png';
-import dogGroup2 from '../public/cornerbgremovedpuppies.png';
+import dogGroup from '../public/leftcornerdogs.png';
+import dogGroup2 from '../public/imagerightdogs.png';
 import about from '../public/profile.png';
 import pawprint from '../public/pawprint.png';
 import dog2 from '../public/dog.png';
@@ -49,7 +49,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
               <div className="flex-1 text-center lg:text-left">
                 <div
-                  className={`${fredoka.className} text-sky-900 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight`}
+                  className={`${fredoka.className} text-transparent bg-clip-text bg-gradient-to-br from-sky-900 to-blue-800 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight`}
                 >
                   SYDNEY-BASED.
                 </div>
@@ -97,7 +97,7 @@ export default function Home() {
         <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
           <div className="max-w-6xl mx-auto px-6 text-center">
             <div
-              className={`${fredoka.className} text-sky-900 text-4xl md:text-5xl font-bold mb-8 leading-tight`}
+              className={`${fredoka.className} text-blue-800 text-4xl md:text-5xl font-bold mb-8 leading-tight`}
             >
               We procure highly desirable dog breeds from our select
               range of dog breeders.
@@ -111,7 +111,7 @@ export default function Home() {
 
             {/* Benefits grid */}
             <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-neutral-100 transition-shadow">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -140,7 +140,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-neutral-100 transition-shadow">
                 <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -169,7 +169,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:bg-neutral-100 hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -237,7 +237,7 @@ export default function Home() {
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
             <div
-              className={`${fredoka.className} text-center text-sky-900 text-4xl md:text-5xl font-bold mb-16`}
+              className={`${fredoka.className} text-center text-blue-800 text-4xl md:text-5xl font-bold mb-16`}
             >
               Trusted by Sydney Dog Lovers
             </div>
@@ -309,12 +309,16 @@ export default function Home() {
               family member.
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-red-500 hover:bg-white hover:text-red-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105">
-                Get Started Now
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-sky-900 px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 duration-300">
-                Learn More
-              </button>
+              <Link href="/breeds">
+                <button className="bg-red-500 hover:bg-white hover:text-red-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105">
+                  Get Started Now
+                </button>
+              </Link>
+              <Link href="/about">
+                <button className="border-2 border-white text-white hover:bg-white hover:text-sky-900 px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105 duration-300">
+                  Learn More
+                </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -322,21 +326,21 @@ export default function Home() {
 
       {/* Bottom decorative images - Enhanced positioning */}
       <div className="relative">
-        <div className="absolute bottom-[-37px] left-0 z-10">
+        <div className="absolute bottom-[-37px] left-[-68px] z-10">
           <Image
             className="rounded-tr-3xl"
             src={dogGroup.src}
-            width="300"
-            height="320"
+            width="250"
+            height="100"
             alt="Group of dogs"
           />
         </div>
-        <div className="absolute bottom-[-55px] right-0 z-10">
+        <div className="absolute bottom-[-37px] right-[-67px] z-10">
           <Image
             className="rounded-tl-3xl"
             src={dogGroup2.src}
-            width="300"
-            height="320"
+            width="250"
+            height="150"
             alt="Group of dogs"
           />
         </div>
