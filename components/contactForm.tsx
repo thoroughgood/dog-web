@@ -56,7 +56,7 @@ export function EmailForm({ breed }: EmailFormProps) {
       email: '',
       number: '',
       message: '',
-      breed: '' || breed,
+      breed: breed ?? undefined,
       colour: '',
     },
   });
