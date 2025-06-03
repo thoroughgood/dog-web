@@ -22,7 +22,7 @@ export default function Home() {
           <div
             className={`${fredoka.className} text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 leading-tight`}
           >
-            Let us save you the hassle of finding the perfect breeder
+            Let us save you the hassle of finding the perfect puppy
           </div>
           <div
             className={`${open_sans.className} text-xl md:text-2xl text-blue-50 max-w-2xl mx-auto leading-relaxed`}

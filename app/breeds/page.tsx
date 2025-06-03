@@ -21,7 +21,8 @@ const BreedsPage = () => {
   for (const breed of breedsData.dogBreeds) {
     if (
       !breed.name.includes('oodle') ||
-      (breed.name.includes('Cavoodle') || breed.name.includes('Poodle'))
+      breed.name.includes('Cavoodle') ||
+      breed.name.includes('Poodle')
     ) {
       breeds.push(breed);
     }
@@ -36,10 +37,16 @@ const BreedsPage = () => {
   return (
     <div className="p-6 min-h-screen pb-20 mx-auto">
       <h1
-        className={`${fredoka.className} text-red-500 text-4xl font-bold text-center mb-8`}
+        className={`${fredoka.className} text-red-500 text-4xl font-bold text-center mb-2`}
       >
         Dog Breeds
       </h1>
+      <h3
+        className={`${fredoka.className} text-red-500 text-xl text-center mb-8`}
+      >
+        Prices are subject to change based on{' '}
+        <span className="underline font-bold">availability</span>
+      </h3>
       {/* Flexbox Container */}
       <div className="flex flex-wrap justify-center gap-6">
         {breeds.map((breed) => (
@@ -55,7 +62,7 @@ const BreedsPage = () => {
               <CardContent className="h-[250px] flex justify-center items-center overflow-hidden">
                 <Image
                   className="object-fit rounded-lg overflow-hidden sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] max-h-[250px]"
-                  src={breed.image}
+                  src={breed.headimage}
                   fill={true}
                   alt={breed.name}
                 />
