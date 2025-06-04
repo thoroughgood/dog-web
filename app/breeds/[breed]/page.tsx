@@ -37,7 +37,7 @@ export default function Page() {
           <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col justify-center">
             <Image
               className="border-2 border-gray-300 rounded-lg w-full"
-              src={breed.image}
+              src={breed.bodyimage}
               width={400}
               height={500}
               alt={breed.name}
