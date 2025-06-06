@@ -8,7 +8,7 @@ const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 
 export default function Home() {
   return (
-    <Suspense>
+    <>
       <div className="flex flex-col max-w-7xl min-h-screen pb-20 mx-auto px-4 md:px-8">
         <main className="flex flex-col text-left text-black gap-10 items-center justify-center mt-8">
           <h1
@@ -71,6 +71,6 @@ export default function Home() {
           </div>
         </main>
       </div>
-    </Suspense>
+    </>
   );
 }
