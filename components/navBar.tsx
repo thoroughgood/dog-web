@@ -127,7 +127,7 @@ const Navbar = () => {
               Breeds
             </div>
           </Link>
-          <Link href="/about">
+          <Link href="/services">
             <div className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
               Services
             </div>

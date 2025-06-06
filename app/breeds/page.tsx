@@ -77,8 +77,7 @@ const BreedsPage = () => {
         ))}
       </div>
       <div className="w-auto">
-        List of dog breeds
-        <ul>
+        <div className="flex flex-wrap gap-6 pt-8">
           {breedsList.map((breed) => (
             <Link
               key={breed.name}
@@ -86,12 +85,13 @@ const BreedsPage = () => {
                 .toLowerCase()
                 .split(' ')
                 .join('')}`}
-              className="hover:underline hover:text-blue-500"
             >
-              <li>{breed.name}</li>
+              <div className="border-2 rounded-md px-12 hover:translate-y-[-4px] py-4 shadow-md duration-100 ease-in-out bg-white text-blue-500">
+                {breed.name}
+              </div>
             </Link>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
