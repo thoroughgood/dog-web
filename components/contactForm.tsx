@@ -23,6 +23,7 @@ import {
 } from './ui/select';
 import { CheckCircle, Loader2 } from 'lucide-react';
 import breedsData from '../public/dogBreeds.json';
+import { useSearchParams } from 'next/navigation';
 
 const FormSchema = z.object({
   name: z.string().min(1, {
@@ -35,20 +36,14 @@ const FormSchema = z.object({
   message: z.string().min(10, {
     message: 'Message must be at least 10 characters',
   }),
-  breed: z.string({ message: 'There was a problem :(' }),
+  breed: z.string({ message: 'There was a problem :(' }).nullable(),
   colour: z.string().min(1, {
     message: 'Colour must have at least one character',
   }),
 });
-
-interface EmailFormProps {
-  breed?: string | null;
-}
-
-export function EmailForm({ breed }: EmailFormProps) {
-  if (breed === null) {
-    breed = undefined;
-  }
+//function that sets up the react form, and what it should expect.
+//putting zod as the resolver provides the rule sets for inputs (validation)
+export function EmailForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -56,7 +51,7 @@ export function EmailForm({ breed }: EmailFormProps) {
       email: '',
       number: '',
       message: '',
-      breed: breed ?? undefined,
+      breed: '',
       colour: '',
     },
   });
@@ -66,8 +61,11 @@ export function EmailForm({ breed }: EmailFormProps) {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
 
+  //gets a list of the breeds and fills out the values
   const breeds = breedsData.dogBreeds;
+  const breed = useSearchParams().get('breed') ?? '';
 
+  //once the user clicks submit, we contact the email API and await its response
   const onSubmit = async (values: z.infer<typeof FormSchema>) => {
     setIsSubmitting(true);
     setIsSuccess(false);
@@ -88,7 +86,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           }),
         }
       );
-
+      //tree of options depending on response
       const result = await response.json();
       if (result.success) {
         setIsSuccess(true);
@@ -208,10 +206,7 @@ export function EmailForm({ breed }: EmailFormProps) {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-white">Breed</FormLabel>
-              <Select
-                value={field.value}
-                onValueChange={field.onChange}
-              >
+              <Select value={breed} onValueChange={field.onChange}>
                 <FormControl>
                   <SelectTrigger className="bg-white">
                     <SelectValue placeholder="Select a breed" />

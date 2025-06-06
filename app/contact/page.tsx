@@ -2,15 +2,11 @@
 import { EmailForm } from '@/components/contactForm';
 import { Button } from '@/components/ui/button';
 import { Fredoka } from 'next/font/google';
-import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 
 export default function Home() {
-  const breedParams = useSearchParams();
-  const breed = breedParams.get('breed');
-  console.log(breed);
   return (
     <Suspense>
       <div className="flex flex-col max-w-7xl min-h-screen pb-20 mx-auto px-4 md:px-8">
@@ -23,7 +19,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-8 w-full max-w-4xl items-center mt-4">
             <div className="w-full sm:w-1/2 shadow-md shadow-gray-400 rounded-md bg-white">
-              <EmailForm breed={breed} />
+              <EmailForm />
             </div>
             <div className="flex flex-col text-lg gap-6 justify-center items-center w-full sm:w-1/2">
               <div className="bg-sky-900 p-6 rounded-md w-full shadow-md text-white text-center">
