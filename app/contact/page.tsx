@@ -21,7 +21,7 @@ export default function Home() {
             Contact Us
           </h1>
 
-          <div className="flex flex-col sm:flex-row gap-8 w-full max-w-4xl items-center mt-16">
+          <div className="flex flex-col sm:flex-row gap-8 w-full max-w-4xl items-center mt-4">
             <div className="w-full sm:w-1/2 shadow-md shadow-gray-400 rounded-md bg-white">
               <EmailForm breed={breed} />
             </div>

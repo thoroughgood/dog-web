@@ -34,7 +34,7 @@ export default function Page() {
         </h1>
 
         <div className="flex flex-col xl:flex-row gap-6 items-center xl:items-start">
-          <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex justify-center">
+          <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col justify-center">
             <Image
               className="border-2 border-gray-300 rounded-lg w-full"
               src={placeholder}
@@ -42,6 +42,11 @@ export default function Page() {
               height={500}
               alt={pack.name}
             />
+            <Link href={`../contact?breed=other`}>
+              <button className="rounded-md w-full bg-sky-900 text-white p-3 mt-2 font-bold">
+                ENQUIRE
+              </button>
+            </Link>
           </div>
 
           <div className="w-full xl:w-2/3 flex flex-col text-gray-700 gap-4 items-center">
@@ -58,9 +63,7 @@ export default function Page() {
         </div>
 
         <div className="flex flex-col items-center xl:items-start mt-6 xl:w-1/2">
-          <div>
-            <Link href="../contact">Contact us here!</Link>
-          </div>
+          <div></div>
         </div>
       </div>
     </div>

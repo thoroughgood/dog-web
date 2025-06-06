@@ -9,7 +9,8 @@ interface Breed {
   characteristics: string;
   lifespan: string;
   temperament: string;
-  image: string;
+  bodyimage: string;
+  headimage: string;
 }
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 /* Need to code for 9 most popular dog breeds, rest go in a list */
