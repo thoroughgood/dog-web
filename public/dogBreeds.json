@@ -10,6 +10,15 @@
       "headimage": "/dog/cavoodlehead.png"
     },
     {
+      "name": "Oodles",
+      "description": "Oodles refer to a group of Poodle mixes that inherit the Poodle’s intelligence and hypoallergenic coat, combined with the traits of other popular breeds. Common varieties include the Labradoodle (Labrador x Poodle), Cavoodle (Cavalier King Charles Spaniel x Poodle), and Groodle (Golden Retriever x Poodle), each with its own distinct appearance and personality.",
+      "characteristics": "Oodles vary in size depending on the breed mix, ranging from toy-sized (like Cavoodles) to larger varieties (like Labradoodles). Their coats are typically curly or wavy and low-shedding, requiring regular brushing and grooming to maintain their condition and prevent matting.",
+      "lifespan": "Most Oodles live between 12 to 15 years, with their longevity benefiting from their hybrid vigor and the generally robust health of their parent breeds.",
+      "temperament": "Friendly, affectionate, and highly trainable, Oodles are popular for their versatility and suitability to families, singles, and seniors alike. Their adaptable nature means they thrive in many living situations, though they require mental stimulation and regular exercise to remain happy and well-behaved.",
+      "bodyimage": "/dog/goldendoodlebody.png",
+      "headimage": "/dog/goldendoodlehead.png"
+    },
+    {
       "name": "French Bulldog",
       "description": "The French Bulldog is a compact and muscular breed, instantly recognizable by its distinctive bat-like ears, flat snout, and endearing, wrinkled face. It possesses a confident and comical presence, which has made it a popular companion worldwide.",
       "characteristics": "French Bulldogs typically weigh between 8 to 14 kilograms and have a short, smooth, low-maintenance coat. While their coat is easy to care for, they are prone to heat sensitivity due to their brachycephalic (short-nosed) anatomy, requiring careful monitoring in warm climates.",
@@ -134,15 +143,6 @@
       "temperament": "Alert, active, and highly trainable, Poodles are ideal for owners who enjoy an interactive and engaging companion. They excel in obedience and agility activities and are well-suited to families who can match their mental and physical stimulation needs.",
       "bodyimage": "/dog/poodlebody.png",
       "headimage": "/dog/poodlehead.png"
-    },
-    {
-      "name": "Oodles",
-      "description": "Oodles refer to a group of Poodle mixes that inherit the Poodle’s intelligence and hypoallergenic coat, combined with the traits of other popular breeds. Common varieties include the Labradoodle (Labrador x Poodle), Cavoodle (Cavalier King Charles Spaniel x Poodle), and Groodle (Golden Retriever x Poodle), each with its own distinct appearance and personality.",
-      "characteristics": "Oodles vary in size depending on the breed mix, ranging from toy-sized (like Cavoodles) to larger varieties (like Labradoodles). Their coats are typically curly or wavy and low-shedding, requiring regular brushing and grooming to maintain their condition and prevent matting.",
-      "lifespan": "Most Oodles live between 12 to 15 years, with their longevity benefiting from their hybrid vigor and the generally robust health of their parent breeds.",
-      "temperament": "Friendly, affectionate, and highly trainable, Oodles are popular for their versatility and suitability to families, singles, and seniors alike. Their adaptable nature means they thrive in many living situations, though they require mental stimulation and regular exercise to remain happy and well-behaved.",
-      "bodyimage": "/dog/goldendoodlebody.png",
-      "headimage": "/dog/goldendoodlehead.png"
     },
     {
       "name": "Shih Tzu",

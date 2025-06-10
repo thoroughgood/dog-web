@@ -20,15 +20,8 @@ const BreedsPage = () => {
   const breeds: Breed[] = [];
   //Removes all oodle variations, poodle is not part of this and Cavoodle is most popular so we take it out of the pool
   for (const breed of breedsData.dogBreeds) {
-    if (
-      !breed.name.includes('oodle') ||
-      breed.name.includes('Cavoodle') ||
-      breed.name.includes('Poodle')
-    ) {
-      breeds.push(breed);
-    }
-    console.log(breed.name);
-    if (breeds.length === 9) break;
+    breeds.push(breed);
+    if (breeds.length === 10) break;
   }
 
   const breedsList = breedsData.dogBreeds.filter(
@@ -43,10 +36,15 @@ const BreedsPage = () => {
         Dog Breeds
       </h1>
       <h3
-        className={`${fredoka.className} text-red-500 text-xl text-center mb-8`}
+        className={`${fredoka.className} text-red-500 text-xl text-center`}
       >
         Prices are subject to change based on{' '}
-        <span className="underline font-bold">availability</span>
+        <span className="underline font-bold">availability.</span>
+      </h3>
+      <h3
+        className={`${fredoka.className} text-red-500 text-xl text-center mb-8`}
+      >
+        Pay a 50% initial deposit, and the rest when you&apos;re done.
       </h3>
       {/* Flexbox Container */}
       <div className="flex flex-wrap justify-center gap-6">
@@ -57,7 +55,7 @@ const BreedsPage = () => {
               .toLowerCase()
               .split(' ')
               .join('')}`}
-            className="block w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(20%-18px)] shadow-lg hover:shadow-xl transform rounded-xl hover:-translate-y-1 transition duration-300"
+            className="block w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(20%-18px)] shadow-lg hover:shadow-xl transform rounded-xl hover:scale-105 hover:-translate-y-1 transition duration-300"
           >
             <Card className="bg-white h-full">
               <CardContent className="h-[250px] flex justify-center items-center overflow-hidden">
@@ -69,7 +67,7 @@ const BreedsPage = () => {
                 />
               </CardContent>
               <CardFooter
-                className={`${fredoka.className} bg-sky-900 text-white rounded-b-lg flex flex-row justify-center items-center h-[75px] p-0 -my-[1px] text-xl`}
+                className={`${fredoka.className} bg-blue-500 text-white rounded-b-lg flex flex-row justify-center items-center h-[75px] p-0 -my-[1px] text-xl`}
               >
                 {breed.name}
               </CardFooter>
@@ -77,8 +75,8 @@ const BreedsPage = () => {
           </Link>
         ))}
       </div>
-      <div className="w-auto">
-        <div className="flex flex-wrap gap-6 pt-8">
+      <div className="w-3/4 flex m-auto">
+        <div className="flex flex-wrap gap-6 justify-center pt-6">
           {breedsList.map((breed) => (
             <Link
               key={breed.name}
@@ -87,7 +85,7 @@ const BreedsPage = () => {
                 .split(' ')
                 .join('')}`}
             >
-              <div className="border-2 rounded-md px-12 hover:translate-y-[-4px] py-4 shadow-md duration-100 ease-in-out bg-white text-blue-500">
+              <div className="border-2 rounded-md px-12 hover:translate-y-[-4px] py-3 shadow-md duration-100 ease-in-out bg-white text-blue-500">
                 {breed.name}
               </div>
             </Link>

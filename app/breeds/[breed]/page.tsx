@@ -21,7 +21,7 @@ export default function Page() {
   if (!breed) {
     notFound();
   }
-
+  console.log(breed.name);
   return (
     <div
       className={`min-h-screen px-4 sm:px-8 md:px-16 lg:px-32 py-8 ${redHat.className}`}
@@ -50,7 +50,7 @@ export default function Page() {
           </div>
 
           <div className="w-full xl:w-2/3 flex flex-col text-gray-700 gap-4">
-            {breed.name === 'oodles' ? (
+            {breed.name === 'Oodles' ? (
               <>
                 <div className="text-center xl:text-left font-semibold">
                   Here are a list of our desirable oodle breeds:
