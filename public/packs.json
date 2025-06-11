@@ -4,6 +4,7 @@
       "name": "Starter Pack",
       "slogan": "Set yourself up for your new puppy with these essential items",
       "price": "159.99",
+      "image": "/basket.png",
       "items": [
         "Bag Premium Dry Puppy Food",
         "Collar",

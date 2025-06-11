@@ -6,6 +6,7 @@ import { Fredoka, Red_Hat_Display } from 'next/font/google';
 /* import { EmailForm } from '@/components/contactForm';
  */ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Enquire from '@/components/enquire';
 
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
 const fredoka = Fredoka({ subsets: ['latin'], weight: '500' });
@@ -42,11 +43,7 @@ export default function Page() {
               height={500}
               alt={breed.name}
             />
-            <Link href={`../contact?breed=${breed.name}`}>
-              <button className="rounded-md w-full bg-sky-900 text-white p-3 mt-2 font-bold">
-                ENQUIRE
-              </button>
-            </Link>
+            <Enquire breed={`${breed.name}`}></Enquire>
           </div>
 
           <div className="w-full xl:w-2/3 flex flex-col text-gray-700 gap-4">

@@ -106,7 +106,7 @@ export function EmailForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="bg-sky-900 rounded-md p-6 w-full mx-auto"
+        className="bg-blue-600 rounded-md p-6 w-full mx-auto"
       >
         <FormField
           control={form.control}

@@ -23,7 +23,7 @@ export default function Home() {
                 <EmailForm />
               </div>
               <div className="flex flex-col text-lg gap-6 justify-center items-center w-full sm:w-1/2">
-                <div className="bg-sky-900 p-6 rounded-md w-full shadow-md text-white text-center">
+                <div className="bg-blue-600 p-6 rounded-md w-full shadow-md text-white text-center">
                   <p className="pb-3">
                     Text or Call Pick A Pooch at:
                   </p>
@@ -58,7 +58,7 @@ export default function Home() {
                     </Button>
                   </a>
                 </div>
-                <div className="bg-sky-900 text-lg rounded-md p-6 text-white w-full shadow-md">
+                <div className="bg-blue-600 text-lg rounded-md p-6 text-white w-full shadow-md">
                   <h2 className="text-2xl text-center pb-3">
                     Operating Hours
                   </h2>

@@ -30,7 +30,7 @@ export default function ServiceCard({
       <Card className="w-[350px] shadow-md duration-100 ease-in-out h-[200px] hover:bg-gray-100">
         <CardHeader>
           <CardTitle
-            className={`text-sky-900 ${fredoka.className} self-center font-bold text-2xl`}
+            className={`text-blue-500 ${fredoka.className} self-center font-bold text-2xl`}
           >
             {title}
           </CardTitle>
@@ -40,15 +40,15 @@ export default function ServiceCard({
           </CardDescription>
         </CardHeader>
 
-        <CardContent className="flex flex-row justify-center items-center">
+        <CardContent className="flex flex-row justify-center items-center align-middle">
           {images?.map((image) => {
             return (
               <Image
                 src={image}
-                width={55}
-                height={55}
+                className=""
+                width={50}
                 key={image.src}
-                alt="this is a test image"
+                alt="this is a row of relevant items to the pack"
               ></Image>
             );
           })}

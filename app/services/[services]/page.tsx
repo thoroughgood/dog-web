@@ -3,8 +3,8 @@ import packsData from '../../../public/packs.json';
 import { notFound, usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Fredoka, Red_Hat_Display } from 'next/font/google';
-import Link from 'next/link';
 import placeholder from '../../../public/Untitled.png';
+import Enquire from '@/components/enquire';
 
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
 const fredoka = Fredoka({ subsets: ['latin'], weight: '500' });
@@ -37,16 +37,12 @@ export default function Page() {
           <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col justify-center">
             <Image
               className="border-2 border-gray-300 rounded-lg w-full"
-              src={placeholder}
+              src={pack.image}
               width={400}
               height={500}
               alt={pack.name}
             />
-            <Link href={`../contact?breed=other`}>
-              <button className="rounded-md w-full bg-sky-900 text-white p-3 mt-2 font-bold">
-                ENQUIRE
-              </button>
-            </Link>
+            <Enquire breed="other"></Enquire>
           </div>
 
           <div className="w-full xl:w-2/3 flex flex-col text-gray-700 gap-4 items-center">

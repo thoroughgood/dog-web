@@ -44,6 +44,19 @@ export default function About() {
           That&apos;s when we realized we had to adapt to meet our
           customers&apos; needs.
         </p>
+        <p className="text-lg text-gray-700">Now it&apos;s just:</p>
+        <p className="text-lg text-gray-700">
+          1. Select your desired breed
+        </p>
+        <p className="text-lg text-gray-700">
+          2. Pay your small deposit
+        </p>
+        <p className="text-lg text-gray-700">
+          3. Video calls to help find your new friend
+        </p>
+        <p className="text-lg text-gray-700">
+          4. Sit back stress-free and let us organise everything
+        </p>
 
         <p className="text-lg text-gray-700">
           Over the years, I have met many different breeders and
@@ -56,18 +69,6 @@ export default function About() {
           —a service that takes the hassle out of choosing your next
           perfect puppy. You select your desired breed and pay your
           deposit, all from the comfort of your home.
-        </p>
-        <p className="text-lg text-gray-700">
-          1. Select your desired breed
-        </p>
-        <p className="text-lg text-gray-700">
-          2. Pay your small deposit
-        </p>
-        <p className="text-lg text-gray-700">
-          3. Video calls to help find your new friend
-        </p>
-        <p className="text-lg text-gray-700">
-          4. Sit back stress-free and let us organise everything
         </p>
       </div>
     </div>

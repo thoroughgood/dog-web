@@ -1,5 +1,5 @@
-import bowl from '../../public/dog-dish-svgrepo-com.svg';
-import bone from '../../public/bone-svgrepo-com.svg';
+import bowl from '../../public/dogbowl.svg';
+import bone from '../../public/Untitled.svg';
 import ball from '../../public/tennis-ball-2-svgrepo-com.svg';
 import { Fredoka } from 'next/font/google';
 import ServiceCard from '../../components/serviceCard';
@@ -45,7 +45,8 @@ const ServicesPage = () => {
           Choose your puppy, place a deposit, and let us handle the
           rest. We’ll deliver your new companion straight to your
           door, ensuring a seamless and joyful experience for you and
-          your pet.
+          your pet. In the mean time, view some convenient packages
+          we&apos;ve curated for you!
         </p>
       </div>
     </div>
