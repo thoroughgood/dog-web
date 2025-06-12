@@ -20,7 +20,9 @@ const BreedsPage = () => {
   const breeds: Breed[] = [];
   //Removes all oodle variations, poodle is not part of this and Cavoodle is most popular so we take it out of the pool
   for (const breed of breedsData.dogBreeds) {
-    breeds.push(breed);
+    if (!breed.name.includes('oodle')) {
+      breeds.push(breed);
+    }
     if (breeds.length === 10) break;
   }
 

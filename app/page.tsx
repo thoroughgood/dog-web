@@ -111,7 +111,7 @@ export default function Home() {
 
             {/* Benefits grid */}
             <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-neutral-100 transition-shadow">
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -140,7 +140,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl hover:bg-neutral-100 transition-shadow">
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -169,7 +169,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:bg-neutral-100 hover:shadow-xl transition-shadow">
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -345,7 +345,7 @@ export default function Home() {
           />
         </div>
         {/* Spacer to prevent content overlap */}
-        <div className=" h-44"></div>
+        <div className="h-32"></div>
       </div>
     </>
   );

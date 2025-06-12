@@ -269,6 +269,33 @@
       "temperament": "Beagles are sociable, intelligent, and affectionate, thriving in homes that can provide consistent interaction and moderate exercise. They are particularly good with children and other dogs, making them excellent additions to family households. While friendly and eager to please, Beagles can be a bit stubborn due to their scent-driven instincts, so early training and firm, patient guidance are beneficial.",
       "bodyimage": "/dog/beaglebody.png",
       "headimage": "/dog/beaglehead.png"
+    },
+    {
+      "name": "Groodle",
+      "description": "The Groodle, also known as a Goldendoodle, is a designer crossbreed resulting from a Golden Retriever and Poodle mix. With a charming blend of both parent breeds, Groodles are typically medium to large in size and exhibit a soft, often wavy to curly coat, expressive eyes, and a joyful, friendly demeanor that radiates approachability and warmth.",
+      "characteristics": "Depending on the size of the Poodle parent, Groodles can weigh between 14 to 30 kilograms. Their coat is usually low-shedding and ranges from wavy to tightly curled, often in shades of gold, cream, or apricot, requiring regular grooming to prevent matting and to maintain coat health.",
+      "lifespan": "Groodles generally live between 12 to 15 years, particularly when raised with a healthy lifestyle, regular vet visits, and appropriate grooming routines.",
+      "temperament": "Affectionate, intelligent, and sociable, Groodles are known for their even temper and make exceptional family pets, therapy dogs, or companions for active individuals. They inherit the Poodle’s intelligence and the Golden Retriever’s friendliness, thriving in environments where they can engage in interactive play, light training, and enjoy human company.",
+      "bodyimage": "/dog/groodlebody.png",
+      "headimage": "/dog/groodlehead.png"
+    },
+    {
+      "name": "Spoodle",
+      "description": "The Spoodle, also commonly referred to as a Cockapoo, is a delightful crossbreed between a Cocker Spaniel and a Poodle. This small to medium-sized dog is admired for its affectionate nature, expressive eyes, and a soft, curly or wavy coat that gives it a charming, teddy-bear-like appearance.",
+      "characteristics": "Spoodles typically weigh between 8 to 14 kilograms. Their coats can vary from loose waves to tight curls, often in hues of cream, brown, or black, and tend to be low-shedding, though grooming is necessary to avoid knots and tangles.",
+      "lifespan": "With good care, Spoodles can live around 12 to 16 years, often remaining energetic and affectionate into their senior years.",
+      "temperament": "Spoodles are friendly, affectionate, and people-oriented, making them excellent companions for families, children, and even first-time dog owners. They blend the gentle, playful nature of the Cocker Spaniel with the intelligence of the Poodle, enjoying both cuddle time and light training or agility activities.",
+      "bodyimage": "/dog/spoodlebody.png",
+      "headimage": "/dog/spoodlehead.png"
+    },
+    {
+      "name": "Labradoodle",
+      "description": "The Labradoodle is a popular designer dog breed that combines the Labrador Retriever’s friendly, outgoing nature with the Poodle’s intelligence and low-shedding coat. Medium to large in size, Labradoodles often have a shaggy, fleece-like coat and a friendly, eager-to-please expression.",
+      "characteristics": "Labradoodles generally weigh between 20 to 35 kilograms, depending on whether a standard, miniature, or toy Poodle was used in the breeding. Their coat may range from wavy to curly, and regular grooming is essential to keep it free of tangles and to maintain cleanliness. Many are allergy-friendly, but coat traits can vary by generation.",
+      "lifespan": "The average lifespan of a Labradoodle is between 12 to 14 years, with proper diet, exercise, and regular checkups contributing to their health and longevity.",
+      "temperament": "Energetic, affectionate, and highly trainable, Labradoodles are great for active families, therapy work, or homes that can provide regular mental and physical stimulation. They get along well with children and other pets and are known for their joyful, friendly disposition and strong desire to be part of the family.",
+      "bodyimage": "/dog/labradoodlebody.png",
+      "headimage": "/dog/labradoodlehead.png"
     }
   ]
 }
