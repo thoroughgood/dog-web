@@ -27,7 +27,8 @@ const BreedsPage = () => {
   }
 
   const breedsList = breedsData.dogBreeds.filter(
-    (breed) => !breeds.includes(breed)
+    (breed) =>
+      !breeds.includes(breed)
   );
 
   return (
