@@ -326,7 +326,7 @@ export default function Home() {
 
       {/* Bottom decorative images - Enhanced positioning */}
       <div className="relative">
-        <div className="absolute bottom-[-37px] left-[-68px] z-10">
+        <div className="absolute bottom-[-37px] left-[-68px] z-10 hidden lg:flex">
           <Image
             className="rounded-tr-3xl"
             src={dogGroup.src}
@@ -335,7 +335,7 @@ export default function Home() {
             alt="Group of dogs on the left"
           />
         </div>
-        <div className="absolute bottom-[-37px] right-0 z-10">
+        <div className="absolute bottom-[-37px] right-0 z-10 hidden lg:flex">
           <Image
             className="rounded-tl-3xl"
             src={dogGroup2.src}
