@@ -32,11 +32,15 @@ const FormSchema = z.object({
   email: z.string().email('Invalid email address').min(2, {
     message: 'Email must be at least 2 characters',
   }),
-  number: z.number().min(8).optional().or(z.literal('')),
+  number: z
+    .string()
+    .min(8, 'Phone number must be at least 8 digits')
+    .optional()
+    .or(z.literal('')),
   message: z.string().min(10, {
     message: 'Message must be at least 10 characters',
   }),
-  breed: z.string({ message: 'There was a problem :(' }).nullable(),
+  breed: z.string({ message: 'There was a problem :(' }),
   colour: z.string().min(1, {
     message: 'Colour must have at least one character',
   }),
@@ -44,6 +48,10 @@ const FormSchema = z.object({
 //function that sets up the react form, and what it should expect.
 //putting zod as the resolver provides the rule sets for inputs (validation)
 export function EmailForm() {
+  //gets a list of the breeds and fills out the values
+  const breeds = breedsData.dogBreeds;
+  const breedParam = useSearchParams().get('breed') ?? '';
+
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -51,7 +59,7 @@ export function EmailForm() {
       email: '',
       number: '',
       message: '',
-      breed: '',
+      breed: breedParam,
       colour: '',
     },
   });
@@ -60,10 +68,6 @@ export function EmailForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
-
-  //gets a list of the breeds and fills out the values
-  const breeds = breedsData.dogBreeds;
-  const breed = useSearchParams().get('breed') ?? '';
 
   //once the user clicks submit, we contact the email API and await its response
   const onSubmit = async (values: z.infer<typeof FormSchema>) => {
@@ -90,7 +94,7 @@ export function EmailForm() {
       const result = await response.json();
       if (result.success) {
         setIsSuccess(true);
-        reset({ breed: breed || 'Poodle' });
+        reset({ breed: breedParam || 'Poodle' });
       } else {
         setIsError(true);
       }
@@ -206,7 +210,10 @@ export function EmailForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-white">Breed</FormLabel>
-              <Select value={breed} onValueChange={field.onChange}>
+              <Select
+                value={field.value}
+                onValueChange={field.onChange}
+              >
                 <FormControl>
                   <SelectTrigger className="bg-white">
                     <SelectValue placeholder="Select a breed" />
@@ -218,6 +225,10 @@ export function EmailForm() {
                       {breed.name}
                     </SelectItem>
                   ))}
+                  <SelectItem value="starterpack">
+                    Starter Pack
+                  </SelectItem>
+                  <SelectItem value="foodpack">Food Pack</SelectItem>
                   <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
@@ -235,7 +246,7 @@ export function EmailForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-white pl-1 font-bold">
-                Colour
+                Colour (optional)
               </FormLabel>
               <FormControl>
                 <Input

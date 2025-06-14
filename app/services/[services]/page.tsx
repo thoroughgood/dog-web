@@ -3,7 +3,6 @@ import packsData from '../../../public/packs.json';
 import { notFound, usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { Fredoka, Red_Hat_Display } from 'next/font/google';
-import placeholder from '../../../public/Untitled.png';
 import Enquire from '@/components/enquire';
 
 const redHat = Red_Hat_Display({ subsets: ['latin'] });

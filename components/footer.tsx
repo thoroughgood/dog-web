@@ -13,55 +13,55 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-2">Breeds</h3>
             <div className="text-md flex flex-col text-gray-300 ">
               <Link
-                href="breeds/poodle"
+                href="/breeds/poodle"
                 className="hover:underline hover:text-red-400"
               >
                 Poodle
               </Link>
               <Link
-                href="breeds/cavoodle"
+                href="/breeds/cavoodle"
                 className="hover:underline hover:text-red-400"
               >
                 Cavoodle
               </Link>
               <Link
-                href="breeds/labradoodle"
+                href="/breeds/labradoodle"
                 className="hover:underline hover:text-red-400"
               >
                 Labradoodle
               </Link>
               <Link
-                href="breeds/groodle"
+                href="/breeds/groodle"
                 className="hover:underline hover:text-red-400"
               >
                 Groodle
               </Link>
               <Link
-                href="breeds/spoodle"
+                href="/breeds/spoodle"
                 className="hover:underline hover:text-red-400"
               >
                 Spoodle
               </Link>
               <Link
-                href="breeds/dachshund"
+                href="/breeds/dachshund"
                 className="hover:underline hover:text-red-400"
               >
                 Dachshund
               </Link>
               <Link
-                href="breeds/pugs"
+                href="/breeds/pugs"
                 className="hover:underline hover:text-red-400"
               >
                 Pugs
               </Link>
               <Link
-                href="breeds/frenchbulldog"
+                href="/breeds/frenchbulldog"
                 className="hover:underline hover:text-red-400"
               >
                 French Bulldog
               </Link>
               <Link
-                href="breeds/bulldog"
+                href="/breeds/bulldog"
                 className="hover:underline hover:text-red-400"
               >
                 Bulldog

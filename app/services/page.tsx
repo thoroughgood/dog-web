@@ -1,6 +1,6 @@
-import bowl from '../../public/dogbowl.svg';
+import food from '../../public/food.png';
 import bone from '../../public/Untitled.svg';
-import ball from '../../public/tennis-ball-2-svgrepo-com.svg';
+import ball from '../../public/tennisball.svg';
 import { Fredoka } from 'next/font/google';
 import ServiceCard from '../../components/serviceCard';
 
@@ -20,13 +20,13 @@ const ServicesPage = () => {
           link="/services/starterpack"
           title="$159.99 Puppy Pack"
           description="Get started with a kit for your puppy"
-          images={[bowl, bone, ball]}
+          images={[bone, ball]}
         />
         <ServiceCard
           link="/services/foodpack"
           title="$49.99 Puppy Food Pack"
           description="Food for all your nutritious needs"
-          images={[bowl, bone, ball]}
+          images={[food]}
         />
       </div>
 

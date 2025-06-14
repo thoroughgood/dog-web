@@ -70,6 +70,8 @@ export default function Home() {
                     <span>Thursday:</span>{' '}
                     <span>9:00am - 6:00pm</span>
                     <span>Friday:</span> <span>9:00am - 5:00pm</span>
+                    <span>Saturday:</span> <span>Closed</span>
+                    <span>Sunday:</span> <span>Closed</span>
                   </div>
                 </div>
               </div>

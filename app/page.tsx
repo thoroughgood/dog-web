@@ -332,16 +332,16 @@ export default function Home() {
             src={dogGroup.src}
             width="250"
             height="100"
-            alt="Group of dogs"
+            alt="Group of dogs on the left"
           />
         </div>
-        <div className="absolute bottom-[-37px] right-[-67px] z-10">
+        <div className="absolute bottom-[-37px] right-0 z-10">
           <Image
             className="rounded-tl-3xl"
             src={dogGroup2.src}
             width="250"
             height="150"
-            alt="Group of dogs"
+            alt="Group of dogs on the right"
           />
         </div>
         {/* Spacer to prevent content overlap */}
