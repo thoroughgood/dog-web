@@ -57,7 +57,6 @@ export default function Page() {
                     'Cavoodle',
                     'Groodle',
                     'Labradoodle',
-                    'Poodle',
                     'Spoodle',
                   ].map((b) => (
                     <Link

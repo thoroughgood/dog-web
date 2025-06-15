@@ -46,22 +46,22 @@
       "headimage": "/dog/pughead.jpg"
     },
     {
-      "name": "Chihuahua",
-      "description": "The Chihuahua is the world’s smallest dog breed, renowned for its outsized personality, large alert eyes, and pointed ears. Despite its tiny stature, it possesses a bold and spirited demeanor.",
-      "characteristics": "Chihuahuas usually weigh between 1.5 to 3 kilograms and come in both short-haired and long-haired coat varieties, with grooming needs ranging from minimal to moderate depending on the coat type.",
-      "lifespan": "They are one of the longest-living breeds, with lifespans ranging from 14 to 17 years when provided with a nutritious diet and regular health screenings.",
-      "temperament": "Chihuahuas are fiercely loyal and protective of their owners, often forming a strong bond with one person in particular. While affectionate, they can be wary of strangers and prefer calm households or those with older children who understand their delicate nature.",
-      "bodyimage": "/dog/chihuahuabody.jpg",
-      "headimage": "/dog/chihuahuahead.jpg"
+      "name": "Maltese Terrier",
+      "description": "The Maltese Terrier is a toy-sized breed known for its flowing, silky white coat and alert, expressive face. It carries itself with grace and confidence, often appearing elegant and cheerful in equal measure.",
+      "characteristics": "Weighing around 3 to 4 kilograms, the Maltese has a fine, straight coat that requires daily grooming to avoid matting and maintain its pristine look. Their compact size makes them suitable for small living spaces.",
+      "lifespan": "Maltese Terriers typically enjoy a long life of 12 to 15 years, benefiting from consistent grooming, proper nutrition, and routine vet visits.",
+      "temperament": "Affectionate, lively, and intelligent, Maltese Terriers thrive in families that offer companionship and moderate playtime. They are best suited to gentle households and adapt well to apartment living, often forming close bonds with their owners.",
+      "bodyimage": "/dog/maltesebody.jpg",
+      "headimage": "/dog/maltesehead.jpg"
     },
     {
-      "name": "Pomeranian",
-      "description": "The Pomeranian is a toy-sized breed with a fox-like face, bright eyes, and an abundant double coat that gives it a fluffy, plush appearance. This breed carries itself with an alert and lively demeanor that far exceeds its small stature.",
-      "characteristics": "Weighing between 1.5 to 3.5 kilograms, Pomeranians have a dense, long coat that requires regular brushing to prevent tangles and maintain its beautiful volume. Despite their size, they are spirited and agile.",
-      "lifespan": "Pomeranians generally enjoy a long life of 12 to 16 years, thriving best with routine dental care, grooming, and mental stimulation.",
-      "temperament": "Vivacious, confident, and inquisitive, Pomeranians are known for their bold personalities. They form strong attachments with their families and do well in apartments or homes, provided they are given adequate attention and engagement. While small, they can be vocal and act as effective alert dogs.",
-      "bodyimage": "/dog/pomeranianbody.jpg",
-      "headimage": "/dog/pomeranianhead.jpg"
+      "name": "Border Collie",
+      "description": "The Border Collie is a medium-sized, intensely focused breed known for its sharp intelligence and strong herding instincts. With a graceful build, attentive expression, and agile movements, it’s often considered the most intelligent of all dog breeds.",
+      "characteristics": "Typically weighing between 14 to 22 kilograms, Border Collies have a weather-resistant double coat that may be smooth or rough, requiring moderate grooming. Their athletic build makes them natural performers in agility and obedience sports.",
+      "lifespan": "Border Collies live between 12 to 15 years and benefit from physically and mentally stimulating routines to keep them happy and healthy.",
+      "temperament": "Highly energetic, loyal, and incredibly intelligent, Border Collies need an environment that offers structure and purpose. They are best suited for active families or individuals who can provide daily physical exercise and mental challenges. Without proper stimulation, they may become bored or exhibit unwanted behaviors.",
+      "bodyimage": "/dog/bordercolliebody.jpg",
+      "headimage": "/dog/bordercolliehead.jpg"
     },
     {
       "name": "Staffordshire Bull Terrier",
@@ -82,6 +82,15 @@
       "headimage": "/dog/germanhead.jpg"
     },
     {
+      "name": "Cocker Spaniel",
+      "description": "The Cocker Spaniel is a medium-sized dog with long, silky ears and expressive eyes that give it a sweet, endearing look. With a soft, wavy coat and a wagging tail, it embodies charm and a lively spirit.",
+      "characteristics": "Weighing between 12 to 16 kilograms, Cocker Spaniels have a dense, medium-length coat that requires regular grooming to prevent tangles and ear infections. Their build is compact yet athletic, well-suited for both play and cuddling.",
+      "lifespan": "Cocker Spaniels typically live between 12 to 15 years, and with proper grooming, exercise, and ear care, they remain vibrant well into their senior years.",
+      "temperament": "Gentle, affectionate, and eager to please, Cocker Spaniels make excellent companions for families with children or active individuals. They enjoy being involved in daily activities and thrive in homes where they receive ample attention and exercise.",
+      "bodyimage": "/dog/cockerspanielbody.jpg",
+      "headimage": "/dog/cockerspanielhead.jpg"
+    },
+    {
       "name": "Labrador Retriever",
       "description": "The Labrador Retriever is a well-balanced and athletic breed with a broad head, expressive eyes, and a thick, water-resistant coat. Labradors are widely recognized for their friendly and dependable nature, making them one of the most popular dog breeds worldwide.",
       "characteristics": "Weighing between 25 to 36 kilograms, Labs have a short, dense coat that sheds seasonally and is relatively low-maintenance. They are naturally strong swimmers and highly energetic.",
@@ -91,13 +100,13 @@
       "headimage": "/dog/labradorhead.jpg"
     },
     {
-      "name": "Border Collie",
-      "description": "The Border Collie is a medium-sized, intensely focused breed known for its sharp intelligence and strong herding instincts. With a graceful build, attentive expression, and agile movements, it’s often considered the most intelligent of all dog breeds.",
-      "characteristics": "Typically weighing between 14 to 22 kilograms, Border Collies have a weather-resistant double coat that may be smooth or rough, requiring moderate grooming. Their athletic build makes them natural performers in agility and obedience sports.",
-      "lifespan": "Border Collies live between 12 to 15 years and benefit from physically and mentally stimulating routines to keep them happy and healthy.",
-      "temperament": "Highly energetic, loyal, and incredibly intelligent, Border Collies need an environment that offers structure and purpose. They are best suited for active families or individuals who can provide daily physical exercise and mental challenges. Without proper stimulation, they may become bored or exhibit unwanted behaviors.",
-      "bodyimage": "/dog/bordercolliebody.jpg",
-      "headimage": "/dog/bordercolliehead.jpg"
+      "name": "Chihuahua",
+      "description": "The Chihuahua is the world’s smallest dog breed, renowned for its outsized personality, large alert eyes, and pointed ears. Despite its tiny stature, it possesses a bold and spirited demeanor.",
+      "characteristics": "Chihuahuas usually weigh between 1.5 to 3 kilograms and come in both short-haired and long-haired coat varieties, with grooming needs ranging from minimal to moderate depending on the coat type.",
+      "lifespan": "They are one of the longest-living breeds, with lifespans ranging from 14 to 17 years when provided with a nutritious diet and regular health screenings.",
+      "temperament": "Chihuahuas are fiercely loyal and protective of their owners, often forming a strong bond with one person in particular. While affectionate, they can be wary of strangers and prefer calm households or those with older children who understand their delicate nature.",
+      "bodyimage": "/dog/chihuahuabody.jpg",
+      "headimage": "/dog/chihuahuahead.jpg"
     },
     {
       "name": "British Bulldog",
@@ -127,15 +136,6 @@
       "headimage": "/dog/boxerhead.jpg"
     },
     {
-      "name": "Maltese Terrier",
-      "description": "The Maltese Terrier is a toy-sized breed known for its flowing, silky white coat and alert, expressive face. It carries itself with grace and confidence, often appearing elegant and cheerful in equal measure.",
-      "characteristics": "Weighing around 3 to 4 kilograms, the Maltese has a fine, straight coat that requires daily grooming to avoid matting and maintain its pristine look. Their compact size makes them suitable for small living spaces.",
-      "lifespan": "Maltese Terriers typically enjoy a long life of 12 to 15 years, benefiting from consistent grooming, proper nutrition, and routine vet visits.",
-      "temperament": "Affectionate, lively, and intelligent, Maltese Terriers thrive in families that offer companionship and moderate playtime. They are best suited to gentle households and adapt well to apartment living, often forming close bonds with their owners.",
-      "bodyimage": "/dog/maltesebody.jpg",
-      "headimage": "/dog/maltesehead.jpg"
-    },
-    {
       "name": "Poodle",
       "description": "The Poodle is a highly intelligent and elegant breed known for its distinctive curly coat and dignified bearing. Available in standard, miniature, and toy sizes, the Poodle maintains its signature look across variations while adapting well to various living environments.",
       "characteristics": "Depending on size, Poodles can weigh from 4 kilograms (toy) up to 30 kilograms (standard). Their dense, curly coat is low-shedding and often suitable for allergy-sensitive households, though it requires regular grooming and trimming.",
@@ -154,13 +154,13 @@
       "headimage": "/dog/shihtzuhead.jpg"
     },
     {
-      "name": "Cocker Spaniel",
-      "description": "The Cocker Spaniel is a medium-sized dog with long, silky ears and expressive eyes that give it a sweet, endearing look. With a soft, wavy coat and a wagging tail, it embodies charm and a lively spirit.",
-      "characteristics": "Weighing between 12 to 16 kilograms, Cocker Spaniels have a dense, medium-length coat that requires regular grooming to prevent tangles and ear infections. Their build is compact yet athletic, well-suited for both play and cuddling.",
-      "lifespan": "Cocker Spaniels typically live between 12 to 15 years, and with proper grooming, exercise, and ear care, they remain vibrant well into their senior years.",
-      "temperament": "Gentle, affectionate, and eager to please, Cocker Spaniels make excellent companions for families with children or active individuals. They enjoy being involved in daily activities and thrive in homes where they receive ample attention and exercise.",
-      "bodyimage": "/dog/cockerspanielbody.jpg",
-      "headimage": "/dog/cockerspanielhead.jpg"
+      "name": "Pomeranian",
+      "description": "The Pomeranian is a toy-sized breed with a fox-like face, bright eyes, and an abundant double coat that gives it a fluffy, plush appearance. This breed carries itself with an alert and lively demeanor that far exceeds its small stature.",
+      "characteristics": "Weighing between 1.5 to 3.5 kilograms, Pomeranians have a dense, long coat that requires regular brushing to prevent tangles and maintain its beautiful volume. Despite their size, they are spirited and agile.",
+      "lifespan": "Pomeranians generally enjoy a long life of 12 to 16 years, thriving best with routine dental care, grooming, and mental stimulation.",
+      "temperament": "Vivacious, confident, and inquisitive, Pomeranians are known for their bold personalities. They form strong attachments with their families and do well in apartments or homes, provided they are given adequate attention and engagement. While small, they can be vocal and act as effective alert dogs.",
+      "bodyimage": "/dog/pomeranianbody.jpg",
+      "headimage": "/dog/pomeranianhead.jpg"
     },
     {
       "name": "Aussie Bulldog",

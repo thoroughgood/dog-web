@@ -49,7 +49,7 @@ export default function Footer() {
                 Dachshund
               </Link>
               <Link
-                href="/breeds/pugs"
+                href="/breeds/pug"
                 className="hover:underline hover:text-red-400"
               >
                 Pugs

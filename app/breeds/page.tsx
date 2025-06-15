@@ -20,15 +20,17 @@ const BreedsPage = () => {
   const breeds: Breed[] = [];
   //Removes all oodle variations, poodle is not part of this and Cavoodle is most popular so we take it out of the pool
   for (const breed of breedsData.dogBreeds) {
-    if (!breed.name.includes('oodle')) {
+    if (
+      !breed.name.includes('oodle') ||
+      breed.name.includes('Cavoodle')
+    ) {
       breeds.push(breed);
     }
     if (breeds.length === 10) break;
   }
 
   const breedsList = breedsData.dogBreeds.filter(
-    (breed) =>
-      !breeds.includes(breed)
+    (breed) => !breeds.includes(breed)
   );
 
   return (
@@ -70,7 +72,7 @@ const BreedsPage = () => {
                 />
               </CardContent>
               <CardFooter
-                className={`${fredoka.className} bg-blue-500 text-white rounded-b-lg flex flex-row justify-center items-center h-[75px] p-0 -my-[1px] text-xl`}
+                className={`${fredoka.className} bg-blue-500 text-white text-center rounded-b-lg flex flex-row justify-center items-center h-[75px] p-0 -my-[1px] text-xl`}
               >
                 {breed.name}
               </CardFooter>
