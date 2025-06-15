@@ -1,8 +1,17 @@
+'use client';
 import Link from 'next/link';
 import breedsData from '../../public/dogBreeds.json';
 import Image from 'next/image';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import { Fredoka } from 'next/font/google';
+import { Fredoka, Open_Sans } from 'next/font/google';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '../../components/ui/dialog';
 interface Breed {
   name: string;
   description: string;
@@ -13,6 +22,8 @@ interface Breed {
   headimage: string;
 }
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
+const open_sans = Open_Sans({ subsets: ['latin'], weight: '400' });
+
 /* Need to code for 9 most popular dog breeds, rest go in a list */
 const BreedsPage = () => {
   /* This removes any dog breed with "oodle", there will be one category for them */
@@ -41,13 +52,30 @@ const BreedsPage = () => {
         Dog Breeds
       </h1>
       <h3
-        className={`${fredoka.className} text-red-500 text-xl text-center`}
+        className={`${open_sans.className} $text-black text-xl text-center`}
       >
         Prices are subject to change based on{' '}
-        <span className="underline font-bold">availability.</span>
+        <Dialog>
+          <DialogTrigger className="text-red-500 underline">
+            availability
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>
+                Extra Information about availability
+              </DialogTitle>
+              <DialogDescription>
+                Due to the nature of dog breeding, not all breeds will
+                be available all year round. We will try our best,
+                however, to ensure transparent and prompt
+                communication.
+              </DialogDescription>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </h3>
       <h3
-        className={`${fredoka.className} text-red-500 text-xl text-center mb-8`}
+        className={`${open_sans.className} text-black text-xl text-center mb-8`}
       >
         Pay a 50% initial deposit, and the rest when you&apos;re done.
       </h3>
