@@ -109,11 +109,11 @@ export default function Footer() {
                   height="25"
                 />
               </Link>
-              <Link href="https://www.instagram.com/">
+              <Link href="https://www.instagram.com/pickapoochau">
                 <Image
                   className="hover:opacity-70"
                   src={instagram.src}
-                  alt="Facebook link for business"
+                  alt="Instagram link for business"
                   width="25"
                   height="25"
                 />

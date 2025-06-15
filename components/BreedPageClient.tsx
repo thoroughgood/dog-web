@@ -1,28 +1,33 @@
 'use client';
-import breedsData from '../../../public/dogBreeds.json';
-import { notFound, usePathname } from 'next/navigation';
+
 import Image from 'next/image';
-import { Fredoka, Red_Hat_Display } from 'next/font/google';
-/* import { EmailForm } from '@/components/contactForm';
- */ import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import Enquire from '@/components/enquire';
+import { Fredoka, Red_Hat_Display } from 'next/font/google';
+import Link from 'next/link';
+import { Button } from './ui/button';
 
 const redHat = Red_Hat_Display({ subsets: ['latin'] });
 const fredoka = Fredoka({ subsets: ['latin'], weight: '500' });
 
-export default function Page() {
-  const pathname = usePathname().split('/')[2];
-  const breed = breedsData.dogBreeds.find(
-    (b) =>
-      b.name.toLowerCase().split(' ').join('') ===
-      pathname.toLowerCase()
-  );
+interface BreedParams {
+  name: string;
+  bodyimage: string;
+  headimage: string;
+  description: string;
+  lifespan: string;
+  characteristics: string;
+  temperament: string;
+}
 
+export default function BreedPageClient({
+  breed,
+}: {
+  breed: BreedParams;
+}) {
   if (!breed) {
-    notFound();
+    return <div>Breed not found.</div>;
   }
-  console.log(breed.name);
+
   return (
     <div
       className={`min-h-screen px-4 sm:px-8 md:px-16 lg:px-32 py-8 ${redHat.className}`}
@@ -43,7 +48,7 @@ export default function Page() {
               height={500}
               alt={breed.name}
             />
-            <Enquire breed={`${breed.name}`}></Enquire>
+            <Enquire breed={breed.name} />
           </div>
 
           <div className="w-full xl:w-2/3 flex flex-col text-gray-700 gap-4">
@@ -71,12 +76,15 @@ export default function Page() {
                 <div
                   className={`${fredoka.className} text-red-500 text-center xl:text-left mt-4 flex gap-4 flex-row justify-center items-center`}
                 >
-                  <div className="">
+                  <div>
                     If you are interested in other breeds not listed
                     here, email or call us!
                   </div>
 
-                  <a href="tel:+61431892647">
+                  <a
+                    href="tel:+61431892647"
+                    aria-label="Call 0431 892 647"
+                  >
                     <Button className="bg-red-500 hover:bg-red-400 flex items-center gap-2 px-4 py-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +93,7 @@ export default function Page() {
                         strokeWidth="1.5"
                         stroke="currentColor"
                         className="w-6 h-6"
+                        aria-hidden="true"
                       >
                         <path
                           strokeLinecap="round"

@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import breedsData from '../../public/dogBreeds.json';
+import breedsData from '@/data/dogBreeds.json';
 import Image from 'next/image';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Fredoka, Open_Sans } from 'next/font/google';

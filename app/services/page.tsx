@@ -3,8 +3,13 @@ import bone from '../../public/Untitled.svg';
 import ball from '../../public/tennisball.svg';
 import { Fredoka } from 'next/font/google';
 import ServiceCard from '../../components/serviceCard';
+import { Metadata } from 'next';
 
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
+
+export const metadata: Metadata = {
+  title: 'Services',
+};
 
 const ServicesPage = () => {
   return (

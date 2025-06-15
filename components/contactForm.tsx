@@ -22,7 +22,7 @@ import {
   SelectValue,
 } from './ui/select';
 import { CheckCircle, Loader2 } from 'lucide-react';
-import breedsData from '../public/dogBreeds.json';
+import breedsData from '@/data/dogBreeds.json';
 import { useSearchParams } from 'next/navigation';
 
 const FormSchema = z.object({

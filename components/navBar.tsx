@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import image from '../public/pickapooch_1.webp';
+import image from '../public/pickapooch_1.png';
 import Image from 'next/image';
 const Navbar = () => {
   const [isVisible, setIsOpen] = useState(false);
