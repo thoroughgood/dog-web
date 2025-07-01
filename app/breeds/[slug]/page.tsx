@@ -1,5 +1,6 @@
 import breedsData from '@/data/dogBreeds.json';
 import BreedPageClient from '@/components/BreedPageClient';
+import { notFound } from 'next/dist/client/components/not-found';
 
 // generateStaticParams should be async to satisfy Next.js expectations
 export async function generateStaticParams() {
@@ -14,7 +15,7 @@ type PageProps = {
   };
 };
 
-export default function Page({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
   const slug = params.slug;
   const breed = breedsData.dogBreeds.find(
     (b) =>
@@ -22,6 +23,7 @@ export default function Page({ params }: PageProps) {
   );
 
   if (!breed) {
+    notFound();
     // You might want to handle not found here to avoid passing undefined to BreedPageClient
     // e.g. throw new Error('Breed not found') or use notFound() from next/navigation
   }

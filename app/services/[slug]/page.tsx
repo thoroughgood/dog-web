@@ -3,15 +3,21 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import PackPageClient from '@/components/PackPageClient';
 
+// --- Type definitions ---
+type PageParams = {
+  params: {
+    slug: string;
+  };
+};
+
+// --- Metadata generation ---
 export async function generateMetadata({
   params,
-}: {
-  params: { slug: string };
-}): Metadata {
+}: PageParams): Promise<Metadata> {
   const slug = params.slug;
   const pack = packsData.packs.find(
     (b) =>
-      b.name.toLowerCase().split(' ').join('') === slug.toLowerCase()
+      b.name.toLowerCase().replace(/\s/g, '') === slug.toLowerCase()
   );
 
   if (!pack) notFound();
@@ -22,11 +28,8 @@ export async function generateMetadata({
   };
 }
 
-export default function Page({
-  params,
-}: {
-  params: { slug: string };
-}) {
+// --- Page component ---
+export default function Page({ params }: PageParams) {
   const slug = params.slug;
   const pack = packsData.packs.find(
     (b) =>
