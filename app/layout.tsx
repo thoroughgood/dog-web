@@ -7,7 +7,8 @@ const open_sans = Open_Sans({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: { default: 'Pick A Pooch', template: '%s - Pick A Pooch' },
-  description: 'A puppy purchasing service',
+  description:
+    'Find and adopt the perfect puppy breed for your lifestyle. Pick A Pooch connects you with trusted breeders and helps you choose the right pup with ease.',
   twitter: {
     card: 'summary_large_image',
   },

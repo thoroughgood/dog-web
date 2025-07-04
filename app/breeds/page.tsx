@@ -1,4 +1,3 @@
-'use client';
 import Link from 'next/link';
 import breedsData from '@/data/dogBreeds.json';
 import Image from 'next/image';
@@ -12,6 +11,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '../../components/ui/dialog';
+import { Metadata } from 'next';
 interface Breed {
   name: string;
   description: string;
@@ -23,6 +23,12 @@ interface Breed {
 }
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 const open_sans = Open_Sans({ subsets: ['latin'], weight: '400' });
+
+export const metadata: Metadata = {
+  title: 'Dog Breeds',
+  description:
+    'Take a look at our prepared service packages, offering the best quality puppy needs at convenient and low prices.',
+};
 
 /* Need to code for 9 most popular dog breeds, rest go in a list */
 const BreedsPage = () => {

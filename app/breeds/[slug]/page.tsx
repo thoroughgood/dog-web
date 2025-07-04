@@ -1,6 +1,7 @@
 import breedsData from '@/data/dogBreeds.json';
 import BreedPageClient from '@/components/BreedPageClient';
 import { notFound } from 'next/dist/client/components/not-found';
+import { Metadata } from 'next';
 
 // generateStaticParams should be async to satisfy Next.js expectations
 export async function generateStaticParams() {
@@ -9,13 +10,31 @@ export async function generateStaticParams() {
   }));
 }
 
-type PageProps = {
+type PageParams = {
   params: {
     slug: string;
   };
 };
 
-export default async function Page({ params }: PageProps) {
+// --- Metadata generation ---
+export async function generateMetadata({
+  params,
+}: PageParams): Promise<Metadata> {
+  const slug = params.slug;
+  const breeds = breedsData.dogBreeds.find(
+    (b) =>
+      b.name.toLowerCase().replace(/\s/g, '') === slug.toLowerCase()
+  );
+
+  if (!breeds) notFound();
+
+  return {
+    title: breeds.name,
+    description: breeds.description,
+  };
+}
+
+export default async function Page({ params }: PageParams) {
   const slug = params.slug;
   const breed = breedsData.dogBreeds.find(
     (b) =>
