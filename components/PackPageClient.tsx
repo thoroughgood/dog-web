@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Enquire from '@/components/enquire';
 import { Fredoka, Red_Hat_Display } from 'next/font/google';

@@ -1,10 +1,16 @@
-'use client';
 import { EmailForm } from '@/components/contactForm';
 import { Button } from '@/components/ui/button';
+import { Metadata } from 'next';
 import { Fredoka } from 'next/font/google';
 import { Suspense } from 'react';
 
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
+
+export const metadata: Metadata = {
+  title: 'Dog Breeds',
+  description:
+    'Take a look at our prepared service packages, offering the best quality puppy needs at convenient and low prices.',
+};
 
 export default function Home() {
   return (
