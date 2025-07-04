@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import { Fredoka } from 'next/font/google';
 
 const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
+
+export const metadata: Metadata = {
+  title: 'About',
+  description:
+    'Learn how Pick A Pooch evolved from a small family breeding service into a trusted online puppy platform, offering safe, stress-free puppy delivery across Australia.',
+};
 
 export default function About() {
   return (
