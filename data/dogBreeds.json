@@ -20,7 +20,7 @@
     },
     {
       "name": "French Bulldog",
-      "description": "The French Bulldog is a compact and muscular breed, instantly recognizable by its distinctive bat-like ears, flat snout, and endearing, wrinkled face. It possesses a confident and comical presence, which has made it a popular companion worldwide.",
+      "description": "The French Bulldog is a compact and muscular breed, instantly recognisable by its distinctive bat-like ears, flat snout, and endearing, wrinkled face. It possesses a confident and comical presence, which has made it a popular companion worldwide.",
       "characteristics": "French Bulldogs typically weigh between 8 to 14 kilograms and have a short, smooth, low-maintenance coat. While their coat is easy to care for, they are prone to heat sensitivity due to their brachycephalic (short-nosed) anatomy, requiring careful monitoring in warm climates.",
       "lifespan": "This breed generally enjoys a lifespan of 10 to 12 years, although potential owners should be aware of common respiratory and joint issues associated with the bree.",
       "temperament": "Playful, affectionate, and occasionally stubborn, French Bulldogs are known for their charming personalities. They form strong bonds with their owners and do well in smaller spaces, making them ideal pets for city dwellers or apartment living. Their low energy needs also suit a more relaxed househol.",
@@ -29,7 +29,7 @@
     },
     {
       "name": "Dachshund",
-      "description": "The Dachshund, affectionately known as the 'sausage dog,' is a breed characterized by its long body, short legs, and confident stance. Available in smooth, long-haired, or wire-haired coat types, the breed is visually unique and historically bred for hunting small game.",
+      "description": "The Dachshund, affectionately known as the 'sausage dog,' is a breed characterised by its long body, short legs, and confident stance. Available in smooth, long-haired, or wire-haired coat types, the breed is visually unique and historically bred for hunting small game.",
       "characteristics": "Dachshunds typically weigh between 5 to 14 kilograms depending on whether they are miniature or standar. Their coat type dictates grooming needs—smooth coats are low-maintenance, while long-haired and wire-haired variants require more frequent brushing.",
       "lifespan": "This spirited breed has a life expectancy of around 12 to 16 years, although it is important to manage their weight and avoid excessive jumping due to their predisposition to back problems.",
       "temperament": "Dachshunds are bold, curious, and lively, often forming strong attachments with their families. Though small, they can be quite vocal and protective, making them alert watchdogs. They thrive in environments where they receive both affection and structured activity.",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Pug",
-      "description": "The Pug is a small and robust breed recognized by its wrinkled face, large round eyes, and curled tail resting over its back. Its charming and often comical expressions have earned it a loyal following among dog enthusiasts.",
+      "description": "The Pug is a small and robust breed recognised by its wrinkled face, large round eyes, and curled tail resting over its back. Its charming and often comical expressions have earned it a loyal following among dog enthusiasts.",
       "characteristics": "Pugs typically weigh between 6 to 8 kilograms and have a short, dense coat that sheds throughout the year. Due to their flat faces, they are sensitive to heat and can be prone to breathing issues, necessitating a moderate and climate-conscious lifestyle.",
       "lifespan": "Pugs generally live between 12 to 15 years and benefit from a balanced diet, weight management, and regular check-ups, particularly for respiratory and skin issues.",
       "temperament": "Friendly, loyal, and loving, Pugs make excellent companions for families, singles, and seniors alike. They are social and affectionate, enjoying human interaction, and are typically very adaptable to a range of living situations, including apartments.",
@@ -68,7 +68,7 @@
       "description": "The Staffordshire Bull Terrier is a medium-sized, muscular breed known for its broad head, strong build, and expressive, loving eyes. It has a sleek, smooth coat and an overall appearance of strength and stability.",
       "characteristics": "Typically weighing between 11 to 17 kilograms, this breed has a short, low-maintenance coat that comes in various colors. The breed’s muscular frame is compact and agile, suited for active play and exercise.",
       "lifespan": "Staffordshire Bull Terriers commonly live between 12 to 14 years, provided they are kept physically active and mentally engage.",
-      "temperament": "Despite their strong appearance, ‘Staffies’ are known for their affectionate and loyal nature. They are particularly good with children and are sometimes referred to as ‘nanny dogs.’ They thrive in active households where they receive both exercise and companionship, and they benefit from early socialization to promote positive interactions with other pets.",
+      "temperament": "Despite their strong appearance, ‘Staffies’ are known for their affectionate and loyal nature. They are particularly good with children and are sometimes referred to as ‘nanny dogs.’ They thrive in active households where they receive both exercise and companionship, and they benefit from early socialisation to promote positive interactions with other pets.",
       "bodyimage": "/dog/staffybody.jpg",
       "headimage": "/dog/staffyhead.jpg"
     },
@@ -92,7 +92,7 @@
     },
     {
       "name": "Labrador Retriever",
-      "description": "The Labrador Retriever is a well-balanced and athletic breed with a broad head, expressive eyes, and a thick, water-resistant coat. Labradors are widely recognized for their friendly and dependable nature, making them one of the most popular dog breeds worldwide.",
+      "description": "The Labrador Retriever is a well-balanced and athletic breed with a broad head, expressive eyes, and a thick, water-resistant coat. Labradors are widely recognised for their friendly and dependable nature, making them one of the most popular dog breeds worldwide.",
       "characteristics": "Weighing between 25 to 36 kilograms, Labs have a short, dense coat that sheds seasonally and is relatively low-maintenance. They are naturally strong swimmers and highly energetic.",
       "lifespan": "Labrador Retrievers live approximately 10 to 14 years, and their health benefits significantly from proper nutrition, regular exercise, and weight management.",
       "temperament": "Gentle, intelligent, and highly trainable, Labradors are ideal for families, therapy roles, and active individuals. They are social animals who thrive on interaction and are particularly well-suited to homes with children or other pets.",
@@ -113,7 +113,7 @@
       "description": "The British Bulldog, often simply called the Bulldog, is a medium-sized breed with a distinctive wrinkled face, stocky frame, and iconic pushed-in nose. With its unmistakable rolling gait and loose skin, it presents a comical yet dignified appearance.",
       "characteristics": "British Bulldogs usually weigh between 18 to 25 kilograms and have a short, smooth coat that requires minimal grooming. Their muscular build and short legs give them a powerful stance, though they are not built for endurance activities.",
       "lifespan": "They generally have a lifespan of 8 to 10 years, and prospective owners should be aware of their susceptibility to respiratory, joint, and skin issues.",
-      "temperament": "Calm, courageous, and affectionate, British Bulldogs are ideal for families looking for a low-energy, loyal companion. They are particularly fond of lounging and tend to get along well with children and other pets when properly socialize.",
+      "temperament": "Calm, courageous, and affectionate, British Bulldogs are ideal for families looking for a low-energy, loyal companion. They are particularly fond of lounging and tend to get along well with children and other pets when properly socialise.",
       "bodyimage": "/dog/britbulldogbody.jpg",
       "headimage": "/dog/britbulldoghead.jpg"
     },
@@ -122,7 +122,7 @@
       "description": "The Boxer is a strong, athletic, and energetic breed with a distinctive square jaw and alert expression. Its sleek, muscular frame is matched with a playful, exuberant spirit that makes it a popular family pet.",
       "characteristics": "Boxers generally weigh between 25 to 32 kilograms and have a short, tight coat that is easy to maintain. Their physique reflects both power and agility, suitable for active lifestyles.",
       "lifespan": "Boxers typically live between 10 to 12 years, though they may be predisposed to certain genetic heart and cancer conditions which should be monitored with routine veterinary care.",
-      "temperament": "Boxers are known for their playful, loyal, and protective nature. They are excellent with children and require ample exercise to match their high energy. Early training and socialization are essential, as they can be exuberant and strong-willed if left untraine.",
+      "temperament": "Boxers are known for their playful, loyal, and protective nature. They are excellent with children and require ample exercise to match their high energy. Early training and socialisation are essential, as they can be exuberant and strong-willed if left untraine.",
       "bodyimage": "/dog/boxerbody.jpg",
       "headimage": "/dog/boxerhead.jpg"
     },
@@ -167,7 +167,7 @@
       "description": "The Rottweiler is a large, powerful breed known for its strong frame, black coat with rich tan markings, and a confident, steady gaze. Originally bred for herding and guarding, the Rottweiler has a commanding presence and a calm, intelligent demeanor.",
       "characteristics": "Weighing between 35 to 60 kilograms, Rottweilers have a short, dense coat that is easy to groom but sheds seasonally. Their muscular build requires structured physical activity to maintain strength and balance.",
       "lifespan": "Rottweilers typically live between 8 to 10 years and benefit from early training, regular exercise, and consistent health monitoring to ensure a balanced and healthy life.",
-      "temperament": "Protective, loyal, and disciplined, Rottweilers are excellent family dogs when properly trained and socialize. They require confident ownership and do best in households that can provide firm, loving guidance along with opportunities for physical and mental stimulation.",
+      "temperament": "Protective, loyal, and disciplined, Rottweilers are excellent family dogs when properly trained and socialise. They require confident ownership and do best in households that can provide firm, loving guidance along with opportunities for physical and mental stimulation.",
       "bodyimage": "/dog/rottweilerbody.jpg",
       "headimage": "/dog/rottweilerhead.jpg"
     },
@@ -194,7 +194,7 @@
       "description": "The Jack Russell Terrier is a small but highly energetic breed with a strong prey drive and a lively, expressive face. It features a compact, athletic body with either a smooth or broken coat, and often displays a white coat with tan or black markings.",
       "characteristics": "Typically weighing between 6 to 8 kilograms, Jack Russells are muscular and agile with a weatherproof coat that requires minimal grooming. Their sturdy build supports their intense activity levels and agility.",
       "lifespan": "Jack Russell Terriers are known for their vitality and longevity, commonly living 13 to 16 years when properly exercised and stimulate.",
-      "temperament": "Fearless, intelligent, and enthusiastic, Jack Russells require active homes with plenty of physical and mental stimulation. They do best with owners who can match their intensity and provide consistent training. While affectionate and playful, they may not always be tolerant of small children or other pets without early socialization.",
+      "temperament": "Fearless, intelligent, and enthusiastic, Jack Russells require active homes with plenty of physical and mental stimulation. They do best with owners who can match their intensity and provide consistent training. While affectionate and playful, they may not always be tolerant of small children or other pets without early socialisation.",
       "bodyimage": "/dog/jrterrierbody.jpg",
       "headimage": "/dog/jrterrierhead.jpg"
     },

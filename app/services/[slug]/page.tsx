@@ -5,19 +5,22 @@ import PackPageClient from '@/components/PackPageClient';
 
 // --- Type definitions ---
 type PageParams = {
-  params: {
-    slug: string;
-  };
+  // For Next.js 15+, 'params' is a Promise that resolves to an object
+  params: Promise<{
+    slug: string; // The 'slug' property inside the resolved object is a string
+  }>;
 };
 
 // --- Metadata generation ---
 export async function generateMetadata({
   params,
 }: PageParams): Promise<Metadata> {
-  const slug = params.slug;
+  // Await the 'params' promise to get the actual slug object
+  const { slug } = await params;
+
   const pack = packsData.packs.find(
-    (b) =>
-      b.name.toLowerCase().replace(/\s/g, '') === slug.toLowerCase()
+    (p) =>
+      p.name.toLowerCase().replace(/\s/g, '') === slug.toLowerCase()
   );
 
   if (!pack) notFound();
@@ -29,11 +32,14 @@ export async function generateMetadata({
 }
 
 // --- Page component ---
-export default function Page({ params }: PageParams) {
-  const slug = params.slug;
+// This component needs to be 'async' because we are 'await'ing 'params'
+export default async function Page({ params }: PageParams) {
+  // Await the 'params' promise here to get the actual slug object
+  const { slug } = await params;
+
   const pack = packsData.packs.find(
-    (b) =>
-      b.name.toLowerCase().replace(/\s/g, '') === slug.toLowerCase()
+    (p) =>
+      p.name.toLowerCase().replace(/\s/g, '') === slug.toLowerCase()
   );
 
   if (!pack) notFound();

@@ -111,13 +111,16 @@ export default function BreedPageClient({
                 <div>
                   <strong>Description:</strong> {breed.description}
                 </div>
+                <br></br>
                 <div>
                   <strong>Characteristics:</strong>{' '}
                   {breed.characteristics}
                 </div>
+                <br></br>
                 <div>
                   <strong>Lifestyle:</strong> {breed.lifespan}
                 </div>
+                <br></br>
                 <div>
                   <strong>Temperament:</strong> {breed.temperament}
                 </div>
