@@ -46,7 +46,7 @@ export default function BreedPageClient({
               src={breed.bodyimage}
               width={400}
               height={500}
-              alt={breed.name}
+              alt={`An image of a ${breed.name}`}
             />
             <Enquire breed={breed.name} />
           </div>

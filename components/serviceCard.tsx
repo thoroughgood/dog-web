@@ -48,7 +48,7 @@ export default function ServiceCard({
                 className=""
                 width={50}
                 key={image.src}
-                alt="this is a row of relevant items to the pack"
+                alt="basic icons relating to the title of the pack"
               ></Image>
             );
           })}

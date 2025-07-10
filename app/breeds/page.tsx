@@ -102,7 +102,7 @@ const BreedsPage = () => {
                   className="object-fit rounded-lg overflow-hidden sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] max-h-[250px]"
                   src={breed.headimage}
                   fill={true}
-                  alt={breed.name}
+                  alt={`An image of a ${breed.name}`}
                 />
               </CardContent>
               <CardFooter
