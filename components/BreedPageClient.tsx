@@ -25,62 +25,80 @@ export default function BreedPageClient({
   breed: BreedParams;
 }) {
   if (!breed) {
-    return <div>Breed not found.</div>;
+    return <div role="alert">Breed not found.</div>;
   }
 
   return (
-    <div
+    <main
       className={`min-h-screen px-4 sm:px-8 md:px-16 lg:px-32 py-8 ${redHat.className}`}
+      aria-label={`Information about ${breed.name}`}
     >
-      <div className="max-w-5xl mx-auto">
-        <h1
-          className={`${fredoka.className} text-sky-900 text-4xl font-bold text-center flex justify-center sm:text-left mb-6`}
-        >
-          {breed.name}
-        </h1>
+      <article
+        className="max-w-5xl mx-auto"
+        aria-labelledby="breed-heading"
+      >
+        <header>
+          <h1
+            id="breed-heading"
+            className={`${fredoka.className} text-sky-900 text-4xl font-bold text-center flex justify-center sm:text-left mb-6`}
+          >
+            {breed.name}
+          </h1>
+        </header>
 
         <div className="flex flex-col xl:flex-row gap-6 items-center xl:items-start">
-          <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col justify-center">
-            <Image
-              className="border-2 border-gray-300 rounded-lg w-full"
-              src={breed.bodyimage}
-              width={400}
-              height={500}
-              alt={`An image of a ${breed.name}`}
-            />
+          <aside className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col justify-center">
+            <figure>
+              <Image
+                className="border-2 border-gray-300 rounded-lg w-full"
+                src={breed.bodyimage}
+                width={400}
+                height={500}
+                loading="lazy"
+                alt={`An image of a ${breed.name}`}
+                role="img"
+              />
+              <figcaption className="sr-only">
+                Full-body image of a {breed.name}
+              </figcaption>
+            </figure>
             <Enquire breed={breed.name} />
-          </div>
+          </aside>
 
-          <div className="w-full xl:w-2/3 flex flex-col text-gray-700 gap-4">
+          <section
+            className="w-full xl:w-2/3 flex flex-col text-gray-700 gap-4"
+            aria-label="Breed Information"
+          >
             {breed.name === 'Oodles' ? (
               <>
-                <div className="text-center xl:text-left font-semibold">
+                <p className="text-center xl:text-left font-semibold">
                   Here are a list of our desirable oodle breeds:
-                </div>
-                <div className="flex flex-col text-center xl:text-left space-y-2">
+                </p>
+                <ul className="flex flex-col text-center xl:text-left space-y-2 list-disc list-inside">
                   {[
                     'Cavoodle',
                     'Groodle',
                     'Labradoodle',
                     'Spoodle',
                   ].map((b) => (
-                    <Link
-                      key={b}
-                      className="hover:text-blue-500 flex w-fit self-center"
-                      href={`./${b.toLowerCase()}`}
-                    >
-                      {b}
-                    </Link>
+                    <li key={b}>
+                      <Link
+                        className="hover:text-blue-500"
+                        href={`./${b.toLowerCase()}`}
+                      >
+                        {b}
+                      </Link>
+                    </li>
                   ))}
-                </div>
+                </ul>
                 <div
-                  className={`${fredoka.className} text-red-500 text-center xl:text-left mt-4 flex gap-4 flex-row justify-center items-center`}
+                  className={`${fredoka.className} text-red-500 text-center xl:text-left mt-4 flex flex-col xl:flex-row gap-4 items-center`}
+                  aria-label="Contact information"
                 >
-                  <div>
+                  <p>
                     If you are interested in other breeds not listed
                     here, email or call us!
-                  </div>
-
+                  </p>
                   <a
                     href="tel:+61431892647"
                     aria-label="Call 0431 892 647"
@@ -107,32 +125,30 @@ export default function BreedPageClient({
                 </div>
               </>
             ) : (
-              <div className="text-lg">
-                <div>
+              <div className="text-lg space-y-4">
+                <section aria-label="Breed description">
                   <strong>Description:</strong> {breed.description}
-                </div>
-                <br></br>
-                <div>
+                </section>
+                <section aria-label="Breed characteristics">
                   <strong>Characteristics:</strong>{' '}
                   {breed.characteristics}
-                </div>
-                <br></br>
-                <div>
+                </section>
+                <section aria-label="Breed lifestyle">
                   <strong>Lifestyle:</strong> {breed.lifespan}
-                </div>
-                <br></br>
-                <div>
+                </section>
+                <section aria-label="Breed temperament">
                   <strong>Temperament:</strong> {breed.temperament}
-                </div>
+                </section>
               </div>
             )}
-          </div>
+          </section>
         </div>
 
-        <div className="flex flex-col items-center xl:items-start mt-6 xl:w-1/2">
+        {/* Future form integration area */}
+        <footer className="flex flex-col items-center xl:items-start mt-6 xl:w-1/2">
           {/* <EmailForm breed={breed.name} /> */}
-        </div>
-      </div>
-    </div>
+        </footer>
+      </article>
+    </main>
   );
 }

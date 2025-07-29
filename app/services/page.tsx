@@ -22,7 +22,7 @@ const ServicesPage = () => {
         Our Services
       </h1>
 
-      <div className="flex flex-col md:flex-row gap-6 md:justify-center items-center">
+      <section className="flex flex-col md:flex-row gap-6 md:justify-center items-center">
         <ServiceCard
           link="/services/starterpack"
           title="$159.99 Puppy Pack"
@@ -35,7 +35,7 @@ const ServicesPage = () => {
           description="Food for all your nutritious needs"
           images={[food]}
         />
-      </div>
+      </section>
 
       <div className="mt-10 max-w-3xl mx-auto text-lg text-gray-700 leading-7 text-center">
         <p>

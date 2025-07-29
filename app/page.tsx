@@ -15,69 +15,72 @@ const open_sans = Open_Sans({ subsets: ['latin'], weight: '400' });
 export default function Home() {
   return (
     <>
-      {/* Hero Section - Enhanced with gradient and better spacing */}
-      <div className="bg-gradient-to-br from-blue-600 to-blue-400 w-full py-16 flex justify-center flex-col items-center shadow-xl relative overflow-hidden">
+      {/* Header Section, sits at the top of the page under the navbar but above the main content */}
+      <header className="bg-gradient-to-br from-blue-600 to-blue-400 w-full py-16 flex justify-center flex-col items-center shadow-xl relative overflow-hidden">
         <div className="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <div
+          <h1
             className={`${fredoka.className} text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6 leading-tight`}
           >
             Let us save you the hassle of finding the perfect puppy
-          </div>
-          <div
+          </h1>
+          <h2
             className={`${open_sans.className} text-xl md:text-2xl text-blue-50 max-w-2xl mx-auto leading-relaxed`}
           >
             At{' '}
-            <span className={`${fredoka.className}`}>
+            <strong className={fredoka.className}>
               Pick A Pooch
-            </span>
+            </strong>
             , we do all the searching for you.
-          </div>
+          </h2>
           <Link href="/breeds">
-            <div className="mt-8 inline-block bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="mt-8 inline-block bg-red-500 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
               Start Your Search Today
-            </div>
+            </button>
           </Link>
         </div>
-      </div>
-
-      {/* Main content */}
+      </header>
+      {/* main section, actual content about the business */}
       <main className="flex flex-col text-left text-black">
-        {/* Sydney-based section - Enhanced with better layout */}
-        <section className="py-20 bg-white">
+        <section
+          aria-labelledby="sydney-heading"
+          className="py-20 bg-white"
+        >
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
               <div className="flex-1 text-center lg:text-left">
-                <div
+                <h2
+                  id="sydney-heading"
                   className={`${fredoka.className} text-transparent bg-clip-text bg-gradient-to-br from-sky-900 to-blue-800 text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight`}
                 >
                   SYDNEY-BASED.
-                </div>
-                <div
-                  className={`${open_sans.className} text-xl md:text-2xl text-slate-600 leading-relaxed max-w-lg`}
+                </h2>
+                <p
+                  className={`${open_sans.className} text-xl md:text-2xl text-slate-600 leading-relaxed lg:text-left`}
                 >
                   Delivering to the Greater Sydney regions
-                </div>
-                <div className="mt-8 flex flex-wrap gap-4 text-blue-800 justify-center lg:justify-start">
-                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
-                    Greater Sydney
-                  </span>
-                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
-                    South Coast
-                  </span>
-                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
-                    Central Coast
-                  </span>
-                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
-                    Shoalhaven
-                  </span>
-                  <span className="bg-blue-100 px-4 py-2 rounded-full font-medium">
-                    Illawarra
-                  </span>
-                </div>
+                </p>
+                {/*unordered list { list items } */}
+                <ul className="mt-8 flex flex-wrap gap-4 text-blue-800 justify-center lg:justify-start list-none">
+                  {[
+                    'Greater Sydney',
+                    'South Coast',
+                    'Central Coast',
+                    'Shoalhaven',
+                    'Illawarra',
+                  ].map((region) => (
+                    <li
+                      key={region}
+                      className="bg-blue-100 px-4 py-2 rounded-full font-medium"
+                    >
+                      {region}
+                    </li>
+                  ))}
+                </ul>
               </div>
               <div className="flex-1 flex justify-center">
-                <div className="relative">
+                {/* figure - self contained content like illustrations diagrams etc*/}
+                <figure className="relative">
                   <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-red-200 rounded-3xl blur-xl opacity-30"></div>
                   <Image
                     className="relative rounded-3xl shadow-2xl max-w-md w-full"
@@ -87,31 +90,32 @@ export default function Home() {
                     height="400"
                     alt="Happy dog with tongue out"
                   />
-                </div>
+                </figure>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Value proposition section - Enhanced */}
-        <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+        <section
+          aria-labelledby="benefits-heading"
+          className="py-20 bg-gradient-to-br from-slate-50 to-blue-50"
+        >
           <div className="max-w-6xl mx-auto px-6 text-center">
-            <div
+            <h2
+              id="benefits-heading"
               className={`${fredoka.className} text-blue-800 text-4xl md:text-5xl font-bold mb-8 leading-tight`}
             >
               We procure highly desirable dog breeds from our select
               range of dog breeders.
-            </div>
-            <div
+            </h2>
+            <p
               className={`${open_sans.className} text-slate-600 text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed`}
             >
               The right puppy, at the right price, delivered right to
               your door.
-            </div>
-
-            {/* Benefits grid */}
+            </p>
             <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <article className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -138,9 +142,9 @@ export default function Home() {
                   All our breeders are carefully selected and verified
                   for quality and ethics.
                 </p>
-              </div>
+              </article>
 
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <article className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -167,9 +171,9 @@ export default function Home() {
                   We quickly connect you with the perfect puppy that
                   matches your preferences.
                 </p>
-              </div>
+              </article>
 
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+              <article className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
                     className="w-8 h-8 text-white"
@@ -196,20 +200,23 @@ export default function Home() {
                   Safe and comfortable delivery directly to your home
                   across Sydney regions.
                 </p>
-              </div>
+              </article>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-r from-red-500 to-red-600">
+        <section
+          aria-labelledby="cta-heading"
+          className="py-16 bg-gradient-to-r from-red-500 to-red-600"
+        >
           <div className="max-w-4xl mx-auto px-6 text-center">
-            <div
+            <h2
+              id="cta-heading"
               className={`${fredoka.className} text-white text-3xl md:text-4xl font-bold mb-6`}
             >
               Interested in what we&apos;ve got to offer? Search our
               range!
-            </div>
+            </h2>
             <div className="flex flex-col items-center md:flex-row gap-8 mt-12">
               <BrowseCard
                 link="./services"
@@ -233,81 +240,87 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonial or Stats Section - NEW */}
-        <section className="py-20 bg-white">
+        <section
+          aria-labelledby="trusted-heading"
+          className="py-20 bg-white"
+        >
           <div className="max-w-6xl mx-auto px-6">
-            <div
+            <h2
+              id="trusted-heading"
               className={`${fredoka.className} text-center text-blue-800 text-4xl md:text-5xl font-bold mb-16`}
             >
               Trusted by Sydney Dog Lovers
-            </div>
-            <div className="grid md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div
+            </h2>
+            <dl className="grid md:grid-cols-4 gap-8 text-center">
+              <div>
+                <dt
                   className={`${fredoka.className} text-4xl font-bold text-red-500 mb-2`}
                 >
                   100+
-                </div>
-                <div
+                </dt>
+                <dd
                   className={`${open_sans.className} text-slate-600 text-lg`}
                 >
                   Happy Families
-                </div>
+                </dd>
               </div>
-              <div className="text-center">
-                <div
+              <div>
+                <dt
                   className={`${fredoka.className} text-4xl font-bold text-blue-500 mb-2`}
                 >
                   50+
-                </div>
-                <div
+                </dt>
+                <dd
                   className={`${open_sans.className} text-slate-600 text-lg`}
                 >
                   Trusted Breeders
-                </div>
+                </dd>
               </div>
-              <div className="text-center">
-                <div
+              <div>
+                <dt
                   className={`${fredoka.className} text-4xl font-bold text-red-500 mb-2`}
                 >
                   27
-                </div>
-                <div
+                </dt>
+                <dd
                   className={`${open_sans.className} text-slate-600 text-lg`}
                 >
                   Dog Breeds
-                </div>
+                </dd>
               </div>
-              <div className="text-center">
-                <div
+              <div>
+                <dt
                   className={`${fredoka.className} text-4xl font-bold text-blue-500 mb-2`}
                 >
                   5
-                </div>
-                <div
+                </dt>
+                <dd
                   className={`${open_sans.className} text-slate-600 text-lg`}
                 >
                   Service Regions
-                </div>
+                </dd>
               </div>
-            </div>
+            </dl>
           </div>
         </section>
 
-        {/* Final CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-sky-900 to-blue-800 text-white text-center">
+        <section
+          aria-labelledby="final-cta-heading"
+          className="py-20 bg-gradient-to-br from-sky-900 to-blue-800 text-white text-center"
+        >
           <div className="max-w-4xl mx-auto px-6">
-            <div
+            <h2
+              id="final-cta-heading"
               className={`${fredoka.className} text-4xl md:text-5xl font-bold mb-6`}
             >
               Ready to Find Your Perfect Companion?
-            </div>
-            <div
+            </h2>
+            <p
               className={`${open_sans.className} text-xl mb-8 opacity-90`}
             >
               Let us do the hard work while you prepare for your new
               family member.
-            </div>
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/breeds">
                 <button className="bg-red-500 hover:bg-white hover:text-red-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105">
@@ -324,29 +337,27 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Bottom decorative images - Enhanced positioning */}
-      <div className="relative">
-        <div className="absolute bottom-[-37px] left-[-68px] z-10 hidden lg:flex">
+      <footer className="relative" aria-hidden="true">
+        <figure className="absolute bottom-[-37px] left-[-68px] z-10 hidden lg:flex">
           <Image
             className="rounded-tr-3xl"
             src={dogGroup.src}
             width="250"
             height="100"
-            alt="Group of dogs on the left"
+            alt=""
           />
-        </div>
-        <div className="absolute bottom-[-37px] right-0 z-10 hidden lg:flex">
+        </figure>
+        <figure className="absolute bottom-[-37px] right-0 z-10 hidden lg:flex">
           <Image
             className="rounded-tl-3xl"
             src={dogGroup2.src}
             width="250"
             height="150"
-            alt="Group of dogs on the right"
+            alt=""
           />
-        </div>
-        {/* Spacer to prevent content overlap */}
+        </figure>
         <div className="h-32"></div>
-      </div>
+      </footer>
     </>
   );
 }
