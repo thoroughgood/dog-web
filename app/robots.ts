@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: '/contact?*breed=',
+        disallow: '/contact*',
       },
     ],
     sitemap: `https://pickapooch.com.au/sitemap.xml`,
