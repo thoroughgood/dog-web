@@ -66,7 +66,8 @@ export default function Home() {
                     'Greater Sydney',
                     'South Coast',
                     'Central Coast',
-                    'Shoalhaven',
+                    'Gosford/Newcastle',
+                    'North Coast',
                     'Illawarra',
                   ].map((region) => (
                     <li
