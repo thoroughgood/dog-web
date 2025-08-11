@@ -60,12 +60,6 @@ export default function Footer() {
               >
                 French Bulldog
               </Link>
-              <Link
-                href="/breeds/bulldog"
-                className="hover:underline hover:text-red-400"
-              >
-                Bulldog
-              </Link>
             </div>
           </div>
 
