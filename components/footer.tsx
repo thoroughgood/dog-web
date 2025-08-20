@@ -94,7 +94,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex justify-center md:justify-start space-x-4">
-              <Link href="https://www.facebook.com/">
+              <Link href="https://www.facebook.com/people/Pick-A-Pooch/61579164969218/">
                 <Image
                   className="hover:opacity-70"
                   src={facebook.src}
