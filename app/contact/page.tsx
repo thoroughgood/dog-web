@@ -9,7 +9,7 @@ const fredoka = Fredoka({ subsets: ['latin'], weight: '600' });
 export const metadata: Metadata = {
   title: 'Dog Breeds',
   description:
-    'Take a look at our prepared service packages, offering the best quality puppy needs at convenient and low prices.',
+    'Contact us and begin your dog adoption process!',
 };
 
 export default function Home() {

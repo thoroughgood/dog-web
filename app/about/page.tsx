@@ -38,11 +38,14 @@ export default function About() {
           puppies that make the perfect addition to your home.
         </p>
         <p className="text-lg text-gray-700">
-          However, as times have changed, we have noticed that people
+          However, as times have changed, we have
+          {/*  noticed that people
           no longer want to take the traditional route of visiting
-          breeders in person. More and more prospective buyers reach
-          out to us, asking about availability with the simple
-          question:
+          breeders in person */}{' '}
+          decided to elevate the dog adoption business, providing more
+          convenience and accessibility to families. More and more
+          prospective buyers reach out to us, asking about
+          availability with the simple question:
           <span className="italic">
             {' '}
             &quot;Do you have a male or female available, and can we
